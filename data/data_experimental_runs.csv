@@ -1,0 +1,2345 @@
+Description,runs,Analyte,Obs Conc,methods,ptid
+Reagent Name: Background0,1,GM-CSF (20),NA,Background,0
+Reagent Name: Background0,2,GM-CSF (20),NA,Background,0
+Reagent Name: Standard1,1,GM-CSF (20),0.07,Standard,1
+Reagent Name: Standard1,2,GM-CSF (20),0.05,Standard,1
+Reagent Name: Standard2,1,GM-CSF (20),0.24,Standard,2
+Reagent Name: Standard2,2,GM-CSF (20),0.25,Standard,2
+Reagent Name: Standard3,1,GM-CSF (20),0.96,Standard,3
+Reagent Name: Standard3,2,GM-CSF (20),0.96,Standard,3
+Reagent Name: Standard4,1,GM-CSF (20),3.97,Standard,4
+Reagent Name: Standard4,2,GM-CSF (20),3.93,Standard,4
+Reagent Name: Standard5,1,GM-CSF (20),16.11,Standard,5
+Reagent Name: Standard5,2,GM-CSF (20),15.26,Standard,5
+Reagent Name: Standard6,1,GM-CSF (20),51.28,Standard,6
+Reagent Name: Standard6,2,GM-CSF (20),73.23,Standard,6
+Reagent Name: Standard7,1,GM-CSF (20),327.03,Standard,7
+Reagent Name: Standard7,2,GM-CSF (20),217.64,Standard,7
+Sample ID: QC1,1,GM-CSF (20),0.83,QC,1
+Sample ID: QC1,2,GM-CSF (20),1.01,QC,1
+Sample ID: QC2,1,GM-CSF (20),10.55,QC,2
+Sample ID: QC2,2,GM-CSF (20),9.3,QC,2
+Sample ID: 3994 Pellet,1,GM-CSF (20),0.01,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,GM-CSF (20),0.01,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,GM-CSF (20),0.02,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,GM-CSF (20),0.03,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,GM-CSF (20),NA,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,GM-CSF (20),NA,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,GM-CSF (20),0.27,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,GM-CSF (20),0.12,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,GM-CSF (20),0.02,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,GM-CSF (20),0.03,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,GM-CSF (20),0.01,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,GM-CSF (20),0.02,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,GM-CSF (20),NA,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,GM-CSF (20),NA,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,GM-CSF (20),0.05,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,GM-CSF (20),0.07,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,GM-CSF (20),NA,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,GM-CSF (20),NA,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,GM-CSF (20),NA,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,GM-CSF (20),NA,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,GM-CSF (20),0.03,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,GM-CSF (20),0.02,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,GM-CSF (20),0.02,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,GM-CSF (20),0.01,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,GM-CSF (20),NA,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,GM-CSF (20),NA,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,GM-CSF (20),NA,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,GM-CSF (20),0.01,epithelial brushings,4049
+Sample ID: 3994 tissue,1,GM-CSF (20),0.02,tissue,3994
+Sample ID: 3994 tissue,2,GM-CSF (20),NA,tissue,3994
+Sample ID: 3995 tissue,1,GM-CSF (20),NA,tissue,3995
+Sample ID: 3995 tissue,2,GM-CSF (20),NA,tissue,3995
+Sample ID: 3996 tissue,1,GM-CSF (20),NA,tissue,3996
+Sample ID: 3996 tissue,2,GM-CSF (20),NA,tissue,3996
+Sample ID: 4002 tissue,1,GM-CSF (20),NA,tissue,4002
+Sample ID: 4002 tissue,2,GM-CSF (20),NA,tissue,4002
+Sample ID: 4006 tissue,1,GM-CSF (20),0.01,tissue,4006
+Sample ID: 4006 tissue,2,GM-CSF (20),0.01,tissue,4006
+Sample ID: 4007 tissue,1,GM-CSF (20),0.01,tissue,4007
+Sample ID: 4007 tissue,2,GM-CSF (20),0.05,tissue,4007
+Sample ID: 4012 tissue,1,GM-CSF (20),NA,tissue,4012
+Sample ID: 4012 tissue,2,GM-CSF (20),NA,tissue,4012
+Sample ID: 4023 tissue,1,GM-CSF (20),0.01,tissue,4023
+Sample ID: 4023 tissue,2,GM-CSF (20),0.01,tissue,4023
+Sample ID: 4027 tissue,1,GM-CSF (20),NA,tissue,4027
+Sample ID: 4027 tissue,2,GM-CSF (20),NA,tissue,4027
+Sample ID: 4034 tissue,1,GM-CSF (20),0.02,tissue,4034
+Sample ID: 4034 tissue,2,GM-CSF (20),0.01,tissue,4034
+Sample ID: 4040 tissue,1,GM-CSF (20),NA,tissue,4040
+Sample ID: 4040 tissue,2,GM-CSF (20),NA,tissue,4040
+Sample ID: 4042 tissue,1,GM-CSF (20),NA,tissue,4042
+Sample ID: 4042 tissue,2,GM-CSF (20),NA,tissue,4042
+Sample ID: 4048 tissue,1,GM-CSF (20),0.03,tissue,4048
+Sample ID: 4048 tissue,2,GM-CSF (20),0.03,tissue,4048
+Sample ID: 4049 tissue,1,GM-CSF (20),0.08,tissue,4049
+Sample ID: 4049 tissue,2,GM-CSF (20),0.07,tissue,4049
+Sample ID: 4002 mucus,1,GM-CSF (20),NA,mucus,4002
+Sample ID: 4002 mucus,2,GM-CSF (20),NA,mucus,4002
+Sample ID: 4006 mucus,1,GM-CSF (20),NA,mucus,4006
+Sample ID: 4006 mucus,2,GM-CSF (20),NA,mucus,4006
+Sample ID: 4012 mucus,1,GM-CSF (20),NA,mucus,4012
+Sample ID: 4012 mucus,2,GM-CSF (20),NA,mucus,4012
+Sample ID: 4023 mucus,1,GM-CSF (20),0.01,mucus,4023
+Sample ID: 4023 mucus,2,GM-CSF (20),0.01,mucus,4023
+Sample ID: 4027 mucus,1,GM-CSF (20),NA,mucus,4027
+Sample ID: 4027 mucus,2,GM-CSF (20),NA,mucus,4027
+Sample ID: 4034 mucus,1,GM-CSF (20),0.07,mucus,4034
+Sample ID: 4034 mucus,2,GM-CSF (20),0.08,mucus,4034
+Sample ID: 4040 mucus,1,GM-CSF (20),NA,mucus,4040
+Sample ID: 4040 mucus,2,GM-CSF (20),0.01,mucus,4040
+Sample ID: 4042 mucus,1,GM-CSF (20),NA,mucus,4042
+Sample ID: 4042 mucus,2,GM-CSF (20),NA,mucus,4042
+Sample ID: 4048 mucus,1,GM-CSF (20),NA,mucus,4048
+Sample ID: 4048 mucus,2,GM-CSF (20),NA,mucus,4048
+Sample ID: 4049 mucus,1,GM-CSF (20),NA,mucus,4049
+Sample ID: 4049 mucus,2,GM-CSF (20),NA,mucus,4049
+Reagent Name: Background0,1,IFN-g (25),NA,Background,0
+Reagent Name: Background0,2,IFN-g (25),NA,Background,0
+Reagent Name: Standard1,1,IFN-g (25),8.65,Standard,1
+Reagent Name: Standard1,2,IFN-g (25),11.05,Standard,1
+Reagent Name: Standard2,1,IFN-g (25),38.08,Standard,2
+Reagent Name: Standard2,2,IFN-g (25),38.08,Standard,2
+Reagent Name: Standard3,1,IFN-g (25),161.49,Standard,3
+Reagent Name: Standard3,2,IFN-g (25),163.66,Standard,3
+Reagent Name: Standard4,1,IFN-g (25),616.69,Standard,4
+Reagent Name: Standard4,2,IFN-g (25),600.1,Standard,4
+Reagent Name: Standard5,1,IFN-g (25),2388.19,Standard,5
+Reagent Name: Standard5,2,IFN-g (25),2671.52,Standard,5
+Reagent Name: Standard6,1,IFN-g (25),10260.03,Standard,6
+Reagent Name: Standard6,2,IFN-g (25),9676.5,Standard,6
+Reagent Name: Standard7,1,IFN-g (25),40487.81,Standard,7
+Reagent Name: Standard7,2,IFN-g (25),39617.75,Standard,7
+Sample ID: QC1,1,IFN-g (25),152.8,QC,1
+Sample ID: QC1,2,IFN-g (25),153.89,QC,1
+Sample ID: QC2,1,IFN-g (25),1806.62,QC,2
+Sample ID: QC2,2,IFN-g (25),1665.97,QC,2
+Sample ID: 3994 Pellet,1,IFN-g (25),8.25,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IFN-g (25),10.65,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IFN-g (25),23.7,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IFN-g (25),21.29,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IFN-g (25),15.88,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IFN-g (25),15.07,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IFN-g (25),14.27,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IFN-g (25),11.85,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IFN-g (25),37.35,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IFN-g (25),30.74,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IFN-g (25),33.14,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IFN-g (25),36.75,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IFN-g (25),10.57,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IFN-g (25),7.06,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IFN-g (25),34.76,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IFN-g (25),43.49,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IFN-g (25),10.97,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IFN-g (25),10.97,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IFN-g (25),23.01,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IFN-g (25),11.45,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IFN-g (25),32.54,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IFN-g (25),30.74,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IFN-g (25),24.04,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IFN-g (25),25.68,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IFN-g (25),15.88,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IFN-g (25),16.29,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IFN-g (25),12.45,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IFN-g (25),13.06,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IFN-g (25),2.76,tissue,3994
+Sample ID: 3994 tissue,2,IFN-g (25),2.37,tissue,3994
+Sample ID: 3995 tissue,1,IFN-g (25),4.31,tissue,3995
+Sample ID: 3995 tissue,2,IFN-g (25),3.53,tissue,3995
+Sample ID: 3996 tissue,1,IFN-g (25),2.76,tissue,3996
+Sample ID: 3996 tissue,2,IFN-g (25),3.34,tissue,3996
+Sample ID: 4002 tissue,1,IFN-g (25),5.88,tissue,4002
+Sample ID: 4002 tissue,2,IFN-g (25),7.46,tissue,4002
+Sample ID: 4006 tissue,1,IFN-g (25),3.92,tissue,4006
+Sample ID: 4006 tissue,2,IFN-g (25),4.31,tissue,4006
+Sample ID: 4007 tissue,1,IFN-g (25),4.7,tissue,4007
+Sample ID: 4007 tissue,2,IFN-g (25),6.27,tissue,4007
+Sample ID: 4012 tissue,1,IFN-g (25),3.92,tissue,4012
+Sample ID: 4012 tissue,2,IFN-g (25),3.72,tissue,4012
+Sample ID: 4023 tissue,1,IFN-g (25),2.37,tissue,4023
+Sample ID: 4023 tissue,2,IFN-g (25),1.99,tissue,4023
+Sample ID: 4027 tissue,1,IFN-g (25),3.14,tissue,4027
+Sample ID: 4027 tissue,2,IFN-g (25),1.99,tissue,4027
+Sample ID: 4034 tissue,1,IFN-g (25),1.61,tissue,4034
+Sample ID: 4034 tissue,2,IFN-g (25),1.23,tissue,4034
+Sample ID: 4040 tissue,1,IFN-g (25),1.61,tissue,4040
+Sample ID: 4040 tissue,2,IFN-g (25),1.61,tissue,4040
+Sample ID: 4042 tissue,1,IFN-g (25),0.86,tissue,4042
+Sample ID: 4042 tissue,2,IFN-g (25),0.86,tissue,4042
+Sample ID: 4048 tissue,1,IFN-g (25),0.12,tissue,4048
+Sample ID: 4048 tissue,2,IFN-g (25),1.23,tissue,4048
+Sample ID: 4049 tissue,1,IFN-g (25),1.23,tissue,4049
+Sample ID: 4049 tissue,2,IFN-g (25),0.86,tissue,4049
+Sample ID: 4002 mucus,1,IFN-g (25),7.46,mucus,4002
+Sample ID: 4002 mucus,2,IFN-g (25),7.85,mucus,4002
+Sample ID: 4006 mucus,1,IFN-g (25),3.92,mucus,4006
+Sample ID: 4006 mucus,2,IFN-g (25),4.11,mucus,4006
+Sample ID: 4012 mucus,1,IFN-g (25),4.7,mucus,4012
+Sample ID: 4012 mucus,2,IFN-g (25),5.48,mucus,4012
+Sample ID: 4023 mucus,1,IFN-g (25),6.27,mucus,4023
+Sample ID: 4023 mucus,2,IFN-g (25),4.89,mucus,4023
+Sample ID: 4027 mucus,1,IFN-g (25),0.86,mucus,4027
+Sample ID: 4027 mucus,2,IFN-g (25),0.86,mucus,4027
+Sample ID: 4034 mucus,1,IFN-g (25),67.86,mucus,4034
+Sample ID: 4034 mucus,2,IFN-g (25),61.24,mucus,4034
+Sample ID: 4040 mucus,1,IFN-g (25),7.85,mucus,4040
+Sample ID: 4040 mucus,2,IFN-g (25),4.7,mucus,4040
+Sample ID: 4042 mucus,1,IFN-g (25),3.92,mucus,4042
+Sample ID: 4042 mucus,2,IFN-g (25),4.89,mucus,4042
+Sample ID: 4048 mucus,1,IFN-g (25),10.25,mucus,4048
+Sample ID: 4048 mucus,2,IFN-g (25),9.45,mucus,4048
+Sample ID: 4049 mucus,1,IFN-g (25),0.86,mucus,4049
+Sample ID: 4049 mucus,2,IFN-g (25),1.42,mucus,4049
+Reagent Name: Background0,1,IL-10 (27),NA,Background,0
+Reagent Name: Background0,2,IL-10 (27),NA,Background,0
+Reagent Name: Standard1,1,IL-10 (27),1.2,Standard,1
+Reagent Name: Standard1,2,IL-10 (27),1.2,Standard,1
+Reagent Name: Standard2,1,IL-10 (27),4.8,Standard,2
+Reagent Name: Standard2,2,IL-10 (27),5.08,Standard,2
+Reagent Name: Standard3,1,IL-10 (27),19.58,Standard,3
+Reagent Name: Standard3,2,IL-10 (27),19.72,Standard,3
+Reagent Name: Standard4,1,IL-10 (27),79.91,Standard,4
+Reagent Name: Standard4,2,IL-10 (27),74.28,Standard,4
+Reagent Name: Standard5,1,IL-10 (27),323.87,Standard,5
+Reagent Name: Standard5,2,IL-10 (27),305.53,Standard,5
+Reagent Name: Standard6,1,IL-10 (27),1387.77,Standard,6
+Reagent Name: Standard6,2,IL-10 (27),1117.03,Standard,6
+Reagent Name: Standard7,1,IL-10 (27),5786.97,Standard,7
+Reagent Name: Standard7,2,IL-10 (27),4410.27,Standard,7
+Sample ID: QC1,1,IL-10 (27),12.32,QC,1
+Sample ID: QC1,2,IL-10 (27),10.93,QC,1
+Sample ID: QC2,1,IL-10 (27),118.43,QC,2
+Sample ID: QC2,2,IL-10 (27),123.38,QC,2
+Sample ID: 3994 Pellet,1,IL-10 (27),7.58,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-10 (27),7.45,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-10 (27),41.96,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-10 (27),42.24,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-10 (27),14.55,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-10 (27),13.44,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-10 (27),7.86,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-10 (27),5.64,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-10 (27),14.82,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-10 (27),12.74,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-10 (27),15.24,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-10 (27),16.91,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-10 (27),13.5,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-10 (27),12.39,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-10 (27),7.58,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-10 (27),6.47,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-10 (27),11.83,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-10 (27),12.94,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-10 (27),16.51,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-10 (27),10.65,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-10 (27),6.08,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-10 (27),6.08,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-10 (27),3.69,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-10 (27),3.14,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-10 (27),3.14,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-10 (27),3.14,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-10 (27),16.79,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-10 (27),16.79,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-10 (27),19.02,tissue,3994
+Sample ID: 3994 tissue,2,IL-10 (27),16.23,tissue,3994
+Sample ID: 3995 tissue,1,IL-10 (27),3.69,tissue,3995
+Sample ID: 3995 tissue,2,IL-10 (27),2.72,tissue,3995
+Sample ID: 3996 tissue,1,IL-10 (27),23.36,tissue,3996
+Sample ID: 3996 tissue,2,IL-10 (27),22.38,tissue,3996
+Sample ID: 4002 tissue,1,IL-10 (27),11.63,tissue,4002
+Sample ID: 4002 tissue,2,IL-10 (27),12.04,tissue,4002
+Sample ID: 4006 tissue,1,IL-10 (27),0.37,tissue,4006
+Sample ID: 4006 tissue,2,IL-10 (27),0.23,tissue,4006
+Sample ID: 4007 tissue,1,IL-10 (27),7.86,tissue,4007
+Sample ID: 4007 tissue,2,IL-10 (27),9.26,tissue,4007
+Sample ID: 4012 tissue,1,IL-10 (27),12.32,tissue,4012
+Sample ID: 4012 tissue,2,IL-10 (27),13.58,tissue,4012
+Sample ID: 4023 tissue,1,IL-10 (27),10.37,tissue,4023
+Sample ID: 4023 tissue,2,IL-10 (27),8.7,tissue,4023
+Sample ID: 4027 tissue,1,IL-10 (27),2.03,tissue,4027
+Sample ID: 4027 tissue,2,IL-10 (27),2.03,tissue,4027
+Sample ID: 4034 tissue,1,IL-10 (27),2.86,tissue,4034
+Sample ID: 4034 tissue,2,IL-10 (27),2.3,tissue,4034
+Sample ID: 4040 tissue,1,IL-10 (27),45.76,tissue,4040
+Sample ID: 4040 tissue,2,IL-10 (27),48.71,tissue,4040
+Sample ID: 4042 tissue,1,IL-10 (27),8.56,tissue,4042
+Sample ID: 4042 tissue,2,IL-10 (27),8.14,tissue,4042
+Sample ID: 4048 tissue,1,IL-10 (27),6.47,tissue,4048
+Sample ID: 4048 tissue,2,IL-10 (27),6.19,tissue,4048
+Sample ID: 4049 tissue,1,IL-10 (27),36.65,tissue,4049
+Sample ID: 4049 tissue,2,IL-10 (27),34.55,tissue,4049
+Sample ID: 4002 mucus,1,IL-10 (27),15.25,mucus,4002
+Sample ID: 4002 mucus,2,IL-10 (27),14.28,mucus,4002
+Sample ID: 4006 mucus,1,IL-10 (27),12.04,mucus,4006
+Sample ID: 4006 mucus,2,IL-10 (27),12.88,mucus,4006
+Sample ID: 4012 mucus,1,IL-10 (27),55.17,mucus,4012
+Sample ID: 4012 mucus,2,IL-10 (27),59.24,mucus,4012
+Sample ID: 4023 mucus,1,IL-10 (27),24.05,mucus,4023
+Sample ID: 4023 mucus,2,IL-10 (27),24.89,mucus,4023
+Sample ID: 4027 mucus,1,IL-10 (27),4.39,mucus,4027
+Sample ID: 4027 mucus,2,IL-10 (27),4.8,mucus,4027
+Sample ID: 4034 mucus,1,IL-10 (27),53.7,mucus,4034
+Sample ID: 4034 mucus,2,IL-10 (27),55.66,mucus,4034
+Sample ID: 4040 mucus,1,IL-10 (27),80.34,mucus,4040
+Sample ID: 4040 mucus,2,IL-10 (27),92.59,mucus,4040
+Sample ID: 4042 mucus,1,IL-10 (27),32.59,mucus,4042
+Sample ID: 4042 mucus,2,IL-10 (27),34.13,mucus,4042
+Sample ID: 4048 mucus,1,IL-10 (27),49.83,mucus,4048
+Sample ID: 4048 mucus,2,IL-10 (27),51.52,mucus,4048
+Sample ID: 4049 mucus,1,IL-10 (27),49.55,mucus,4049
+Sample ID: 4049 mucus,2,IL-10 (27),45.2,mucus,4049
+Reagent Name: Background0,1,IL-13 (35),NA,Background,0
+Reagent Name: Background0,2,IL-13 (35),NA,Background,0
+Reagent Name: Standard1,1,IL-13 (35),6.37,Standard,1
+Reagent Name: Standard1,2,IL-13 (35),7.79,Standard,1
+Reagent Name: Standard2,1,IL-13 (35),32.04,Standard,2
+Reagent Name: Standard2,2,IL-13 (35),30.18,Standard,2
+Reagent Name: Standard3,1,IL-13 (35),112.49,Standard,3
+Reagent Name: Standard3,2,IL-13 (35),117.75,Standard,3
+Reagent Name: Standard4,1,IL-13 (35),448.82,Standard,4
+Reagent Name: Standard4,2,IL-13 (35),457.49,Standard,4
+Reagent Name: Standard5,1,IL-13 (35),1900.1,Standard,5
+Reagent Name: Standard5,2,IL-13 (35),1984.53,Standard,5
+Reagent Name: Standard6,1,IL-13 (35),7570.94,Standard,6
+Reagent Name: Standard6,2,IL-13 (35),7260.11,Standard,6
+Reagent Name: Standard7,1,IL-13 (35),30774.04,Standard,7
+Reagent Name: Standard7,2,IL-13 (35),29419.64,Standard,7
+Sample ID: QC1,1,IL-13 (35),124.15,QC,1
+Sample ID: QC1,2,IL-13 (35),103.79,QC,1
+Sample ID: QC2,1,IL-13 (35),1330.67,QC,2
+Sample ID: QC2,2,IL-13 (35),1353.92,QC,2
+Sample ID: 3994 Pellet,1,IL-13 (35),81.34,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-13 (35),77.21,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-13 (35),136.5,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-13 (35),127.76,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-13 (35),56.06,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-13 (35),45.91,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-13 (35),79.5,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-13 (35),37.83,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-13 (35),155.04,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-13 (35),144.66,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-13 (35),153.65,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-13 (35),159.88,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-13 (35),76.12,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-13 (35),73.34,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-13 (35),181.67,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-13 (35),174.6,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-13 (35),65.47,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-13 (35),67.79,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-13 (35),467.29,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-13 (35),43.37,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-13 (35),341.58,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-13 (35),254.33,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-13 (35),298.27,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-13 (35),295.54,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-13 (35),48.68,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-13 (35),51.91,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-13 (35),36.9,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-13 (35),32.27,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-13 (35),212.2,tissue,3994
+Sample ID: 3994 tissue,2,IL-13 (35),216.99,tissue,3994
+Sample ID: 3995 tissue,1,IL-13 (35),33.66,tissue,3995
+Sample ID: 3995 tissue,2,IL-13 (35),39.91,tissue,3995
+Sample ID: 3996 tissue,1,IL-13 (35),104.71,tissue,3996
+Sample ID: 3996 tissue,2,IL-13 (35),105.17,tissue,3996
+Sample ID: 4002 tissue,1,IL-13 (35),60.43,tissue,4002
+Sample ID: 4002 tissue,2,IL-13 (35),54.21,tissue,4002
+Sample ID: 4006 tissue,1,IL-13 (35),10.61,tissue,4006
+Sample ID: 4006 tissue,2,IL-13 (35),10.14,tissue,4006
+Sample ID: 4007 tissue,1,IL-13 (35),49.14,tissue,4007
+Sample ID: 4007 tissue,2,IL-13 (35),39.68,tissue,4007
+Sample ID: 4012 tissue,1,IL-13 (35),47.76,tissue,4012
+Sample ID: 4012 tissue,2,IL-13 (35),47.76,tissue,4012
+Sample ID: 4023 tissue,1,IL-13 (35),21.12,tissue,4023
+Sample ID: 4023 tissue,2,IL-13 (35),25.31,tissue,4023
+Sample ID: 4027 tissue,1,IL-13 (35),89.59,tissue,4027
+Sample ID: 4027 tissue,2,IL-13 (35),86.38,tissue,4027
+Sample ID: 4034 tissue,1,IL-13 (35),18.56,tissue,4034
+Sample ID: 4034 tissue,2,IL-13 (35),13.42,tissue,4034
+Sample ID: 4040 tissue,1,IL-13 (35),83.86,tissue,4040
+Sample ID: 4040 tissue,2,IL-13 (35),77.21,tissue,4040
+Sample ID: 4042 tissue,1,IL-13 (35),9.9,tissue,4042
+Sample ID: 4042 tissue,2,IL-13 (35),10.14,tissue,4042
+Sample ID: 4048 tissue,1,IL-13 (35),100.13,tissue,4048
+Sample ID: 4048 tissue,2,IL-13 (35),101.28,tissue,4048
+Sample ID: 4049 tissue,1,IL-13 (35),59.74,tissue,4049
+Sample ID: 4049 tissue,2,IL-13 (35),59.97,tissue,4049
+Sample ID: 4002 mucus,1,IL-13 (35),11.55,mucus,4002
+Sample ID: 4002 mucus,2,IL-13 (35),12.25,mucus,4002
+Sample ID: 4006 mucus,1,IL-13 (35),34.82,mucus,4006
+Sample ID: 4006 mucus,2,IL-13 (35),27.4,mucus,4006
+Sample ID: 4012 mucus,1,IL-13 (35),146.99,mucus,4012
+Sample ID: 4012 mucus,2,IL-13 (35),153.15,mucus,4012
+Sample ID: 4023 mucus,1,IL-13 (35),25.08,mucus,4023
+Sample ID: 4023 mucus,2,IL-13 (35),29.26,mucus,4023
+Sample ID: 4027 mucus,1,IL-13 (35),4,mucus,4027
+Sample ID: 4027 mucus,2,IL-13 (35),3.53,mucus,4027
+Sample ID: 4034 mucus,1,IL-13 (35),89.06,mucus,4034
+Sample ID: 4034 mucus,2,IL-13 (35),79.82,mucus,4034
+Sample ID: 4040 mucus,1,IL-13 (35),47.3,mucus,4040
+Sample ID: 4040 mucus,2,IL-13 (35),51.22,mucus,4040
+Sample ID: 4042 mucus,1,IL-13 (35),5.42,mucus,4042
+Sample ID: 4042 mucus,2,IL-13 (35),6.13,mucus,4042
+Sample ID: 4048 mucus,1,IL-13 (35),399.14,mucus,4048
+Sample ID: 4048 mucus,2,IL-13 (35),377.73,mucus,4048
+Sample ID: 4049 mucus,1,IL-13 (35),8.26,mucus,4049
+Sample ID: 4049 mucus,2,IL-13 (35),5.42,mucus,4049
+Reagent Name: Background0,1,IL-17A (39),NA,Background,0
+Reagent Name: Background0,2,IL-17A (39),NA,Background,0
+Reagent Name: Standard1,1,IL-17A (39),13.12,Standard,1
+Reagent Name: Standard1,2,IL-17A (39),11.76,Standard,1
+Reagent Name: Standard2,1,IL-17A (39),50.7,Standard,2
+Reagent Name: Standard2,2,IL-17A (39),44.57,Standard,2
+Reagent Name: Standard3,1,IL-17A (39),197.04,Standard,3
+Reagent Name: Standard3,2,IL-17A (39),194.91,Standard,3
+Reagent Name: Standard4,1,IL-17A (39),845.15,Standard,4
+Reagent Name: Standard4,2,IL-17A (39),755.42,Standard,4
+Reagent Name: Standard5,1,IL-17A (39),3085.7,Standard,5
+Reagent Name: Standard5,2,IL-17A (39),3000.71,Standard,5
+Reagent Name: Standard6,1,IL-17A (39),12761.66,Standard,6
+Reagent Name: Standard6,2,IL-17A (39),12946.37,Standard,6
+Reagent Name: Standard7,1,IL-17A (39),48977.51,Standard,7
+Reagent Name: Standard7,2,IL-17A (39),47774.12,Standard,7
+Sample ID: QC1,1,IL-17A (39),230.92,QC,1
+Sample ID: QC1,2,IL-17A (39),194.71,QC,1
+Sample ID: QC2,1,IL-17A (39),2072.07,QC,2
+Sample ID: QC2,2,IL-17A (39),2150.09,QC,2
+Sample ID: 3994 Pellet,1,IL-17A (39),3.48,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-17A (39),3.8,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-17A (39),36.52,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-17A (39),35.31,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-17A (39),20.16,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-17A (39),5.43,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-17A (39),56.69,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-17A (39),45.83,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-17A (39),20.22,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-17A (39),15.78,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-17A (39),7.57,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-17A (39),10.44,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-17A (39),2.25,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-17A (39),NA,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-17A (39),33.32,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-17A (39),38.04,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-17A (39),3.48,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-17A (39),1.34,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-17A (39),18.35,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-17A (39),6.25,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-17A (39),22.7,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-17A (39),20.72,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-17A (39),12.69,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-17A (39),11.68,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-17A (39),15.85,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-17A (39),15.51,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-17A (39),1.05,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-17A (39),1.28,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-17A (39),NA,tissue,3994
+Sample ID: 3994 tissue,2,IL-17A (39),NA,tissue,3994
+Sample ID: 3995 tissue,1,IL-17A (39),NA,tissue,3995
+Sample ID: 3995 tissue,2,IL-17A (39),NA,tissue,3995
+Sample ID: 3996 tissue,1,IL-17A (39),NA,tissue,3996
+Sample ID: 3996 tissue,2,IL-17A (39),NA,tissue,3996
+Sample ID: 4002 tissue,1,IL-17A (39),18.43,tissue,4002
+Sample ID: 4002 tissue,2,IL-17A (39),17.91,tissue,4002
+Sample ID: 4006 tissue,1,IL-17A (39),NA,tissue,4006
+Sample ID: 4006 tissue,2,IL-17A (39),NA,tissue,4006
+Sample ID: 4007 tissue,1,IL-17A (39),NA,tissue,4007
+Sample ID: 4007 tissue,2,IL-17A (39),NA,tissue,4007
+Sample ID: 4012 tissue,1,IL-17A (39),NA,tissue,4012
+Sample ID: 4012 tissue,2,IL-17A (39),NA,tissue,4012
+Sample ID: 4023 tissue,1,IL-17A (39),NA,tissue,4023
+Sample ID: 4023 tissue,2,IL-17A (39),NA,tissue,4023
+Sample ID: 4027 tissue,1,IL-17A (39),NA,tissue,4027
+Sample ID: 4027 tissue,2,IL-17A (39),NA,tissue,4027
+Sample ID: 4034 tissue,1,IL-17A (39),NA,tissue,4034
+Sample ID: 4034 tissue,2,IL-17A (39),NA,tissue,4034
+Sample ID: 4040 tissue,1,IL-17A (39),NA,tissue,4040
+Sample ID: 4040 tissue,2,IL-17A (39),NA,tissue,4040
+Sample ID: 4042 tissue,1,IL-17A (39),NA,tissue,4042
+Sample ID: 4042 tissue,2,IL-17A (39),NA,tissue,4042
+Sample ID: 4048 tissue,1,IL-17A (39),0.52,tissue,4048
+Sample ID: 4048 tissue,2,IL-17A (39),0.67,tissue,4048
+Sample ID: 4049 tissue,1,IL-17A (39),NA,tissue,4049
+Sample ID: 4049 tissue,2,IL-17A (39),NA,tissue,4049
+Sample ID: 4002 mucus,1,IL-17A (39),22.94,mucus,4002
+Sample ID: 4002 mucus,2,IL-17A (39),27.67,mucus,4002
+Sample ID: 4006 mucus,1,IL-17A (39),NA,mucus,4006
+Sample ID: 4006 mucus,2,IL-17A (39),NA,mucus,4006
+Sample ID: 4012 mucus,1,IL-17A (39),NA,mucus,4012
+Sample ID: 4012 mucus,2,IL-17A (39),NA,mucus,4012
+Sample ID: 4023 mucus,1,IL-17A (39),0.38,mucus,4023
+Sample ID: 4023 mucus,2,IL-17A (39),NA,mucus,4023
+Sample ID: 4027 mucus,1,IL-17A (39),NA,mucus,4027
+Sample ID: 4027 mucus,2,IL-17A (39),NA,mucus,4027
+Sample ID: 4034 mucus,1,IL-17A (39),17.63,mucus,4034
+Sample ID: 4034 mucus,2,IL-17A (39),14.8,mucus,4034
+Sample ID: 4040 mucus,1,IL-17A (39),NA,mucus,4040
+Sample ID: 4040 mucus,2,IL-17A (39),NA,mucus,4040
+Sample ID: 4042 mucus,1,IL-17A (39),0.67,mucus,4042
+Sample ID: 4042 mucus,2,IL-17A (39),1.43,mucus,4042
+Sample ID: 4048 mucus,1,IL-17A (39),0.97,mucus,4048
+Sample ID: 4048 mucus,2,IL-17A (39),NA,mucus,4048
+Sample ID: 4049 mucus,1,IL-17A (39),NA,mucus,4049
+Sample ID: 4049 mucus,2,IL-17A (39),NA,mucus,4049
+Reagent Name: Background0,1,IL-17E/IL-25 (66),NA,Background,0
+Reagent Name: Background0,2,IL-17E/IL-25 (66),NA,Background,0
+Reagent Name: Standard1,1,IL-17E/IL-25 (66),0.12,Standard,1
+Reagent Name: Standard1,2,IL-17E/IL-25 (66),0.12,Standard,1
+Reagent Name: Standard2,1,IL-17E/IL-25 (66),0.51,Standard,2
+Reagent Name: Standard2,2,IL-17E/IL-25 (66),0.51,Standard,2
+Reagent Name: Standard3,1,IL-17E/IL-25 (66),2.03,Standard,3
+Reagent Name: Standard3,2,IL-17E/IL-25 (66),2.23,Standard,3
+Reagent Name: Standard4,1,IL-17E/IL-25 (66),7.61,Standard,4
+Reagent Name: Standard4,2,IL-17E/IL-25 (66),5.75,Standard,4
+Reagent Name: Standard5,1,IL-17E/IL-25 (66),18.42,Standard,5
+Reagent Name: Standard5,2,IL-17E/IL-25 (66),25.23,Standard,5
+Reagent Name: Standard6,1,IL-17E/IL-25 (66),690.46,Standard,6
+Reagent Name: Standard6,2,IL-17E/IL-25 (66),269.25,Standard,6
+Reagent Name: Standard7,1,IL-17E/IL-25 (66),387.3,Standard,7
+Reagent Name: Standard7,2,IL-17E/IL-25 (66),646.03,Standard,7
+Sample ID: QC1,1,IL-17E/IL-25 (66),1.87,QC,1
+Sample ID: QC1,2,IL-17E/IL-25 (66),2.22,QC,1
+Sample ID: QC2,1,IL-17E/IL-25 (66),11.74,QC,2
+Sample ID: QC2,2,IL-17E/IL-25 (66),15.57,QC,2
+Sample ID: 3994 Pellet,1,IL-17E/IL-25 (66),0.02,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-17E/IL-25 (66),0.02,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-17E/IL-25 (66),0.05,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-17E/IL-25 (66),0.05,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-17E/IL-25 (66),0.02,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-17E/IL-25 (66),0.03,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-17E/IL-25 (66),0.04,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-17E/IL-25 (66),0.04,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-17E/IL-25 (66),0.06,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-17E/IL-25 (66),0.06,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-17E/IL-25 (66),0.06,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-17E/IL-25 (66),0.06,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-17E/IL-25 (66),0.04,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-17E/IL-25 (66),0.04,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-17E/IL-25 (66),0.05,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-17E/IL-25 (66),0.05,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-17E/IL-25 (66),0.04,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-17E/IL-25 (66),0.04,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-17E/IL-25 (66),0.03,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-17E/IL-25 (66),0.03,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-17E/IL-25 (66),0.06,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-17E/IL-25 (66),0.06,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-17E/IL-25 (66),0.03,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-17E/IL-25 (66),0.03,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-17E/IL-25 (66),0.02,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-17E/IL-25 (66),0.02,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-17E/IL-25 (66),0.02,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-17E/IL-25 (66),0.02,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-17E/IL-25 (66),0.02,tissue,3994
+Sample ID: 3994 tissue,2,IL-17E/IL-25 (66),0.02,tissue,3994
+Sample ID: 3995 tissue,1,IL-17E/IL-25 (66),0.02,tissue,3995
+Sample ID: 3995 tissue,2,IL-17E/IL-25 (66),0.02,tissue,3995
+Sample ID: 3996 tissue,1,IL-17E/IL-25 (66),0.02,tissue,3996
+Sample ID: 3996 tissue,2,IL-17E/IL-25 (66),0.02,tissue,3996
+Sample ID: 4002 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4002
+Sample ID: 4002 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4002
+Sample ID: 4006 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4006
+Sample ID: 4006 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4006
+Sample ID: 4007 tissue,1,IL-17E/IL-25 (66),0.03,tissue,4007
+Sample ID: 4007 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4007
+Sample ID: 4012 tissue,1,IL-17E/IL-25 (66),0.03,tissue,4012
+Sample ID: 4012 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4012
+Sample ID: 4023 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4023
+Sample ID: 4023 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4023
+Sample ID: 4027 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4027
+Sample ID: 4027 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4027
+Sample ID: 4034 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4034
+Sample ID: 4034 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4034
+Sample ID: 4040 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4040
+Sample ID: 4040 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4040
+Sample ID: 4042 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4042
+Sample ID: 4042 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4042
+Sample ID: 4048 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4048
+Sample ID: 4048 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4048
+Sample ID: 4049 tissue,1,IL-17E/IL-25 (66),0.02,tissue,4049
+Sample ID: 4049 tissue,2,IL-17E/IL-25 (66),0.02,tissue,4049
+Sample ID: 4002 mucus,1,IL-17E/IL-25 (66),0.03,mucus,4002
+Sample ID: 4002 mucus,2,IL-17E/IL-25 (66),0.03,mucus,4002
+Sample ID: 4006 mucus,1,IL-17E/IL-25 (66),0.03,mucus,4006
+Sample ID: 4006 mucus,2,IL-17E/IL-25 (66),0.03,mucus,4006
+Sample ID: 4012 mucus,1,IL-17E/IL-25 (66),0.03,mucus,4012
+Sample ID: 4012 mucus,2,IL-17E/IL-25 (66),0.03,mucus,4012
+Sample ID: 4023 mucus,1,IL-17E/IL-25 (66),0.03,mucus,4023
+Sample ID: 4023 mucus,2,IL-17E/IL-25 (66),0.02,mucus,4023
+Sample ID: 4027 mucus,1,IL-17E/IL-25 (66),0.02,mucus,4027
+Sample ID: 4027 mucus,2,IL-17E/IL-25 (66),0.02,mucus,4027
+Sample ID: 4034 mucus,1,IL-17E/IL-25 (66),0.1,mucus,4034
+Sample ID: 4034 mucus,2,IL-17E/IL-25 (66),0.1,mucus,4034
+Sample ID: 4040 mucus,1,IL-17E/IL-25 (66),0.02,mucus,4040
+Sample ID: 4040 mucus,2,IL-17E/IL-25 (66),0.02,mucus,4040
+Sample ID: 4042 mucus,1,IL-17E/IL-25 (66),0.03,mucus,4042
+Sample ID: 4042 mucus,2,IL-17E/IL-25 (66),0.03,mucus,4042
+Sample ID: 4048 mucus,1,IL-17E/IL-25 (66),0.04,mucus,4048
+Sample ID: 4048 mucus,2,IL-17E/IL-25 (66),0.04,mucus,4048
+Sample ID: 4049 mucus,1,IL-17E/IL-25 (66),0.02,mucus,4049
+Sample ID: 4049 mucus,2,IL-17E/IL-25 (66),0.02,mucus,4049
+Reagent Name: Background0,1,IL-1b (46),NA,Background,0
+Reagent Name: Background0,2,IL-1b (46),NA,Background,0
+Reagent Name: Standard1,1,IL-1b (46),4.69,Standard,1
+Reagent Name: Standard1,2,IL-1b (46),5.07,Standard,1
+Reagent Name: Standard2,1,IL-1b (46),19.47,Standard,2
+Reagent Name: Standard2,2,IL-1b (46),17.32,Standard,2
+Reagent Name: Standard3,1,IL-1b (46),82.29,Standard,3
+Reagent Name: Standard3,2,IL-1b (46),81.7,Standard,3
+Reagent Name: Standard4,1,IL-1b (46),325.22,Standard,4
+Reagent Name: Standard4,2,IL-1b (46),340.1,Standard,4
+Reagent Name: Standard5,1,IL-1b (46),1205.09,Standard,5
+Reagent Name: Standard5,2,IL-1b (46),1168.14,Standard,5
+Reagent Name: Standard6,1,IL-1b (46),5519.98,Standard,6
+Reagent Name: Standard6,2,IL-1b (46),4760.25,Standard,6
+Reagent Name: Standard7,1,IL-1b (46),20389.63,Standard,7
+Reagent Name: Standard7,2,IL-1b (46),17579.34,Standard,7
+Sample ID: QC1,1,IL-1b (46),67.37,QC,1
+Sample ID: QC1,2,IL-1b (46),66.14,QC,1
+Sample ID: QC2,1,IL-1b (46),838.03,QC,2
+Sample ID: QC2,2,IL-1b (46),703.13,QC,2
+Sample ID: 3994 Pellet,1,IL-1b (46),3.75,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-1b (46),4,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-1b (46),42.49,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-1b (46),44.17,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-1b (46),8.66,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-1b (46),6.51,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-1b (46),2538.33,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-1b (46),2513.05,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-1b (46),9.09,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-1b (46),8.38,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-1b (46),9,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-1b (46),11.63,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-1b (46),4.77,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-1b (46),3.87,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-1b (46),548.12,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-1b (46),752.3,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-1b (46),4.09,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-1b (46),3.87,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-1b (46),6.31,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-1b (46),5.53,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-1b (46),13.03,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-1b (46),12.94,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-1b (46),10.39,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-1b (46),9.4,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-1b (46),7.19,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-1b (46),7.12,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-1b (46),2.79,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-1b (46),2.56,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-1b (46),1.45,tissue,3994
+Sample ID: 3994 tissue,2,IL-1b (46),1.45,tissue,3994
+Sample ID: 3995 tissue,1,IL-1b (46),1.99,tissue,3995
+Sample ID: 3995 tissue,2,IL-1b (46),2.19,tissue,3995
+Sample ID: 3996 tissue,1,IL-1b (46),1.99,tissue,3996
+Sample ID: 3996 tissue,2,IL-1b (46),1.88,tissue,3996
+Sample ID: 4002 tissue,1,IL-1b (46),2.53,tissue,4002
+Sample ID: 4002 tissue,2,IL-1b (46),2.68,tissue,4002
+Sample ID: 4006 tissue,1,IL-1b (46),1.71,tissue,4006
+Sample ID: 4006 tissue,2,IL-1b (46),1.74,tissue,4006
+Sample ID: 4007 tissue,1,IL-1b (46),2.39,tissue,4007
+Sample ID: 4007 tissue,2,IL-1b (46),3.51,tissue,4007
+Sample ID: 4012 tissue,1,IL-1b (46),4,tissue,4012
+Sample ID: 4012 tissue,2,IL-1b (46),5.43,tissue,4012
+Sample ID: 4023 tissue,1,IL-1b (46),14.84,tissue,4023
+Sample ID: 4023 tissue,2,IL-1b (46),17.52,tissue,4023
+Sample ID: 4027 tissue,1,IL-1b (46),3.48,tissue,4027
+Sample ID: 4027 tissue,2,IL-1b (46),3.21,tissue,4027
+Sample ID: 4034 tissue,1,IL-1b (46),2.68,tissue,4034
+Sample ID: 4034 tissue,2,IL-1b (46),1.82,tissue,4034
+Sample ID: 4040 tissue,1,IL-1b (46),3.75,tissue,4040
+Sample ID: 4040 tissue,2,IL-1b (46),3.66,tissue,4040
+Sample ID: 4042 tissue,1,IL-1b (46),2.05,tissue,4042
+Sample ID: 4042 tissue,2,IL-1b (46),2.13,tissue,4042
+Sample ID: 4048 tissue,1,IL-1b (46),2.44,tissue,4048
+Sample ID: 4048 tissue,2,IL-1b (46),2.33,tissue,4048
+Sample ID: 4049 tissue,1,IL-1b (46),1.39,tissue,4049
+Sample ID: 4049 tissue,2,IL-1b (46),1.42,tissue,4049
+Sample ID: 4002 mucus,1,IL-1b (46),8.42,mucus,4002
+Sample ID: 4002 mucus,2,IL-1b (46),7.87,mucus,4002
+Sample ID: 4006 mucus,1,IL-1b (46),3.45,mucus,4006
+Sample ID: 4006 mucus,2,IL-1b (46),3.18,mucus,4006
+Sample ID: 4012 mucus,1,IL-1b (46),9.22,mucus,4012
+Sample ID: 4012 mucus,2,IL-1b (46),10.03,mucus,4012
+Sample ID: 4023 mucus,1,IL-1b (46),274.13,mucus,4023
+Sample ID: 4023 mucus,2,IL-1b (46),286.67,mucus,4023
+Sample ID: 4027 mucus,1,IL-1b (46),1.55,mucus,4027
+Sample ID: 4027 mucus,2,IL-1b (46),1.66,mucus,4027
+Sample ID: 4034 mucus,1,IL-1b (46),16.7,mucus,4034
+Sample ID: 4034 mucus,2,IL-1b (46),14.3,mucus,4034
+Sample ID: 4040 mucus,1,IL-1b (46),128.45,mucus,4040
+Sample ID: 4040 mucus,2,IL-1b (46),133.26,mucus,4040
+Sample ID: 4042 mucus,1,IL-1b (46),51.75,mucus,4042
+Sample ID: 4042 mucus,2,IL-1b (46),63.83,mucus,4042
+Sample ID: 4048 mucus,1,IL-1b (46),12.68,mucus,4048
+Sample ID: 4048 mucus,2,IL-1b (46),12.2,mucus,4048
+Sample ID: 4049 mucus,1,IL-1b (46),6.65,mucus,4049
+Sample ID: 4049 mucus,2,IL-1b (46),5.92,mucus,4049
+Reagent Name: Background0,1,IL-2 (48),NA,Background,0
+Reagent Name: Background0,2,IL-2 (48),NA,Background,0
+Reagent Name: Standard1,1,IL-2 (48),12.99,Standard,1
+Reagent Name: Standard1,2,IL-2 (48),11.79,Standard,1
+Reagent Name: Standard2,1,IL-2 (48),45.47,Standard,2
+Reagent Name: Standard2,2,IL-2 (48),50.41,Standard,2
+Reagent Name: Standard3,1,IL-2 (48),198.99,Standard,3
+Reagent Name: Standard3,2,IL-2 (48),195.61,Standard,3
+Reagent Name: Standard4,1,IL-2 (48),793.79,Standard,4
+Reagent Name: Standard4,2,IL-2 (48),768.58,Standard,4
+Reagent Name: Standard5,1,IL-2 (48),3011.14,Standard,5
+Reagent Name: Standard5,2,IL-2 (48),3223.23,Standard,5
+Reagent Name: Standard6,1,IL-2 (48),12374.59,Standard,6
+Reagent Name: Standard6,2,IL-2 (48),12677.88,Standard,6
+Reagent Name: Standard7,1,IL-2 (48),49636.8,Standard,7
+Reagent Name: Standard7,2,IL-2 (48),50180.78,Standard,7
+Sample ID: QC1,1,IL-2 (48),186.99,QC,1
+Sample ID: QC1,2,IL-2 (48),200.82,QC,1
+Sample ID: QC2,1,IL-2 (48),1993.52,QC,2
+Sample ID: QC2,2,IL-2 (48),2577.11,QC,2
+Sample ID: 3994 Pellet,1,IL-2 (48),NA,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-2 (48),NA,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-2 (48),NA,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-2 (48),NA,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-2 (48),NA,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-2 (48),NA,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-2 (48),NA,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-2 (48),NA,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-2 (48),7.41,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-2 (48),5.25,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-2 (48),5.12,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-2 (48),10.1,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-2 (48),NA,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-2 (48),NA,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-2 (48),NA,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-2 (48),NA,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-2 (48),NA,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-2 (48),NA,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-2 (48),NA,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-2 (48),NA,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-2 (48),NA,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-2 (48),NA,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-2 (48),NA,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-2 (48),NA,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-2 (48),NA,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-2 (48),NA,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-2 (48),2.91,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-2 (48),2.56,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-2 (48),NA,tissue,3994
+Sample ID: 3994 tissue,2,IL-2 (48),NA,tissue,3994
+Sample ID: 3995 tissue,1,IL-2 (48),NA,tissue,3995
+Sample ID: 3995 tissue,2,IL-2 (48),NA,tissue,3995
+Sample ID: 3996 tissue,1,IL-2 (48),NA,tissue,3996
+Sample ID: 3996 tissue,2,IL-2 (48),NA,tissue,3996
+Sample ID: 4002 tissue,1,IL-2 (48),NA,tissue,4002
+Sample ID: 4002 tissue,2,IL-2 (48),NA,tissue,4002
+Sample ID: 4006 tissue,1,IL-2 (48),NA,tissue,4006
+Sample ID: 4006 tissue,2,IL-2 (48),NA,tissue,4006
+Sample ID: 4007 tissue,1,IL-2 (48),NA,tissue,4007
+Sample ID: 4007 tissue,2,IL-2 (48),NA,tissue,4007
+Sample ID: 4012 tissue,1,IL-2 (48),NA,tissue,4012
+Sample ID: 4012 tissue,2,IL-2 (48),NA,tissue,4012
+Sample ID: 4023 tissue,1,IL-2 (48),NA,tissue,4023
+Sample ID: 4023 tissue,2,IL-2 (48),NA,tissue,4023
+Sample ID: 4027 tissue,1,IL-2 (48),NA,tissue,4027
+Sample ID: 4027 tissue,2,IL-2 (48),NA,tissue,4027
+Sample ID: 4034 tissue,1,IL-2 (48),NA,tissue,4034
+Sample ID: 4034 tissue,2,IL-2 (48),NA,tissue,4034
+Sample ID: 4040 tissue,1,IL-2 (48),NA,tissue,4040
+Sample ID: 4040 tissue,2,IL-2 (48),NA,tissue,4040
+Sample ID: 4042 tissue,1,IL-2 (48),NA,tissue,4042
+Sample ID: 4042 tissue,2,IL-2 (48),NA,tissue,4042
+Sample ID: 4048 tissue,1,IL-2 (48),NA,tissue,4048
+Sample ID: 4048 tissue,2,IL-2 (48),NA,tissue,4048
+Sample ID: 4049 tissue,1,IL-2 (48),NA,tissue,4049
+Sample ID: 4049 tissue,2,IL-2 (48),NA,tissue,4049
+Sample ID: 4002 mucus,1,IL-2 (48),NA,mucus,4002
+Sample ID: 4002 mucus,2,IL-2 (48),NA,mucus,4002
+Sample ID: 4006 mucus,1,IL-2 (48),NA,mucus,4006
+Sample ID: 4006 mucus,2,IL-2 (48),NA,mucus,4006
+Sample ID: 4012 mucus,1,IL-2 (48),NA,mucus,4012
+Sample ID: 4012 mucus,2,IL-2 (48),NA,mucus,4012
+Sample ID: 4023 mucus,1,IL-2 (48),NA,mucus,4023
+Sample ID: 4023 mucus,2,IL-2 (48),NA,mucus,4023
+Sample ID: 4027 mucus,1,IL-2 (48),NA,mucus,4027
+Sample ID: 4027 mucus,2,IL-2 (48),NA,mucus,4027
+Sample ID: 4034 mucus,1,IL-2 (48),NA,mucus,4034
+Sample ID: 4034 mucus,2,IL-2 (48),NA,mucus,4034
+Sample ID: 4040 mucus,1,IL-2 (48),NA,mucus,4040
+Sample ID: 4040 mucus,2,IL-2 (48),NA,mucus,4040
+Sample ID: 4042 mucus,1,IL-2 (48),NA,mucus,4042
+Sample ID: 4042 mucus,2,IL-2 (48),NA,mucus,4042
+Sample ID: 4048 mucus,1,IL-2 (48),NA,mucus,4048
+Sample ID: 4048 mucus,2,IL-2 (48),NA,mucus,4048
+Sample ID: 4049 mucus,1,IL-2 (48),NA,mucus,4049
+Sample ID: 4049 mucus,2,IL-2 (48),NA,mucus,4049
+Reagent Name: Background0,1,IL-22 (43),NA,Background,0
+Reagent Name: Background0,2,IL-22 (43),NA,Background,0
+Reagent Name: Standard1,1,IL-22 (43),0.04,Standard,1
+Reagent Name: Standard1,2,IL-22 (43),0.04,Standard,1
+Reagent Name: Standard2,1,IL-22 (43),0.14,Standard,2
+Reagent Name: Standard2,2,IL-22 (43),0.13,Standard,2
+Reagent Name: Standard3,1,IL-22 (43),0.63,Standard,3
+Reagent Name: Standard3,2,IL-22 (43),0.61,Standard,3
+Reagent Name: Standard4,1,IL-22 (43),2.46,Standard,4
+Reagent Name: Standard4,2,IL-22 (43),2.21,Standard,4
+Reagent Name: Standard5,1,IL-22 (43),9.97,Standard,5
+Reagent Name: Standard5,2,IL-22 (43),8.7,Standard,5
+Reagent Name: Standard6,1,IL-22 (43),38.51,Standard,6
+Reagent Name: Standard6,2,IL-22 (43),36.51,Standard,6
+Reagent Name: Standard7,1,IL-22 (43),155.55,Standard,7
+Reagent Name: Standard7,2,IL-22 (43),144.99,Standard,7
+Sample ID: QC1,1,IL-22 (43),0.62,QC,1
+Sample ID: QC1,2,IL-22 (43),0.75,QC,1
+Sample ID: QC2,1,IL-22 (43),7.77,QC,2
+Sample ID: QC2,2,IL-22 (43),6.5,QC,2
+Sample ID: 3994 Pellet,1,IL-22 (43),0.01,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-22 (43),0.02,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-22 (43),0.08,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-22 (43),0.1,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-22 (43),0.04,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-22 (43),0.1,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-22 (43),0.16,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-22 (43),0.24,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-22 (43),0.04,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-22 (43),0.06,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-22 (43),0.02,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-22 (43),0.02,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-22 (43),0.01,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-22 (43),NA,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-22 (43),0.2,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-22 (43),0.28,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-22 (43),0.02,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-22 (43),NA,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-22 (43),0.23,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-22 (43),0.06,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-22 (43),0.07,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-22 (43),0.05,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-22 (43),0.03,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-22 (43),0.03,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-22 (43),0.02,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-22 (43),0.01,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-22 (43),0.01,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-22 (43),NA,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-22 (43),0.01,tissue,3994
+Sample ID: 3994 tissue,2,IL-22 (43),NA,tissue,3994
+Sample ID: 3995 tissue,1,IL-22 (43),0.01,tissue,3995
+Sample ID: 3995 tissue,2,IL-22 (43),0.01,tissue,3995
+Sample ID: 3996 tissue,1,IL-22 (43),NA,tissue,3996
+Sample ID: 3996 tissue,2,IL-22 (43),0.01,tissue,3996
+Sample ID: 4002 tissue,1,IL-22 (43),0.01,tissue,4002
+Sample ID: 4002 tissue,2,IL-22 (43),0.02,tissue,4002
+Sample ID: 4006 tissue,1,IL-22 (43),NA,tissue,4006
+Sample ID: 4006 tissue,2,IL-22 (43),0.02,tissue,4006
+Sample ID: 4007 tissue,1,IL-22 (43),0.01,tissue,4007
+Sample ID: 4007 tissue,2,IL-22 (43),0.05,tissue,4007
+Sample ID: 4012 tissue,1,IL-22 (43),NA,tissue,4012
+Sample ID: 4012 tissue,2,IL-22 (43),0.11,tissue,4012
+Sample ID: 4023 tissue,1,IL-22 (43),NA,tissue,4023
+Sample ID: 4023 tissue,2,IL-22 (43),NA,tissue,4023
+Sample ID: 4027 tissue,1,IL-22 (43),0.02,tissue,4027
+Sample ID: 4027 tissue,2,IL-22 (43),0.02,tissue,4027
+Sample ID: 4034 tissue,1,IL-22 (43),0.05,tissue,4034
+Sample ID: 4034 tissue,2,IL-22 (43),0.04,tissue,4034
+Sample ID: 4040 tissue,1,IL-22 (43),NA,tissue,4040
+Sample ID: 4040 tissue,2,IL-22 (43),NA,tissue,4040
+Sample ID: 4042 tissue,1,IL-22 (43),0.01,tissue,4042
+Sample ID: 4042 tissue,2,IL-22 (43),NA,tissue,4042
+Sample ID: 4048 tissue,1,IL-22 (43),NA,tissue,4048
+Sample ID: 4048 tissue,2,IL-22 (43),NA,tissue,4048
+Sample ID: 4049 tissue,1,IL-22 (43),0.04,tissue,4049
+Sample ID: 4049 tissue,2,IL-22 (43),0.05,tissue,4049
+Sample ID: 4002 mucus,1,IL-22 (43),0.03,mucus,4002
+Sample ID: 4002 mucus,2,IL-22 (43),0.04,mucus,4002
+Sample ID: 4006 mucus,1,IL-22 (43),0.04,mucus,4006
+Sample ID: 4006 mucus,2,IL-22 (43),0.05,mucus,4006
+Sample ID: 4012 mucus,1,IL-22 (43),0.03,mucus,4012
+Sample ID: 4012 mucus,2,IL-22 (43),0.03,mucus,4012
+Sample ID: 4023 mucus,1,IL-22 (43),0.04,mucus,4023
+Sample ID: 4023 mucus,2,IL-22 (43),0.02,mucus,4023
+Sample ID: 4027 mucus,1,IL-22 (43),NA,mucus,4027
+Sample ID: 4027 mucus,2,IL-22 (43),NA,mucus,4027
+Sample ID: 4034 mucus,1,IL-22 (43),0.37,mucus,4034
+Sample ID: 4034 mucus,2,IL-22 (43),0.37,mucus,4034
+Sample ID: 4040 mucus,1,IL-22 (43),0.02,mucus,4040
+Sample ID: 4040 mucus,2,IL-22 (43),0.03,mucus,4040
+Sample ID: 4042 mucus,1,IL-22 (43),0.05,mucus,4042
+Sample ID: 4042 mucus,2,IL-22 (43),0.05,mucus,4042
+Sample ID: 4048 mucus,1,IL-22 (43),0.16,mucus,4048
+Sample ID: 4048 mucus,2,IL-22 (43),0.24,mucus,4048
+Sample ID: 4049 mucus,1,IL-22 (43),NA,mucus,4049
+Sample ID: 4049 mucus,2,IL-22 (43),NA,mucus,4049
+Reagent Name: Background0,1,IL-33 (47),NA,Background,0
+Reagent Name: Background0,2,IL-33 (47),NA,Background,0
+Reagent Name: Standard1,1,IL-33 (47),5.4,Standard,1
+Reagent Name: Standard1,2,IL-33 (47),4.81,Standard,1
+Reagent Name: Standard2,1,IL-33 (47),20.05,Standard,2
+Reagent Name: Standard2,2,IL-33 (47),16.97,Standard,2
+Reagent Name: Standard3,1,IL-33 (47),82.3,Standard,3
+Reagent Name: Standard3,2,IL-33 (47),76.29,Standard,3
+Reagent Name: Standard4,1,IL-33 (47),337.01,Standard,4
+Reagent Name: Standard4,2,IL-33 (47),313.13,Standard,4
+Reagent Name: Standard5,1,IL-33 (47),1224.45,Standard,5
+Reagent Name: Standard5,2,IL-33 (47),1173.09,Standard,5
+Reagent Name: Standard6,1,IL-33 (47),5601.57,Standard,6
+Reagent Name: Standard6,2,IL-33 (47),4742.12,Standard,6
+Reagent Name: Standard7,1,IL-33 (47),21669.6,Standard,7
+Reagent Name: Standard7,2,IL-33 (47),17862.48,Standard,7
+Sample ID: QC1,1,IL-33 (47),93.37,QC,1
+Sample ID: QC1,2,IL-33 (47),75.89,QC,1
+Sample ID: QC2,1,IL-33 (47),812.2,QC,2
+Sample ID: QC2,2,IL-33 (47),633.35,QC,2
+Sample ID: 3994 Pellet,1,IL-33 (47),1208.15,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-33 (47),1328.36,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-33 (47),1015.61,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-33 (47),961.81,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-33 (47),1602.79,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-33 (47),1648.54,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-33 (47),45.46,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-33 (47),49.52,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-33 (47),3916.44,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-33 (47),3352.05,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-33 (47),2287.35,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-33 (47),2326.03,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-33 (47),2654.47,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-33 (47),2307.43,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-33 (47),144.58,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-33 (47),170.24,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-33 (47),2313.62,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-33 (47),2459.57,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-33 (47),2226.77,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-33 (47),2259.81,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-33 (47),3627.27,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-33 (47),3663.93,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-33 (47),479.55,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-33 (47),473.28,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-33 (47),2330.93,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-33 (47),2123.49,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-33 (47),2226.77,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-33 (47),2680.58,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-33 (47),1043.45,tissue,3994
+Sample ID: 3994 tissue,2,IL-33 (47),1053.59,tissue,3994
+Sample ID: 3995 tissue,1,IL-33 (47),1481.2,tissue,3995
+Sample ID: 3995 tissue,2,IL-33 (47),1325.95,tissue,3995
+Sample ID: 3996 tissue,1,IL-33 (47),869.29,tissue,3996
+Sample ID: 3996 tissue,2,IL-33 (47),925.25,tissue,3996
+Sample ID: 4002 tissue,1,IL-33 (47),611.17,tissue,4002
+Sample ID: 4002 tissue,2,IL-33 (47),590.19,tissue,4002
+Sample ID: 4006 tissue,1,IL-33 (47),97.23,tissue,4006
+Sample ID: 4006 tissue,2,IL-33 (47),86.84,tissue,4006
+Sample ID: 4007 tissue,1,IL-33 (47),167.59,tissue,4007
+Sample ID: 4007 tissue,2,IL-33 (47),166.01,tissue,4007
+Sample ID: 4012 tissue,1,IL-33 (47),1613.17,tissue,4012
+Sample ID: 4012 tissue,2,IL-33 (47),1582.96,tissue,4012
+Sample ID: 4023 tissue,1,IL-33 (47),369.27,tissue,4023
+Sample ID: 4023 tissue,2,IL-33 (47),362.17,tissue,4023
+Sample ID: 4027 tissue,1,IL-33 (47),3065.92,tissue,4027
+Sample ID: 4027 tissue,2,IL-33 (47),2869.71,tissue,4027
+Sample ID: 4034 tissue,1,IL-33 (47),170.77,tissue,4034
+Sample ID: 4034 tissue,2,IL-33 (47),148.28,tissue,4034
+Sample ID: 4040 tissue,1,IL-33 (47),1560.51,tissue,4040
+Sample ID: 4040 tissue,2,IL-33 (47),1794.85,tissue,4040
+Sample ID: 4042 tissue,1,IL-33 (47),130.81,tissue,4042
+Sample ID: 4042 tissue,2,IL-33 (47),129.22,tissue,4042
+Sample ID: 4048 tissue,1,IL-33 (47),1955.32,tissue,4048
+Sample ID: 4048 tissue,2,IL-33 (47),2022.58,tissue,4048
+Sample ID: 4049 tissue,1,IL-33 (47),1246.15,tissue,4049
+Sample ID: 4049 tissue,2,IL-33 (47),1251.2,tissue,4049
+Sample ID: 4002 mucus,1,IL-33 (47),1046.33,mucus,4002
+Sample ID: 4002 mucus,2,IL-33 (47),1093.76,mucus,4002
+Sample ID: 4006 mucus,1,IL-33 (47),2981.53,mucus,4006
+Sample ID: 4006 mucus,2,IL-33 (47),3221.05,mucus,4006
+Sample ID: 4012 mucus,1,IL-33 (47),1496.79,mucus,4012
+Sample ID: 4012 mucus,2,IL-33 (47),1398.31,mucus,4012
+Sample ID: 4023 mucus,1,IL-33 (47),498.1,mucus,4023
+Sample ID: 4023 mucus,2,IL-33 (47),584.92,mucus,4023
+Sample ID: 4027 mucus,1,IL-33 (47),387.13,mucus,4027
+Sample ID: 4027 mucus,2,IL-33 (47),363.1,mucus,4027
+Sample ID: 4034 mucus,1,IL-33 (47),60.87,mucus,4034
+Sample ID: 4034 mucus,2,IL-33 (47),62.79,mucus,4034
+Sample ID: 4040 mucus,1,IL-33 (47),1159.91,mucus,4040
+Sample ID: 4040 mucus,2,IL-33 (47),1456.26,mucus,4040
+Sample ID: 4042 mucus,1,IL-33 (47),1346.19,mucus,4042
+Sample ID: 4042 mucus,2,IL-33 (47),1571.13,mucus,4042
+Sample ID: 4048 mucus,1,IL-33 (47),985.57,mucus,4048
+Sample ID: 4048 mucus,2,IL-33 (47),952.05,mucus,4048
+Sample ID: 4049 mucus,1,IL-33 (47),279.47,mucus,4049
+Sample ID: 4049 mucus,2,IL-33 (47),273.09,mucus,4049
+Reagent Name: Background0,1,IL-4 (53),NA,Background,0
+Reagent Name: Background0,2,IL-4 (53),NA,Background,0
+Reagent Name: Standard1,1,IL-4 (53),0.02,Standard,1
+Reagent Name: Standard1,2,IL-4 (53),0.02,Standard,1
+Reagent Name: Standard2,1,IL-4 (53),0.11,Standard,2
+Reagent Name: Standard2,2,IL-4 (53),0.1,Standard,2
+Reagent Name: Standard3,1,IL-4 (53),0.44,Standard,3
+Reagent Name: Standard3,2,IL-4 (53),0.42,Standard,3
+Reagent Name: Standard4,1,IL-4 (53),1.62,Standard,4
+Reagent Name: Standard4,2,IL-4 (53),1.41,Standard,4
+Reagent Name: Standard5,1,IL-4 (53),6.08,Standard,5
+Reagent Name: Standard5,2,IL-4 (53),5.71,Standard,5
+Reagent Name: Standard6,1,IL-4 (53),25.53,Standard,6
+Reagent Name: Standard6,2,IL-4 (53),26.4,Standard,6
+Reagent Name: Standard7,1,IL-4 (53),99.13,Standard,7
+Reagent Name: Standard7,2,IL-4 (53),100.89,Standard,7
+Sample ID: QC1,1,IL-4 (53),0.45,QC,1
+Sample ID: QC1,2,IL-4 (53),0.47,QC,1
+Sample ID: QC2,1,IL-4 (53),4.73,QC,2
+Sample ID: QC2,2,IL-4 (53),4.74,QC,2
+Sample ID: 3994 Pellet,1,IL-4 (53),0.02,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-4 (53),0.04,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-4 (53),0.37,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-4 (53),0.34,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-4 (53),0.02,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-4 (53),0.02,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-4 (53),0.1,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-4 (53),0.06,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-4 (53),NA,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-4 (53),NA,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-4 (53),NA,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-4 (53),NA,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-4 (53),0.03,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-4 (53),0.01,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-4 (53),0.09,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-4 (53),0.07,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-4 (53),NA,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-4 (53),0.01,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-4 (53),0.04,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-4 (53),0.02,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-4 (53),NA,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-4 (53),NA,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-4 (53),0.02,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-4 (53),0.01,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-4 (53),0.02,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-4 (53),0.02,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-4 (53),NA,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-4 (53),NA,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-4 (53),0.33,tissue,3994
+Sample ID: 3994 tissue,2,IL-4 (53),0.3,tissue,3994
+Sample ID: 3995 tissue,1,IL-4 (53),0.08,tissue,3995
+Sample ID: 3995 tissue,2,IL-4 (53),0.08,tissue,3995
+Sample ID: 3996 tissue,1,IL-4 (53),0.19,tissue,3996
+Sample ID: 3996 tissue,2,IL-4 (53),0.18,tissue,3996
+Sample ID: 4002 tissue,1,IL-4 (53),0.07,tissue,4002
+Sample ID: 4002 tissue,2,IL-4 (53),0.09,tissue,4002
+Sample ID: 4006 tissue,1,IL-4 (53),NA,tissue,4006
+Sample ID: 4006 tissue,2,IL-4 (53),NA,tissue,4006
+Sample ID: 4007 tissue,1,IL-4 (53),0.04,tissue,4007
+Sample ID: 4007 tissue,2,IL-4 (53),0.04,tissue,4007
+Sample ID: 4012 tissue,1,IL-4 (53),0.12,tissue,4012
+Sample ID: 4012 tissue,2,IL-4 (53),0.11,tissue,4012
+Sample ID: 4023 tissue,1,IL-4 (53),0.02,tissue,4023
+Sample ID: 4023 tissue,2,IL-4 (53),0.03,tissue,4023
+Sample ID: 4027 tissue,1,IL-4 (53),0.08,tissue,4027
+Sample ID: 4027 tissue,2,IL-4 (53),0.07,tissue,4027
+Sample ID: 4034 tissue,1,IL-4 (53),NA,tissue,4034
+Sample ID: 4034 tissue,2,IL-4 (53),NA,tissue,4034
+Sample ID: 4040 tissue,1,IL-4 (53),0.11,tissue,4040
+Sample ID: 4040 tissue,2,IL-4 (53),0.1,tissue,4040
+Sample ID: 4042 tissue,1,IL-4 (53),NA,tissue,4042
+Sample ID: 4042 tissue,2,IL-4 (53),NA,tissue,4042
+Sample ID: 4048 tissue,1,IL-4 (53),0.15,tissue,4048
+Sample ID: 4048 tissue,2,IL-4 (53),0.11,tissue,4048
+Sample ID: 4049 tissue,1,IL-4 (53),0.03,tissue,4049
+Sample ID: 4049 tissue,2,IL-4 (53),0.02,tissue,4049
+Sample ID: 4002 mucus,1,IL-4 (53),0.11,mucus,4002
+Sample ID: 4002 mucus,2,IL-4 (53),0.08,mucus,4002
+Sample ID: 4006 mucus,1,IL-4 (53),0.16,mucus,4006
+Sample ID: 4006 mucus,2,IL-4 (53),0.14,mucus,4006
+Sample ID: 4012 mucus,1,IL-4 (53),0.67,mucus,4012
+Sample ID: 4012 mucus,2,IL-4 (53),0.75,mucus,4012
+Sample ID: 4023 mucus,1,IL-4 (53),0.12,mucus,4023
+Sample ID: 4023 mucus,2,IL-4 (53),0.06,mucus,4023
+Sample ID: 4027 mucus,1,IL-4 (53),NA,mucus,4027
+Sample ID: 4027 mucus,2,IL-4 (53),NA,mucus,4027
+Sample ID: 4034 mucus,1,IL-4 (53),1.21,mucus,4034
+Sample ID: 4034 mucus,2,IL-4 (53),1.23,mucus,4034
+Sample ID: 4040 mucus,1,IL-4 (53),0.18,mucus,4040
+Sample ID: 4040 mucus,2,IL-4 (53),0.11,mucus,4040
+Sample ID: 4042 mucus,1,IL-4 (53),0.09,mucus,4042
+Sample ID: 4042 mucus,2,IL-4 (53),0.1,mucus,4042
+Sample ID: 4048 mucus,1,IL-4 (53),4.85,mucus,4048
+Sample ID: 4048 mucus,2,IL-4 (53),4.9,mucus,4048
+Sample ID: 4049 mucus,1,IL-4 (53),0.02,mucus,4049
+Sample ID: 4049 mucus,2,IL-4 (53),0.02,mucus,4049
+Reagent Name: Background0,1,IL-5 (55),NA,Background,0
+Reagent Name: Background0,2,IL-5 (55),NA,Background,0
+Reagent Name: Standard1,1,IL-5 (55),6.31,Standard,1
+Reagent Name: Standard1,2,IL-5 (55),6.01,Standard,1
+Reagent Name: Standard2,1,IL-5 (55),24.42,Standard,2
+Reagent Name: Standard2,2,IL-5 (55),23.21,Standard,2
+Reagent Name: Standard3,1,IL-5 (55),101.4,Standard,3
+Reagent Name: Standard3,2,IL-5 (55),98.13,Standard,3
+Reagent Name: Standard4,1,IL-5 (55),400.33,Standard,4
+Reagent Name: Standard4,2,IL-5 (55),383,Standard,4
+Reagent Name: Standard5,1,IL-5 (55),1610.8,Standard,5
+Reagent Name: Standard5,2,IL-5 (55),1475.41,Standard,5
+Reagent Name: Standard6,1,IL-5 (55),5834.66,Standard,6
+Reagent Name: Standard6,2,IL-5 (55),6793.76,Standard,6
+Reagent Name: Standard7,1,IL-5 (55),25445.34,Standard,7
+Reagent Name: Standard7,2,IL-5 (55),24412.6,Standard,7
+Sample ID: QC1,1,IL-5 (55),84.92,QC,1
+Sample ID: QC1,2,IL-5 (55),81.51,QC,1
+Sample ID: QC2,1,IL-5 (55),962.65,QC,2
+Sample ID: QC2,2,IL-5 (55),985.97,QC,2
+Sample ID: 3994 Pellet,1,IL-5 (55),21.09,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-5 (55),21.24,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-5 (55),69.23,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-5 (55),75.02,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-5 (55),48.06,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-5 (55),43.32,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-5 (55),7.51,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-5 (55),5.12,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-5 (55),62.36,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-5 (55),57.82,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-5 (55),28.85,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-5 (55),32.46,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-5 (55),49.46,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-5 (55),48.24,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-5 (55),22.3,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-5 (55),22.3,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-5 (55),45.21,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-5 (55),45.21,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-5 (55),23.51,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-5 (55),26.55,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-5 (55),40.6,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-5 (55),37.88,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-5 (55),19.27,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-5 (55),19.57,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-5 (55),36.9,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-5 (55),36.9,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-5 (55),20.18,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-5 (55),20.03,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-5 (55),177.93,tissue,3994
+Sample ID: 3994 tissue,2,IL-5 (55),153.83,tissue,3994
+Sample ID: 3995 tissue,1,IL-5 (55),36.29,tissue,3995
+Sample ID: 3995 tissue,2,IL-5 (55),39.5,tissue,3995
+Sample ID: 3996 tissue,1,IL-5 (55),255.77,tissue,3996
+Sample ID: 3996 tissue,2,IL-5 (55),278.49,tissue,3996
+Sample ID: 4002 tissue,1,IL-5 (55),31.11,tissue,4002
+Sample ID: 4002 tissue,2,IL-5 (55),36.29,tissue,4002
+Sample ID: 4006 tissue,1,IL-5 (55),2.73,tissue,4006
+Sample ID: 4006 tissue,2,IL-5 (55),2.88,tissue,4006
+Sample ID: 4007 tissue,1,IL-5 (55),244.28,tissue,4007
+Sample ID: 4007 tissue,2,IL-5 (55),237.51,tissue,4007
+Sample ID: 4012 tissue,1,IL-5 (55),89.42,tissue,4012
+Sample ID: 4012 tissue,2,IL-5 (55),98.6,tissue,4012
+Sample ID: 4023 tissue,1,IL-5 (55),291.86,tissue,4023
+Sample ID: 4023 tissue,2,IL-5 (55),317.23,tissue,4023
+Sample ID: 4027 tissue,1,IL-5 (55),57.12,tissue,4027
+Sample ID: 4027 tissue,2,IL-5 (55),53.28,tissue,4027
+Sample ID: 4034 tissue,1,IL-5 (55),46.07,tissue,4034
+Sample ID: 4034 tissue,2,IL-5 (55),43.62,tissue,4034
+Sample ID: 4040 tissue,1,IL-5 (55),138.06,tissue,4040
+Sample ID: 4040 tissue,2,IL-5 (55),149.09,tissue,4040
+Sample ID: 4042 tissue,1,IL-5 (55),0.65,tissue,4042
+Sample ID: 4042 tissue,2,IL-5 (55),0.65,tissue,4042
+Sample ID: 4048 tissue,1,IL-5 (55),50.82,tissue,4048
+Sample ID: 4048 tissue,2,IL-5 (55),47.6,tissue,4048
+Sample ID: 4049 tissue,1,IL-5 (55),18.82,tissue,4049
+Sample ID: 4049 tissue,2,IL-5 (55),17.46,tissue,4049
+Sample ID: 4002 mucus,1,IL-5 (55),56.81,mucus,4002
+Sample ID: 4002 mucus,2,IL-5 (55),55.58,mucus,4002
+Sample ID: 4006 mucus,1,IL-5 (55),393.65,mucus,4006
+Sample ID: 4006 mucus,2,IL-5 (55),465.87,mucus,4006
+Sample ID: 4012 mucus,1,IL-5 (55),2389.01,mucus,4012
+Sample ID: 4012 mucus,2,IL-5 (55),2516.71,mucus,4012
+Sample ID: 4023 mucus,1,IL-5 (55),328.73,mucus,4023
+Sample ID: 4023 mucus,2,IL-5 (55),369.7,mucus,4023
+Sample ID: 4027 mucus,1,IL-5 (55),26.55,mucus,4027
+Sample ID: 4027 mucus,2,IL-5 (55),25.94,mucus,4027
+Sample ID: 4034 mucus,1,IL-5 (55),72.58,mucus,4034
+Sample ID: 4034 mucus,2,IL-5 (55),71.36,mucus,4034
+Sample ID: 4040 mucus,1,IL-5 (55),616.51,mucus,4040
+Sample ID: 4040 mucus,2,IL-5 (55),729,mucus,4040
+Sample ID: 4042 mucus,1,IL-5 (55),5.42,mucus,4042
+Sample ID: 4042 mucus,2,IL-5 (55),5.57,mucus,4042
+Sample ID: 4048 mucus,1,IL-5 (55),1926.77,mucus,4048
+Sample ID: 4048 mucus,2,IL-5 (55),1941.73,mucus,4048
+Sample ID: 4049 mucus,1,IL-5 (55),3.17,mucus,4049
+Sample ID: 4049 mucus,2,IL-5 (55),2.88,mucus,4049
+Reagent Name: Background0,1,IL-6 (57),NA,Background,0
+Reagent Name: Background0,2,IL-6 (57),NA,Background,0
+Reagent Name: Standard1,1,IL-6 (57),2.35,Standard,1
+Reagent Name: Standard1,2,IL-6 (57),1.74,Standard,1
+Reagent Name: Standard2,1,IL-6 (57),11.4,Standard,2
+Reagent Name: Standard2,2,IL-6 (57),10.78,Standard,2
+Reagent Name: Standard3,1,IL-6 (57),39.41,Standard,3
+Reagent Name: Standard3,2,IL-6 (57),41.92,Standard,3
+Reagent Name: Standard4,1,IL-6 (57),143.1,Standard,4
+Reagent Name: Standard4,2,IL-6 (57),141.49,Standard,4
+Reagent Name: Standard5,1,IL-6 (57),622.13,Standard,5
+Reagent Name: Standard5,2,IL-6 (57),690.1,Standard,5
+Reagent Name: Standard6,1,IL-6 (57),2422.01,Standard,6
+Reagent Name: Standard6,2,IL-6 (57),2570.63,Standard,6
+Reagent Name: Standard7,1,IL-6 (57),9889.7,Standard,7
+Reagent Name: Standard7,2,IL-6 (57),10133.73,Standard,7
+Sample ID: QC1,1,IL-6 (57),34.74,QC,1
+Sample ID: QC1,2,IL-6 (57),35.88,QC,1
+Sample ID: QC2,1,IL-6 (57),390.96,QC,2
+Sample ID: QC2,2,IL-6 (57),356.77,QC,2
+Sample ID: 3994 Pellet,1,IL-6 (57),13.85,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,IL-6 (57),16.66,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,IL-6 (57),35.06,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,IL-6 (57),33.33,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,IL-6 (57),15.66,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,IL-6 (57),14.99,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,IL-6 (57),11.54,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,IL-6 (57),12.56,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,IL-6 (57),13.54,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,IL-6 (57),11.78,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,IL-6 (57),5.68,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,IL-6 (57),9.78,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,IL-6 (57),13.48,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,IL-6 (57),9.61,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,IL-6 (57),12.97,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,IL-6 (57),18.86,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,IL-6 (57),18.53,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,IL-6 (57),20.47,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,IL-6 (57),78.68,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,IL-6 (57),74.84,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,IL-6 (57),39.31,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,IL-6 (57),39.31,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,IL-6 (57),16.06,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,IL-6 (57),15.53,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,IL-6 (57),60.8,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,IL-6 (57),59.83,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,IL-6 (57),23.38,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,IL-6 (57),24.75,epithelial brushings,4049
+Sample ID: 3994 tissue,1,IL-6 (57),10.1,tissue,3994
+Sample ID: 3994 tissue,2,IL-6 (57),10.23,tissue,3994
+Sample ID: 3995 tissue,1,IL-6 (57),6.03,tissue,3995
+Sample ID: 3995 tissue,2,IL-6 (57),4.59,tissue,3995
+Sample ID: 3996 tissue,1,IL-6 (57),27.85,tissue,3996
+Sample ID: 3996 tissue,2,IL-6 (57),31.44,tissue,3996
+Sample ID: 4002 tissue,1,IL-6 (57),46.03,tissue,4002
+Sample ID: 4002 tissue,2,IL-6 (57),44.17,tissue,4002
+Sample ID: 4006 tissue,1,IL-6 (57),NA,tissue,4006
+Sample ID: 4006 tissue,2,IL-6 (57),NA,tissue,4006
+Sample ID: 4007 tissue,1,IL-6 (57),1.03,tissue,4007
+Sample ID: 4007 tissue,2,IL-6 (57),2.43,tissue,4007
+Sample ID: 4012 tissue,1,IL-6 (57),97.94,tissue,4012
+Sample ID: 4012 tissue,2,IL-6 (57),103.83,tissue,4012
+Sample ID: 4023 tissue,1,IL-6 (57),117.75,tissue,4023
+Sample ID: 4023 tissue,2,IL-6 (57),137.68,tissue,4023
+Sample ID: 4027 tissue,1,IL-6 (57),60.8,tissue,4027
+Sample ID: 4027 tissue,2,IL-6 (57),50.12,tissue,4027
+Sample ID: 4034 tissue,1,IL-6 (57),6.46,tissue,4034
+Sample ID: 4034 tissue,2,IL-6 (57),6.31,tissue,4034
+Sample ID: 4040 tissue,1,IL-6 (57),55.6,tissue,4040
+Sample ID: 4040 tissue,2,IL-6 (57),60.13,tissue,4040
+Sample ID: 4042 tissue,1,IL-6 (57),NA,tissue,4042
+Sample ID: 4042 tissue,2,IL-6 (57),0.27,tissue,4042
+Sample ID: 4048 tissue,1,IL-6 (57),27.33,tissue,4048
+Sample ID: 4048 tissue,2,IL-6 (57),28.68,tissue,4048
+Sample ID: 4049 tissue,1,IL-6 (57),38.91,tissue,4049
+Sample ID: 4049 tissue,2,IL-6 (57),41.54,tissue,4049
+Sample ID: 4002 mucus,1,IL-6 (57),91.79,mucus,4002
+Sample ID: 4002 mucus,2,IL-6 (57),97.23,mucus,4002
+Sample ID: 4006 mucus,1,IL-6 (57),6.74,mucus,4006
+Sample ID: 4006 mucus,2,IL-6 (57),8.64,mucus,4006
+Sample ID: 4012 mucus,1,IL-6 (57),319.04,mucus,4012
+Sample ID: 4012 mucus,2,IL-6 (57),346.61,mucus,4012
+Sample ID: 4023 mucus,1,IL-6 (57),460.77,mucus,4023
+Sample ID: 4023 mucus,2,IL-6 (57),508.61,mucus,4023
+Sample ID: 4027 mucus,1,IL-6 (57),50.56,mucus,4027
+Sample ID: 4027 mucus,2,IL-6 (57),48.82,mucus,4027
+Sample ID: 4034 mucus,1,IL-6 (57),28.64,mucus,4034
+Sample ID: 4034 mucus,2,IL-6 (57),27.02,mucus,4034
+Sample ID: 4040 mucus,1,IL-6 (57),821.89,mucus,4040
+Sample ID: 4040 mucus,2,IL-6 (57),979.41,mucus,4040
+Sample ID: 4042 mucus,1,IL-6 (57),343.9,mucus,4042
+Sample ID: 4042 mucus,2,IL-6 (57),373.27,mucus,4042
+Sample ID: 4048 mucus,1,IL-6 (57),256.46,mucus,4048
+Sample ID: 4048 mucus,2,IL-6 (57),283.97,mucus,4048
+Sample ID: 4049 mucus,1,IL-6 (57),115.3,mucus,4049
+Sample ID: 4049 mucus,2,IL-6 (57),94.99,mucus,4049
+Reagent Name: Background0,1,MIP-3a/CCL20 (28),NA,Background,0
+Reagent Name: Background0,2,MIP-3a/CCL20 (28),NA,Background,0
+Reagent Name: Standard1,1,MIP-3a/CCL20 (28),4.95,Standard,1
+Reagent Name: Standard1,2,MIP-3a/CCL20 (28),5.3,Standard,1
+Reagent Name: Standard2,1,MIP-3a/CCL20 (28),18.04,Standard,2
+Reagent Name: Standard2,2,MIP-3a/CCL20 (28),18.84,Standard,2
+Reagent Name: Standard3,1,MIP-3a/CCL20 (28),81.56,Standard,3
+Reagent Name: Standard3,2,MIP-3a/CCL20 (28),80.38,Standard,3
+Reagent Name: Standard4,1,MIP-3a/CCL20 (28),339.86,Standard,4
+Reagent Name: Standard4,2,MIP-3a/CCL20 (28),295.07,Standard,4
+Reagent Name: Standard5,1,MIP-3a/CCL20 (28),1140.82,Standard,5
+Reagent Name: Standard5,2,MIP-3a/CCL20 (28),1261.47,Standard,5
+Reagent Name: Standard6,1,MIP-3a/CCL20 (28),5393.56,Standard,6
+Reagent Name: Standard6,2,MIP-3a/CCL20 (28),5131.96,Standard,6
+Reagent Name: Standard7,1,MIP-3a/CCL20 (28),18873.84,Standard,7
+Reagent Name: Standard7,2,MIP-3a/CCL20 (28),19595.31,Standard,7
+Sample ID: QC1,1,MIP-3a/CCL20 (28),61.6,QC,1
+Sample ID: QC1,2,MIP-3a/CCL20 (28),50.42,QC,1
+Sample ID: QC2,1,MIP-3a/CCL20 (28),845.6,QC,2
+Sample ID: QC2,2,MIP-3a/CCL20 (28),972.38,QC,2
+Sample ID: 3994 Pellet,1,MIP-3a/CCL20 (28),85.48,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,MIP-3a/CCL20 (28),88.4,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,MIP-3a/CCL20 (28),336.66,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,MIP-3a/CCL20 (28),331.73,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,MIP-3a/CCL20 (28),162.69,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,MIP-3a/CCL20 (28),150.07,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,MIP-3a/CCL20 (28),600.66,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,MIP-3a/CCL20 (28),553.56,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,MIP-3a/CCL20 (28),125.26,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,MIP-3a/CCL20 (28),115.46,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,MIP-3a/CCL20 (28),100.94,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,MIP-3a/CCL20 (28),109.98,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,MIP-3a/CCL20 (28),85.29,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,MIP-3a/CCL20 (28),85.07,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,MIP-3a/CCL20 (28),228.78,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,MIP-3a/CCL20 (28),209.31,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,MIP-3a/CCL20 (28),125.28,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,MIP-3a/CCL20 (28),129.4,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,MIP-3a/CCL20 (28),769.3,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,MIP-3a/CCL20 (28),753.63,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,MIP-3a/CCL20 (28),885.72,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,MIP-3a/CCL20 (28),882.71,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,MIP-3a/CCL20 (28),87.53,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,MIP-3a/CCL20 (28),81.96,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,MIP-3a/CCL20 (28),481.05,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,MIP-3a/CCL20 (28),483.53,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,MIP-3a/CCL20 (28),203.12,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,MIP-3a/CCL20 (28),207.25,epithelial brushings,4049
+Sample ID: 3994 tissue,1,MIP-3a/CCL20 (28),23.73,tissue,3994
+Sample ID: 3994 tissue,2,MIP-3a/CCL20 (28),24.74,tissue,3994
+Sample ID: 3995 tissue,1,MIP-3a/CCL20 (28),31.53,tissue,3995
+Sample ID: 3995 tissue,2,MIP-3a/CCL20 (28),31.89,tissue,3995
+Sample ID: 3996 tissue,1,MIP-3a/CCL20 (28),15.19,tissue,3996
+Sample ID: 3996 tissue,2,MIP-3a/CCL20 (28),15.74,tissue,3996
+Sample ID: 4002 tissue,1,MIP-3a/CCL20 (28),41.64,tissue,4002
+Sample ID: 4002 tissue,2,MIP-3a/CCL20 (28),41.31,tissue,4002
+Sample ID: 4006 tissue,1,MIP-3a/CCL20 (28),14.5,tissue,4006
+Sample ID: 4006 tissue,2,MIP-3a/CCL20 (28),14.78,tissue,4006
+Sample ID: 4007 tissue,1,MIP-3a/CCL20 (28),18.84,tissue,4007
+Sample ID: 4007 tissue,2,MIP-3a/CCL20 (28),19.11,tissue,4007
+Sample ID: 4012 tissue,1,MIP-3a/CCL20 (28),176.84,tissue,4012
+Sample ID: 4012 tissue,2,MIP-3a/CCL20 (28),180.07,tissue,4012
+Sample ID: 4023 tissue,1,MIP-3a/CCL20 (28),75.12,tissue,4023
+Sample ID: 4023 tissue,2,MIP-3a/CCL20 (28),74.42,tissue,4023
+Sample ID: 4027 tissue,1,MIP-3a/CCL20 (28),28.9,tissue,4027
+Sample ID: 4027 tissue,2,MIP-3a/CCL20 (28),28.66,tissue,4027
+Sample ID: 4034 tissue,1,MIP-3a/CCL20 (28),16.16,tissue,4034
+Sample ID: 4034 tissue,2,MIP-3a/CCL20 (28),16.56,tissue,4034
+Sample ID: 4040 tissue,1,MIP-3a/CCL20 (28),87.24,tissue,4040
+Sample ID: 4040 tissue,2,MIP-3a/CCL20 (28),85.78,tissue,4040
+Sample ID: 4042 tissue,1,MIP-3a/CCL20 (28),11.63,tissue,4042
+Sample ID: 4042 tissue,2,MIP-3a/CCL20 (28),11.63,tissue,4042
+Sample ID: 4048 tissue,1,MIP-3a/CCL20 (28),19.63,tissue,4048
+Sample ID: 4048 tissue,2,MIP-3a/CCL20 (28),21.06,tissue,4048
+Sample ID: 4049 tissue,1,MIP-3a/CCL20 (28),17.24,tissue,4049
+Sample ID: 4049 tissue,2,MIP-3a/CCL20 (28),17.24,tissue,4049
+Sample ID: 4002 mucus,1,MIP-3a/CCL20 (28),3069.49,mucus,4002
+Sample ID: 4002 mucus,2,MIP-3a/CCL20 (28),3183.99,mucus,4002
+Sample ID: 4006 mucus,1,MIP-3a/CCL20 (28),388.56,mucus,4006
+Sample ID: 4006 mucus,2,MIP-3a/CCL20 (28),365.51,mucus,4006
+Sample ID: 4012 mucus,1,MIP-3a/CCL20 (28),413.65,mucus,4012
+Sample ID: 4012 mucus,2,MIP-3a/CCL20 (28),406.88,mucus,4012
+Sample ID: 4023 mucus,1,MIP-3a/CCL20 (28),1470.16,mucus,4023
+Sample ID: 4023 mucus,2,MIP-3a/CCL20 (28),1484.82,mucus,4023
+Sample ID: 4027 mucus,1,MIP-3a/CCL20 (28),255.69,mucus,4027
+Sample ID: 4027 mucus,2,MIP-3a/CCL20 (28),254.01,mucus,4027
+Sample ID: 4034 mucus,1,MIP-3a/CCL20 (28),119.68,mucus,4034
+Sample ID: 4034 mucus,2,MIP-3a/CCL20 (28),124.24,mucus,4034
+Sample ID: 4040 mucus,1,MIP-3a/CCL20 (28),3899.5,mucus,4040
+Sample ID: 4040 mucus,2,MIP-3a/CCL20 (28),4235.77,mucus,4040
+Sample ID: 4042 mucus,1,MIP-3a/CCL20 (28),164.28,mucus,4042
+Sample ID: 4042 mucus,2,MIP-3a/CCL20 (28),161.63,mucus,4042
+Sample ID: 4048 mucus,1,MIP-3a/CCL20 (28),151.32,mucus,4048
+Sample ID: 4048 mucus,2,MIP-3a/CCL20 (28),145.06,mucus,4048
+Sample ID: 4049 mucus,1,MIP-3a/CCL20 (28),791.42,mucus,4049
+Sample ID: 4049 mucus,2,MIP-3a/CCL20 (28),739.38,mucus,4049
+Reagent Name: Background0,1,TNF-a (75),NA,Background,0
+Reagent Name: Background0,2,TNF-a (75),NA,Background,0
+Reagent Name: Standard1,1,TNF-a (75),2.61,Standard,1
+Reagent Name: Standard1,2,TNF-a (75),2.41,Standard,1
+Reagent Name: Standard2,1,TNF-a (75),9.5,Standard,2
+Reagent Name: Standard2,2,TNF-a (75),9.03,Standard,2
+Reagent Name: Standard3,1,TNF-a (75),40.37,Standard,3
+Reagent Name: Standard3,2,TNF-a (75),40.29,Standard,3
+Reagent Name: Standard4,1,TNF-a (75),166.79,Standard,4
+Reagent Name: Standard4,2,TNF-a (75),151.33,Standard,4
+Reagent Name: Standard5,1,TNF-a (75),615.45,Standard,5
+Reagent Name: Standard5,2,TNF-a (75),609.87,Standard,5
+Reagent Name: Standard6,1,TNF-a (75),2495.16,Standard,6
+Reagent Name: Standard6,2,TNF-a (75),2541.77,Standard,6
+Reagent Name: Standard7,1,TNF-a (75),10938.67,Standard,7
+Reagent Name: Standard7,2,TNF-a (75),9134.48,Standard,7
+Sample ID: QC1,1,TNF-a (75),35.27,QC,1
+Sample ID: QC1,2,TNF-a (75),32.3,QC,1
+Sample ID: QC2,1,TNF-a (75),334.16,QC,2
+Sample ID: QC2,2,TNF-a (75),380.23,QC,2
+Sample ID: 3994 Pellet,1,TNF-a (75),5.47,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,TNF-a (75),5.71,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,TNF-a (75),44.13,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,TNF-a (75),43.4,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,TNF-a (75),5.95,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,TNF-a (75),7.42,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,TNF-a (75),37.87,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,TNF-a (75),30.32,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,TNF-a (75),7.52,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,TNF-a (75),8.41,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,TNF-a (75),7.52,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,TNF-a (75),8.11,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,TNF-a (75),3.83,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,TNF-a (75),2.83,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,TNF-a (75),21.7,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,TNF-a (75),28.88,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,TNF-a (75),4.82,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,TNF-a (75),5.21,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,TNF-a (75),11.56,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,TNF-a (75),12.4,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,TNF-a (75),21.84,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,TNF-a (75),21.41,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,TNF-a (75),8.13,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,TNF-a (75),8.18,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,TNF-a (75),17.58,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,TNF-a (75),17.58,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,TNF-a (75),8.75,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,TNF-a (75),9.03,epithelial brushings,4049
+Sample ID: 3994 tissue,1,TNF-a (75),6.85,tissue,3994
+Sample ID: 3994 tissue,2,TNF-a (75),6.76,tissue,3994
+Sample ID: 3995 tissue,1,TNF-a (75),3.1,tissue,3995
+Sample ID: 3995 tissue,2,TNF-a (75),3.1,tissue,3995
+Sample ID: 3996 tissue,1,TNF-a (75),5.52,tissue,3996
+Sample ID: 3996 tissue,2,TNF-a (75),5.04,tissue,3996
+Sample ID: 4002 tissue,1,TNF-a (75),16.24,tissue,4002
+Sample ID: 4002 tissue,2,TNF-a (75),16.57,tissue,4002
+Sample ID: 4006 tissue,1,TNF-a (75),3.68,tissue,4006
+Sample ID: 4006 tissue,2,TNF-a (75),3.83,tissue,4006
+Sample ID: 4007 tissue,1,TNF-a (75),3.29,tissue,4007
+Sample ID: 4007 tissue,2,TNF-a (75),4.6,tissue,4007
+Sample ID: 4012 tissue,1,TNF-a (75),10.81,tissue,4012
+Sample ID: 4012 tissue,2,TNF-a (75),10.9,tissue,4012
+Sample ID: 4023 tissue,1,TNF-a (75),4.84,tissue,4023
+Sample ID: 4023 tissue,2,TNF-a (75),4.46,tissue,4023
+Sample ID: 4027 tissue,1,TNF-a (75),5.13,tissue,4027
+Sample ID: 4027 tissue,2,TNF-a (75),4.07,tissue,4027
+Sample ID: 4034 tissue,1,TNF-a (75),2.51,tissue,4034
+Sample ID: 4034 tissue,2,TNF-a (75),2.31,tissue,4034
+Sample ID: 4040 tissue,1,TNF-a (75),4.65,tissue,4040
+Sample ID: 4040 tissue,2,TNF-a (75),5.32,tissue,4040
+Sample ID: 4042 tissue,1,TNF-a (75),1.21,tissue,4042
+Sample ID: 4042 tissue,2,TNF-a (75),1.31,tissue,4042
+Sample ID: 4048 tissue,1,TNF-a (75),7.9,tissue,4048
+Sample ID: 4048 tissue,2,TNF-a (75),7.99,tissue,4048
+Sample ID: 4049 tissue,1,TNF-a (75),11.75,tissue,4049
+Sample ID: 4049 tissue,2,TNF-a (75),12.4,tissue,4049
+Sample ID: 4002 mucus,1,TNF-a (75),13.24,mucus,4002
+Sample ID: 4002 mucus,2,TNF-a (75),13.65,mucus,4002
+Sample ID: 4006 mucus,1,TNF-a (75),9.92,mucus,4006
+Sample ID: 4006 mucus,2,TNF-a (75),11.09,mucus,4006
+Sample ID: 4012 mucus,1,TNF-a (75),23.02,mucus,4012
+Sample ID: 4012 mucus,2,TNF-a (75),26.79,mucus,4012
+Sample ID: 4023 mucus,1,TNF-a (75),50.39,mucus,4023
+Sample ID: 4023 mucus,2,TNF-a (75),56.41,mucus,4023
+Sample ID: 4027 mucus,1,TNF-a (75),1.16,mucus,4027
+Sample ID: 4027 mucus,2,TNF-a (75),1.31,mucus,4027
+Sample ID: 4034 mucus,1,TNF-a (75),24.14,mucus,4034
+Sample ID: 4034 mucus,2,TNF-a (75),21.62,mucus,4034
+Sample ID: 4040 mucus,1,TNF-a (75),395.12,mucus,4040
+Sample ID: 4040 mucus,2,TNF-a (75),439.66,mucus,4040
+Sample ID: 4042 mucus,1,TNF-a (75),14.26,mucus,4042
+Sample ID: 4042 mucus,2,TNF-a (75),14.53,mucus,4042
+Sample ID: 4048 mucus,1,TNF-a (75),17.3,mucus,4048
+Sample ID: 4048 mucus,2,TNF-a (75),17.85,mucus,4048
+Sample ID: 4049 mucus,1,TNF-a (75),22.98,mucus,4049
+Sample ID: 4049 mucus,2,TNF-a (75),20.42,mucus,4049
+Reagent Name: Background0,1,TSLP (43),NA,Background,0
+Reagent Name: Background0,2,TSLP (43),NA,Background,0
+Reagent Name: Standard1,1,TSLP (43),8.37,Standard,1
+Reagent Name: Standard1,2,TSLP (43),11.23,Standard,1
+Reagent Name: Standard2,1,TSLP (43),33.56,Standard,2
+Reagent Name: Standard2,2,TSLP (43),43.06,Standard,2
+Reagent Name: Standard3,1,TSLP (43),170.6,Standard,3
+Reagent Name: Standard3,2,TSLP (43),172.81,Standard,3
+Reagent Name: Standard4,1,TSLP (43),525.3,Standard,4
+Reagent Name: Standard4,2,TSLP (43),558.31,Standard,4
+Reagent Name: Standard5,1,TSLP (43),2388.42,Standard,5
+Reagent Name: Standard5,2,TSLP (43),3458.14,Standard,5
+Reagent Name: Standard6,1,TSLP (43),9667.46,Standard,7
+Reagent Name: Standard6,2,TSLP (43),9643.59,Standard,7
+Sample ID: QC1,1,TSLP (43),156.62,QC,1
+Sample ID: QC1,2,TSLP (43),142.69,QC,1
+Sample ID: QC2,1,TSLP (43),645.91,QC,2
+Sample ID: QC2,2,TSLP (43),740.79,QC,2
+Sample ID: 3994 Pellet,1,TSLP (43),NA,epithelial brushings,3994
+Sample ID: 3994 Pellet,2,TSLP (43),NA,epithelial brushings,3994
+Sample ID: 3995 Pellet,1,TSLP (43),NA,epithelial brushings,3995
+Sample ID: 3995 Pellet,2,TSLP (43),NA,epithelial brushings,3995
+Sample ID: 3996 Pellet,1,TSLP (43),NA,epithelial brushings,3996
+Sample ID: 3996 Pellet,2,TSLP (43),0.7,epithelial brushings,3996
+Sample ID: 4002 Pellet,1,TSLP (43),4.56,epithelial brushings,4002
+Sample ID: 4002 Pellet,2,TSLP (43),2.67,epithelial brushings,4002
+Sample ID: 4006 Pellet,1,TSLP (43),NA,epithelial brushings,4006
+Sample ID: 4006 Pellet,2,TSLP (43),NA,epithelial brushings,4006
+Sample ID: 4007 Pellet,1,TSLP (43),NA,epithelial brushings,4007
+Sample ID: 4007 Pellet,2,TSLP (43),NA,epithelial brushings,4007
+Sample ID: 4012 Pellet,1,TSLP (43),NA,epithelial brushings,4012
+Sample ID: 4012 Pellet,2,TSLP (43),NA,epithelial brushings,4012
+Sample ID: 4023 Pellet,1,TSLP (43),NA,epithelial brushings,4023
+Sample ID: 4023 Pellet,2,TSLP (43),NA,epithelial brushings,4023
+Sample ID: 4027 Pellet,1,TSLP (43),NA,epithelial brushings,4027
+Sample ID: 4027 Pellet,2,TSLP (43),NA,epithelial brushings,4027
+Sample ID: 4034 Pellet,1,TSLP (43),NA,epithelial brushings,4034
+Sample ID: 4034 Pellet,2,TSLP (43),1.43,epithelial brushings,4034
+Sample ID: 4040 Pellet,1,TSLP (43),NA,epithelial brushings,4040
+Sample ID: 4040 Pellet,2,TSLP (43),NA,epithelial brushings,4040
+Sample ID: 4042 Pellet,1,TSLP (43),NA,epithelial brushings,4042
+Sample ID: 4042 Pellet,2,TSLP (43),NA,epithelial brushings,4042
+Sample ID: 4048 Pellet,1,TSLP (43),NA,epithelial brushings,4048
+Sample ID: 4048 Pellet,2,TSLP (43),NA,epithelial brushings,4048
+Sample ID: 4049 Pellet,1,TSLP (43),NA,epithelial brushings,4049
+Sample ID: 4049 Pellet,2,TSLP (43),NA,epithelial brushings,4049
+Sample ID: 3994 tissue,1,TSLP (43),NA,tissue,3994
+Sample ID: 3994 tissue,2,TSLP (43),NA,tissue,3994
+Sample ID: 3995 tissue,1,TSLP (43),NA,tissue,3995
+Sample ID: 3995 tissue,2,TSLP (43),NA,tissue,3995
+Sample ID: 3996 tissue,1,TSLP (43),NA,tissue,3996
+Sample ID: 3996 tissue,2,TSLP (43),NA,tissue,3996
+Sample ID: 4002 tissue,1,TSLP (43),NA,tissue,4002
+Sample ID: 4002 tissue,2,TSLP (43),NA,tissue,4002
+Sample ID: 4006 tissue,1,TSLP (43),NA,tissue,4006
+Sample ID: 4006 tissue,2,TSLP (43),NA,tissue,4006
+Sample ID: 4007 tissue,1,TSLP (43),NA,tissue,4007
+Sample ID: 4007 tissue,2,TSLP (43),NA,tissue,4007
+Sample ID: 4012 tissue,1,TSLP (43),NA,tissue,4012
+Sample ID: 4012 tissue,2,TSLP (43),NA,tissue,4012
+Sample ID: 4023 tissue,1,TSLP (43),NA,tissue,4023
+Sample ID: 4023 tissue,2,TSLP (43),NA,tissue,4023
+Sample ID: 4027 tissue,1,TSLP (43),NA,tissue,4027
+Sample ID: 4027 tissue,2,TSLP (43),NA,tissue,4027
+Sample ID: 4034 tissue,1,TSLP (43),NA,tissue,4034
+Sample ID: 4034 tissue,2,TSLP (43),NA,tissue,4034
+Sample ID: 4040 tissue,1,TSLP (43),NA,tissue,4040
+Sample ID: 4040 tissue,2,TSLP (43),NA,tissue,4040
+Sample ID: 4042 tissue,1,TSLP (43),NA,tissue,4042
+Sample ID: 4042 tissue,2,TSLP (43),NA,tissue,4042
+Sample ID: 4048 tissue,1,TSLP (43),NA,tissue,4048
+Sample ID: 4048 tissue,2,TSLP (43),NA,tissue,4048
+Sample ID: 4049 tissue,1,TSLP (43),NA,tissue,4049
+Sample ID: 4049 tissue,2,TSLP (43),NA,tissue,4049
+Sample ID: 4002 mucus,1,TSLP (43),NA,mucus,4002
+Sample ID: 4002 mucus,2,TSLP (43),NA,mucus,4002
+Sample ID: 4006 mucus,1,TSLP (43),NA,mucus,4006
+Sample ID: 4006 mucus,2,TSLP (43),NA,mucus,4006
+Sample ID: 4012 mucus,1,TSLP (43),NA,mucus,4012
+Sample ID: 4012 mucus,2,TSLP (43),NA,mucus,4012
+Sample ID: 4023 mucus,1,TSLP (43),NA,mucus,4023
+Sample ID: 4023 mucus,2,TSLP (43),NA,mucus,4023
+Sample ID: 4027 mucus,1,TSLP (43),NA,mucus,4027
+Sample ID: 4027 mucus,2,TSLP (43),NA,mucus,4027
+Sample ID: 4034 mucus,1,TSLP (43),NA,mucus,4034
+Sample ID: 4034 mucus,2,TSLP (43),NA,mucus,4034
+Sample ID: 4040 mucus,1,TSLP (43),NA,mucus,4040
+Sample ID: 4040 mucus,2,TSLP (43),NA,mucus,4040
+Sample ID: 4042 mucus,1,TSLP (43),NA,mucus,4042
+Sample ID: 4042 mucus,2,TSLP (43),0.83,mucus,4042
+Sample ID: 4048 mucus,1,TSLP (43),6.56,mucus,4048
+Sample ID: 4048 mucus,2,TSLP (43),4.36,mucus,4048
+Sample ID: 4049 mucus,1,TSLP (43),NA,mucus,4049
+Sample ID: 4049 mucus,2,TSLP (43),NA,mucus,4049
+Reagent Name: Background0,1,GM-CSF (20),NA,Background,0
+Reagent Name: Background0,2,GM-CSF (20),NA,Background,0
+Reagent Name: Standard1,1,GM-CSF (20),0.06,Standard,1
+Reagent Name: Standard1,2,GM-CSF (20),0.07,Standard,1
+Reagent Name: Standard2,1,GM-CSF (20),0.24,Standard,2
+Reagent Name: Standard2,2,GM-CSF (20),0.25,Standard,2
+Reagent Name: Standard3,1,GM-CSF (20),0.95,Standard,3
+Reagent Name: Standard3,2,GM-CSF (20),1.03,Standard,3
+Reagent Name: Standard4,1,GM-CSF (20),3.73,Standard,4
+Reagent Name: Standard4,2,GM-CSF (20),3.99,Standard,4
+Reagent Name: Standard5,1,GM-CSF (20),16.69,Standard,5
+Reagent Name: Standard5,2,GM-CSF (20),14.81,Standard,5
+Reagent Name: Standard6,1,GM-CSF (20),79.94,Standard,6
+Reagent Name: Standard6,2,GM-CSF (20),63.13,Standard,6
+Reagent Name: Standard7,1,GM-CSF (20),165.71,Standard,7
+Reagent Name: Standard7,2,GM-CSF (20),196.01,Standard,7
+Sample ID: QC1,1,GM-CSF (20),1.04,QC,1
+Sample ID: QC1,2,GM-CSF (20),0.94,QC,1
+Sample ID: QC2,1,GM-CSF (20),9.89,QC,2
+Sample ID: QC2,2,GM-CSF (20),10.58,QC,2
+Sample ID: 3991 Pellet,1,GM-CSF (20),NA,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,GM-CSF (20),NA,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,GM-CSF (20),0.08,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,GM-CSF (20),0.08,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,GM-CSF (20),0.19,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,GM-CSF (20),0.17,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,GM-CSF (20),NA,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,GM-CSF (20),0.04,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,GM-CSF (20),NA,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,GM-CSF (20),NA,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,GM-CSF (20),NA,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,GM-CSF (20),NA,epithelial brushings,4051
+Sample ID: 4078 pellet,1,GM-CSF (20),NA,epithelial brushings,4078
+Sample ID: 4078 pellet,2,GM-CSF (20),NA,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,GM-CSF (20),NA,tissue,3999
+Sample ID: 3999 Tissue,2,GM-CSF (20),NA,tissue,3999
+Sample ID: 4001 Tissue,1,GM-CSF (20),0.05,tissue,4001
+Sample ID: 4001 Tissue,2,GM-CSF (20),0.05,tissue,4001
+Sample ID: 4031 Tissue,1,GM-CSF (20),NA,tissue,4031
+Sample ID: 4031 Tissue,2,GM-CSF (20),NA,tissue,4031
+Sample ID: 4051 Tissue,1,GM-CSF (20),NA,tissue,4051
+Sample ID: 4051 Tissue,2,GM-CSF (20),NA,tissue,4051
+Sample ID: 4078 Tissue,1,GM-CSF (20),NA,tissue,4078
+Sample ID: 4078 Tissue,2,GM-CSF (20),NA,tissue,4078
+Sample ID: 4001 Sponge,1,GM-CSF (20),0.03,mucus,4001
+Sample ID: 4001 Sponge,2,GM-CSF (20),NA,mucus,4001
+Sample ID: 4031 Sponge,1,GM-CSF (20),NA,mucus,4031
+Sample ID: 4031 Sponge,2,GM-CSF (20),NA,mucus,4031
+Sample ID: 4037 Sponge,1,GM-CSF (20),NA,mucus,4037
+Sample ID: 4037 Sponge,2,GM-CSF (20),NA,mucus,4037
+Sample ID: 4051 Sponge,1,GM-CSF (20),NA,mucus,4051
+Sample ID: 4051 Sponge,2,GM-CSF (20),NA,mucus,4051
+Sample ID: 4078 Sponge,1,GM-CSF (20),NA,mucus,4078
+Sample ID: 4078 Sponge,2,GM-CSF (20),NA,mucus,4078
+Reagent Name: Background0,1,IFN-g (25),NA,Background,0
+Reagent Name: Background0,2,IFN-g (25),NA,Background,0
+Reagent Name: Standard1,1,IFN-g (25),9.41,Standard,1
+Reagent Name: Standard1,2,IFN-g (25),10,Standard,1
+Reagent Name: Standard2,1,IFN-g (25),40.92,Standard,2
+Reagent Name: Standard2,2,IFN-g (25),38.41,Standard,2
+Reagent Name: Standard3,1,IFN-g (25),155.34,Standard,3
+Reagent Name: Standard3,2,IFN-g (25),153.43,Standard,3
+Reagent Name: Standard4,1,IFN-g (25),613.34,Standard,4
+Reagent Name: Standard4,2,IFN-g (25),631.64,Standard,4
+Reagent Name: Standard5,1,IFN-g (25),2497.32,Standard,5
+Reagent Name: Standard5,2,IFN-g (25),2594.03,Standard,5
+Reagent Name: Standard6,1,IFN-g (25),9884.24,Standard,6
+Reagent Name: Standard6,2,IFN-g (25),9646.34,Standard,6
+Reagent Name: Standard7,1,IFN-g (25),39884.53,Standard,7
+Reagent Name: Standard7,2,IFN-g (25),41818.57,Standard,7
+Sample ID: QC1,1,IFN-g (25),159.33,QC,1
+Sample ID: QC1,2,IFN-g (25),151.83,QC,1
+Sample ID: QC2,1,IFN-g (25),1505.07,QC,2
+Sample ID: QC2,2,IFN-g (25),1533.25,QC,2
+Sample ID: 3991 Pellet,1,IFN-g (25),1.82,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IFN-g (25),2.96,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IFN-g (25),33.42,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IFN-g (25),34.17,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IFN-g (25),3.3,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IFN-g (25),3.74,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IFN-g (25),7.61,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IFN-g (25),9.9,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IFN-g (25),8.41,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IFN-g (25),7.81,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IFN-g (25),3.63,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IFN-g (25),3.3,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IFN-g (25),5.26,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IFN-g (25),5.93,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IFN-g (25),NA,tissue,3999
+Sample ID: 3999 Tissue,2,IFN-g (25),NA,tissue,3999
+Sample ID: 4001 Tissue,1,IFN-g (25),NA,tissue,4001
+Sample ID: 4001 Tissue,2,IFN-g (25),NA,tissue,4001
+Sample ID: 4031 Tissue,1,IFN-g (25),NA,tissue,4031
+Sample ID: 4031 Tissue,2,IFN-g (25),NA,tissue,4031
+Sample ID: 4051 Tissue,1,IFN-g (25),NA,tissue,4051
+Sample ID: 4051 Tissue,2,IFN-g (25),NA,tissue,4051
+Sample ID: 4078 Tissue,1,IFN-g (25),NA,tissue,4078
+Sample ID: 4078 Tissue,2,IFN-g (25),NA,tissue,4078
+Sample ID: 4001 Sponge,1,IFN-g (25),NA,mucus,4001
+Sample ID: 4001 Sponge,2,IFN-g (25),NA,mucus,4001
+Sample ID: 4031 Sponge,1,IFN-g (25),NA,mucus,4031
+Sample ID: 4031 Sponge,2,IFN-g (25),NA,mucus,4031
+Sample ID: 4037 Sponge,1,IFN-g (25),NA,mucus,4037
+Sample ID: 4037 Sponge,2,IFN-g (25),NA,mucus,4037
+Sample ID: 4051 Sponge,1,IFN-g (25),NA,mucus,4051
+Sample ID: 4051 Sponge,2,IFN-g (25),NA,mucus,4051
+Sample ID: 4078 Sponge,1,IFN-g (25),NA,mucus,4078
+Sample ID: 4078 Sponge,2,IFN-g (25),NA,mucus,4078
+Reagent Name: Background0,1,IL-10 (27),NA,Background,0
+Reagent Name: Background0,2,IL-10 (27),NA,Background,0
+Reagent Name: Standard1,1,IL-10 (27),1.59,Standard,1
+Reagent Name: Standard1,2,IL-10 (27),0.78,Standard,1
+Reagent Name: Standard2,1,IL-10 (27),5.16,Standard,2
+Reagent Name: Standard2,2,IL-10 (27),4.89,Standard,2
+Reagent Name: Standard3,1,IL-10 (27),19.04,Standard,3
+Reagent Name: Standard3,2,IL-10 (27),18.95,Standard,3
+Reagent Name: Standard4,1,IL-10 (27),73.84,Standard,4
+Reagent Name: Standard4,2,IL-10 (27),84.52,Standard,4
+Reagent Name: Standard5,1,IL-10 (27),305.14,Standard,5
+Reagent Name: Standard5,2,IL-10 (27),324.67,Standard,5
+Reagent Name: Standard6,1,IL-10 (27),1225.62,Standard,6
+Reagent Name: Standard6,2,IL-10 (27),1246.27,Standard,6
+Reagent Name: Standard7,1,IL-10 (27),4705.75,Standard,7
+Reagent Name: Standard7,2,IL-10 (27),5347.62,Standard,7
+Sample ID: QC1,1,IL-10 (27),18.52,QC,1
+Sample ID: QC1,2,IL-10 (27),18,QC,1
+Sample ID: QC2,1,IL-10 (27),197.18,QC,2
+Sample ID: QC2,2,IL-10 (27),205.29,QC,2
+Sample ID: 3991 Pellet,1,IL-10 (27),3.64,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-10 (27),2.79,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-10 (27),9.36,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-10 (27),8.71,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-10 (27),1.9,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-10 (27),2.08,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-10 (27),2.32,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-10 (27),2.08,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-10 (27),1.96,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-10 (27),1.96,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-10 (27),1.46,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-10 (27),1.46,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-10 (27),9.58,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-10 (27),9.79,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-10 (27),6.67,tissue,3999
+Sample ID: 3999 Tissue,2,IL-10 (27),7.08,tissue,3999
+Sample ID: 4001 Tissue,1,IL-10 (27),15.95,tissue,4001
+Sample ID: 4001 Tissue,2,IL-10 (27),14.85,tissue,4001
+Sample ID: 4031 Tissue,1,IL-10 (27),2.91,tissue,4031
+Sample ID: 4031 Tissue,2,IL-10 (27),3.25,tissue,4031
+Sample ID: 4051 Tissue,1,IL-10 (27),3.42,tissue,4051
+Sample ID: 4051 Tissue,2,IL-10 (27),2.79,tissue,4051
+Sample ID: 4078 Tissue,1,IL-10 (27),5.95,tissue,4078
+Sample ID: 4078 Tissue,2,IL-10 (27),6.16,tissue,4078
+Sample ID: 4001 Sponge,1,IL-10 (27),23.19,mucus,4001
+Sample ID: 4001 Sponge,2,IL-10 (27),23.28,mucus,4001
+Sample ID: 4031 Sponge,1,IL-10 (27),116.33,mucus,4031
+Sample ID: 4031 Sponge,2,IL-10 (27),95.03,mucus,4031
+Sample ID: 4037 Sponge,1,IL-10 (27),9.65,mucus,4037
+Sample ID: 4037 Sponge,2,IL-10 (27),9.55,mucus,4037
+Sample ID: 4051 Sponge,1,IL-10 (27),58.76,mucus,4051
+Sample ID: 4051 Sponge,2,IL-10 (27),60.44,mucus,4051
+Sample ID: 4078 Sponge,1,IL-10 (27),15.47,mucus,4078
+Sample ID: 4078 Sponge,2,IL-10 (27),14.85,mucus,4078
+Reagent Name: Background0,1,IL-13 (35),NA,Background,0
+Reagent Name: Background0,2,IL-13 (35),NA,Background,0
+Reagent Name: Standard1,1,IL-13 (35),6.39,Standard,1
+Reagent Name: Standard1,2,IL-13 (35),8.02,Standard,1
+Reagent Name: Standard2,1,IL-13 (35),30.05,Standard,2
+Reagent Name: Standard2,2,IL-13 (35),30.66,Standard,2
+Reagent Name: Standard3,1,IL-13 (35),116.09,Standard,3
+Reagent Name: Standard3,2,IL-13 (35),111.58,Standard,3
+Reagent Name: Standard4,1,IL-13 (35),448.74,Standard,4
+Reagent Name: Standard4,2,IL-13 (35),492.4,Standard,4
+Reagent Name: Standard5,1,IL-13 (35),1790.92,Standard,5
+Reagent Name: Standard5,2,IL-13 (35),2013.01,Standard,5
+Reagent Name: Standard6,1,IL-13 (35),7323.6,Standard,6
+Reagent Name: Standard6,2,IL-13 (35),7454.04,Standard,6
+Reagent Name: Standard7,1,IL-13 (35),29361.14,Standard,7
+Reagent Name: Standard7,2,IL-13 (35),31275.67,Standard,7
+Sample ID: QC1,1,IL-13 (35),114.92,QC,1
+Sample ID: QC1,2,IL-13 (35),109.68,QC,1
+Sample ID: QC2,1,IL-13 (35),1370.07,QC,2
+Sample ID: QC2,2,IL-13 (35),1421.4,QC,2
+Sample ID: 3991 Pellet,1,IL-13 (35),12.29,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-13 (35),13.49,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-13 (35),133.41,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-13 (35),194.44,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-13 (35),32.26,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-13 (35),30.46,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-13 (35),35.65,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-13 (35),113.3,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-13 (35),248.99,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-13 (35),257.53,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-13 (35),22.71,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-13 (35),20,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-13 (35),159.15,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-13 (35),133.98,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-13 (35),90.45,tissue,3999
+Sample ID: 3999 Tissue,2,IL-13 (35),91.83,tissue,3999
+Sample ID: 4001 Tissue,1,IL-13 (35),11.95,tissue,4001
+Sample ID: 4001 Tissue,2,IL-13 (35),12.72,tissue,4001
+Sample ID: 4031 Tissue,1,IL-13 (35),8.93,tissue,4031
+Sample ID: 4031 Tissue,2,IL-13 (35),9.16,tissue,4031
+Sample ID: 4051 Tissue,1,IL-13 (35),3.98,tissue,4051
+Sample ID: 4051 Tissue,2,IL-13 (35),3.73,tissue,4051
+Sample ID: 4078 Tissue,1,IL-13 (35),28.74,tissue,4078
+Sample ID: 4078 Tissue,2,IL-13 (35),27.22,tissue,4078
+Sample ID: 4001 Sponge,1,IL-13 (35),20.42,mucus,4001
+Sample ID: 4001 Sponge,2,IL-13 (35),13.82,mucus,4001
+Sample ID: 4031 Sponge,1,IL-13 (35),30.05,mucus,4031
+Sample ID: 4031 Sponge,2,IL-13 (35),26.2,mucus,4031
+Sample ID: 4037 Sponge,1,IL-13 (35),NA,mucus,4037
+Sample ID: 4037 Sponge,2,IL-13 (35),NA,mucus,4037
+Sample ID: 4051 Sponge,1,IL-13 (35),NA,mucus,4051
+Sample ID: 4051 Sponge,2,IL-13 (35),NA,mucus,4051
+Sample ID: 4078 Sponge,1,IL-13 (35),37.83,mucus,4078
+Sample ID: 4078 Sponge,2,IL-13 (35),35.85,mucus,4078
+Reagent Name: Background0,1,IL-17A (39),NA,Background,0
+Reagent Name: Background0,2,IL-17A (39),NA,Background,0
+Reagent Name: Standard1,1,IL-17A (39),11.91,Standard,1
+Reagent Name: Standard1,2,IL-17A (39),12.53,Standard,1
+Reagent Name: Standard2,1,IL-17A (39),48.56,Standard,2
+Reagent Name: Standard2,2,IL-17A (39),49.16,Standard,2
+Reagent Name: Standard3,1,IL-17A (39),191.03,Standard,3
+Reagent Name: Standard3,2,IL-17A (39),195.3,Standard,3
+Reagent Name: Standard4,1,IL-17A (39),783.59,Standard,4
+Reagent Name: Standard4,2,IL-17A (39),819.18,Standard,4
+Reagent Name: Standard5,1,IL-17A (39),2947.44,Standard,5
+Reagent Name: Standard5,2,IL-17A (39),3052.93,Standard,5
+Reagent Name: Standard6,1,IL-17A (39),14891.65,Standard,6
+Reagent Name: Standard6,2,IL-17A (39),13965.67,Standard,6
+Reagent Name: Standard7,1,IL-17A (39),47699.63,Standard,7
+Reagent Name: Standard7,2,IL-17A (39),32454.31,Standard,7
+Sample ID: QC1,1,IL-17A (39),214.89,QC,1
+Sample ID: QC1,2,IL-17A (39),200.39,QC,1
+Sample ID: QC2,1,IL-17A (39),1910.34,QC,2
+Sample ID: QC2,2,IL-17A (39),1962.96,QC,2
+Sample ID: 3991 Pellet,1,IL-17A (39),2.56,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-17A (39),2.89,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-17A (39),30.74,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-17A (39),31.66,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-17A (39),7.62,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-17A (39),6.67,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-17A (39),3.11,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-17A (39),17.83,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-17A (39),0.04,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-17A (39),0.29,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-17A (39),4.79,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-17A (39),8.57,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-17A (39),NA,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-17A (39),1.05,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-17A (39),NA,tissue,3999
+Sample ID: 3999 Tissue,2,IL-17A (39),0.04,tissue,3999
+Sample ID: 4001 Tissue,1,IL-17A (39),20.63,tissue,4001
+Sample ID: 4001 Tissue,2,IL-17A (39),18.18,tissue,4001
+Sample ID: 4031 Tissue,1,IL-17A (39),NA,tissue,4031
+Sample ID: 4031 Tissue,2,IL-17A (39),NA,tissue,4031
+Sample ID: 4051 Tissue,1,IL-17A (39),NA,tissue,4051
+Sample ID: 4051 Tissue,2,IL-17A (39),NA,tissue,4051
+Sample ID: 4078 Tissue,1,IL-17A (39),NA,tissue,4078
+Sample ID: 4078 Tissue,2,IL-17A (39),NA,tissue,4078
+Sample ID: 4001 Sponge,1,IL-17A (39),8.99,mucus,4001
+Sample ID: 4001 Sponge,2,IL-17A (39),5.49,mucus,4001
+Sample ID: 4031 Sponge,1,IL-17A (39),NA,mucus,4031
+Sample ID: 4031 Sponge,2,IL-17A (39),NA,mucus,4031
+Sample ID: 4037 Sponge,1,IL-17A (39),NA,mucus,4037
+Sample ID: 4037 Sponge,2,IL-17A (39),NA,mucus,4037
+Sample ID: 4051 Sponge,1,IL-17A (39),NA,mucus,4051
+Sample ID: 4051 Sponge,2,IL-17A (39),NA,mucus,4051
+Sample ID: 4078 Sponge,1,IL-17A (39),0.35,mucus,4078
+Sample ID: 4078 Sponge,2,IL-17A (39),NA,mucus,4078
+Reagent Name: Background0,1,IL-17E/IL-25 (66),NA,Background,0
+Reagent Name: Background0,2,IL-17E/IL-25 (66),NA,Background,0
+Reagent Name: Standard1,1,IL-17E/IL-25 (66),0.12,Standard,1
+Reagent Name: Standard1,2,IL-17E/IL-25 (66),0.12,Standard,1
+Reagent Name: Standard2,1,IL-17E/IL-25 (66),0.54,Standard,2
+Reagent Name: Standard2,2,IL-17E/IL-25 (66),0.51,Standard,2
+Reagent Name: Standard3,1,IL-17E/IL-25 (66),1.68,Standard,3
+Reagent Name: Standard3,2,IL-17E/IL-25 (66),1.82,Standard,3
+Reagent Name: Standard4,1,IL-17E/IL-25 (66),7.59,Standard,4
+Reagent Name: Standard4,2,IL-17E/IL-25 (66),6.26,Standard,4
+Reagent Name: Standard5,1,IL-17E/IL-25 (66),55.32,Standard,5
+Reagent Name: Standard5,2,IL-17E/IL-25 (66),38.5,Standard,5
+Reagent Name: Standard6,1,IL-17E/IL-25 (66),430.84,Standard,6
+Reagent Name: Standard6,2,IL-17E/IL-25 (66),248.83,Standard,6
+Reagent Name: Standard7,1,IL-17E/IL-25 (66),127.37,Standard,7
+Reagent Name: Standard7,2,IL-17E/IL-25 (66),285.58,Standard,7
+Sample ID: QC1,1,IL-17E/IL-25 (66),1.73,QC,1
+Sample ID: QC1,2,IL-17E/IL-25 (66),1.68,QC,1
+Sample ID: QC2,1,IL-17E/IL-25 (66),22.81,QC,2
+Sample ID: QC2,2,IL-17E/IL-25 (66),21.5,QC,2
+Sample ID: 3991 Pellet,1,IL-17E/IL-25 (66),0.01,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-17E/IL-25 (66),0.01,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-17E/IL-25 (66),0.03,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-17E/IL-25 (66),0.03,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-17E/IL-25 (66),0.01,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-17E/IL-25 (66),0.01,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-17E/IL-25 (66),0.01,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-17E/IL-25 (66),0.02,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-17E/IL-25 (66),0.01,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-17E/IL-25 (66),0.01,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-17E/IL-25 (66),0.01,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-17E/IL-25 (66),0.01,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-17E/IL-25 (66),0.02,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-17E/IL-25 (66),0.02,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-17E/IL-25 (66),0.01,tissue,3999
+Sample ID: 3999 Tissue,2,IL-17E/IL-25 (66),0.01,tissue,3999
+Sample ID: 4001 Tissue,1,IL-17E/IL-25 (66),0.01,tissue,4001
+Sample ID: 4001 Tissue,2,IL-17E/IL-25 (66),0.01,tissue,4001
+Sample ID: 4031 Tissue,1,IL-17E/IL-25 (66),0.01,tissue,4031
+Sample ID: 4031 Tissue,2,IL-17E/IL-25 (66),0.01,tissue,4031
+Sample ID: 4051 Tissue,1,IL-17E/IL-25 (66),0.01,tissue,4051
+Sample ID: 4051 Tissue,2,IL-17E/IL-25 (66),0.01,tissue,4051
+Sample ID: 4078 Tissue,1,IL-17E/IL-25 (66),0.01,tissue,4078
+Sample ID: 4078 Tissue,2,IL-17E/IL-25 (66),0.01,tissue,4078
+Sample ID: 4001 Sponge,1,IL-17E/IL-25 (66),0.01,mucus,4001
+Sample ID: 4001 Sponge,2,IL-17E/IL-25 (66),0.01,mucus,4001
+Sample ID: 4031 Sponge,1,IL-17E/IL-25 (66),0.01,mucus,4031
+Sample ID: 4031 Sponge,2,IL-17E/IL-25 (66),0.01,mucus,4031
+Sample ID: 4037 Sponge,1,IL-17E/IL-25 (66),0.01,mucus,4037
+Sample ID: 4037 Sponge,2,IL-17E/IL-25 (66),0.01,mucus,4037
+Sample ID: 4051 Sponge,1,IL-17E/IL-25 (66),0.02,mucus,4051
+Sample ID: 4051 Sponge,2,IL-17E/IL-25 (66),0.02,mucus,4051
+Sample ID: 4078 Sponge,1,IL-17E/IL-25 (66),0.01,mucus,4078
+Sample ID: 4078 Sponge,2,IL-17E/IL-25 (66),0.01,mucus,4078
+Reagent Name: Background0,1,IL-1b (46),NA,Background,0
+Reagent Name: Background0,2,IL-1b (46),NA,Background,0
+Reagent Name: Standard1,1,IL-1b (46),4.79,Standard,1
+Reagent Name: Standard1,2,IL-1b (46),4.99,Standard,1
+Reagent Name: Standard2,1,IL-1b (46),18.67,Standard,2
+Reagent Name: Standard2,2,IL-1b (46),20.2,Standard,2
+Reagent Name: Standard3,1,IL-1b (46),76.57,Standard,3
+Reagent Name: Standard3,2,IL-1b (46),80.34,Standard,3
+Reagent Name: Standard4,1,IL-1b (46),300.65,Standard,4
+Reagent Name: Standard4,2,IL-1b (46),324.94,Standard,4
+Reagent Name: Standard5,1,IL-1b (46),1239.02,Standard,5
+Reagent Name: Standard5,2,IL-1b (46),1246.58,Standard,5
+Reagent Name: Standard6,1,IL-1b (46),5485.79,Standard,6
+Reagent Name: Standard6,2,IL-1b (46),4833.45,Standard,6
+Reagent Name: Standard7,1,IL-1b (46),20888.55,Standard,7
+Reagent Name: Standard7,2,IL-1b (46),16366.63,Standard,7
+Sample ID: QC1,1,IL-1b (46),77.68,QC,1
+Sample ID: QC1,2,IL-1b (46),73.26,QC,1
+Sample ID: QC2,1,IL-1b (46),809.58,QC,2
+Sample ID: QC2,2,IL-1b (46),807.05,QC,2
+Sample ID: 3991 Pellet,1,IL-1b (46),3.38,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-1b (46),3.12,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-1b (46),394.55,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-1b (46),385.93,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-1b (46),1671.41,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-1b (46),1674.89,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-1b (46),73.87,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-1b (46),93.94,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-1b (46),2.6,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-1b (46),3.12,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-1b (46),109.89,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-1b (46),120.05,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-1b (46),2.96,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-1b (46),2.8,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-1b (46),4.14,tissue,3999
+Sample ID: 3999 Tissue,2,IL-1b (46),3.77,tissue,3999
+Sample ID: 4001 Tissue,1,IL-1b (46),9.15,tissue,4001
+Sample ID: 4001 Tissue,2,IL-1b (46),9.09,tissue,4001
+Sample ID: 4031 Tissue,1,IL-1b (46),1.28,tissue,4031
+Sample ID: 4031 Tissue,2,IL-1b (46),0.93,tissue,4031
+Sample ID: 4051 Tissue,1,IL-1b (46),1.28,tissue,4051
+Sample ID: 4051 Tissue,2,IL-1b (46),1.28,tissue,4051
+Sample ID: 4078 Tissue,1,IL-1b (46),1.36,tissue,4078
+Sample ID: 4078 Tissue,2,IL-1b (46),1.32,tissue,4078
+Sample ID: 4001 Sponge,1,IL-1b (46),1046.13,mucus,4001
+Sample ID: 4001 Sponge,2,IL-1b (46),950.54,mucus,4001
+Sample ID: 4031 Sponge,1,IL-1b (46),117.37,mucus,4031
+Sample ID: 4031 Sponge,2,IL-1b (46),54.06,mucus,4031
+Sample ID: 4037 Sponge,1,IL-1b (46),46.37,mucus,4037
+Sample ID: 4037 Sponge,2,IL-1b (46),48.78,mucus,4037
+Sample ID: 4051 Sponge,1,IL-1b (46),39.72,mucus,4051
+Sample ID: 4051 Sponge,2,IL-1b (46),42.33,mucus,4051
+Sample ID: 4078 Sponge,1,IL-1b (46),5.08,mucus,4078
+Sample ID: 4078 Sponge,2,IL-1b (46),4.79,mucus,4078
+Reagent Name: Background0,1,IL-2 (48),NA,Background,0
+Reagent Name: Background0,2,IL-2 (48),NA,Background,0
+Reagent Name: Standard1,1,IL-2 (48),11.46,Standard,1
+Reagent Name: Standard1,2,IL-2 (48),12.96,Standard,1
+Reagent Name: Standard2,1,IL-2 (48),45.24,Standard,2
+Reagent Name: Standard2,2,IL-2 (48),52.77,Standard,2
+Reagent Name: Standard3,1,IL-2 (48),193.18,Standard,3
+Reagent Name: Standard3,2,IL-2 (48),192.13,Standard,3
+Reagent Name: Standard4,1,IL-2 (48),767.38,Standard,4
+Reagent Name: Standard4,2,IL-2 (48),836.96,Standard,4
+Reagent Name: Standard5,1,IL-2 (48),2997.91,Standard,5
+Reagent Name: Standard5,2,IL-2 (48),3043.52,Standard,5
+Reagent Name: Standard6,1,IL-2 (48),13115.66,Standard,6
+Reagent Name: Standard6,2,IL-2 (48),13559.43,Standard,6
+Reagent Name: Standard7,1,IL-2 (48),50827.19,Standard,7
+Reagent Name: Standard7,2,IL-2 (48),41742.44,Standard,7
+Sample ID: QC1,1,IL-2 (48),224.49,QC,1
+Sample ID: QC1,2,IL-2 (48),206.61,QC,1
+Sample ID: QC2,1,IL-2 (48),2051.9,QC,2
+Sample ID: QC2,2,IL-2 (48),2156.49,QC,2
+Sample ID: 3991 Pellet,1,IL-2 (48),NA,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-2 (48),NA,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-2 (48),1.22,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-2 (48),1.45,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-2 (48),6.18,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-2 (48),6.18,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-2 (48),NA,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-2 (48),NA,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-2 (48),11.13,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-2 (48),11.35,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-2 (48),0.78,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-2 (48),0.55,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-2 (48),39.28,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-2 (48),40.42,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-2 (48),NA,tissue,3999
+Sample ID: 3999 Tissue,2,IL-2 (48),NA,tissue,3999
+Sample ID: 4001 Tissue,1,IL-2 (48),NA,tissue,4001
+Sample ID: 4001 Tissue,2,IL-2 (48),NA,tissue,4001
+Sample ID: 4031 Tissue,1,IL-2 (48),NA,tissue,4031
+Sample ID: 4031 Tissue,2,IL-2 (48),NA,tissue,4031
+Sample ID: 4051 Tissue,1,IL-2 (48),NA,tissue,4051
+Sample ID: 4051 Tissue,2,IL-2 (48),NA,tissue,4051
+Sample ID: 4078 Tissue,1,IL-2 (48),NA,tissue,4078
+Sample ID: 4078 Tissue,2,IL-2 (48),NA,tissue,4078
+Sample ID: 4001 Sponge,1,IL-2 (48),NA,mucus,4001
+Sample ID: 4001 Sponge,2,IL-2 (48),NA,mucus,4001
+Sample ID: 4031 Sponge,1,IL-2 (48),NA,mucus,4031
+Sample ID: 4031 Sponge,2,IL-2 (48),NA,mucus,4031
+Sample ID: 4037 Sponge,1,IL-2 (48),NA,mucus,4037
+Sample ID: 4037 Sponge,2,IL-2 (48),NA,mucus,4037
+Sample ID: 4051 Sponge,1,IL-2 (48),NA,mucus,4051
+Sample ID: 4051 Sponge,2,IL-2 (48),NA,mucus,4051
+Sample ID: 4078 Sponge,1,IL-2 (48),NA,mucus,4078
+Sample ID: 4078 Sponge,2,IL-2 (48),NA,mucus,4078
+Reagent Name: Background0,1,IL-22 (43),NA,Background,0
+Reagent Name: Background0,2,IL-22 (43),NA,Background,0
+Reagent Name: Standard1,1,IL-22 (43),0.04,Standard,1
+Reagent Name: Standard1,2,IL-22 (43),0.03,Standard,1
+Reagent Name: Standard2,1,IL-22 (43),0.15,Standard,2
+Reagent Name: Standard2,2,IL-22 (43),0.14,Standard,2
+Reagent Name: Standard3,1,IL-22 (43),0.57,Standard,3
+Reagent Name: Standard3,2,IL-22 (43),0.6,Standard,3
+Reagent Name: Standard4,1,IL-22 (43),2.41,Standard,4
+Reagent Name: Standard4,2,IL-22 (43),2.37,Standard,4
+Reagent Name: Standard5,1,IL-22 (43),9.18,Standard,5
+Reagent Name: Standard5,2,IL-22 (43),9.19,Standard,5
+Reagent Name: Standard6,1,IL-22 (43),37.7,Standard,6
+Reagent Name: Standard6,2,IL-22 (43),38.3,Standard,6
+Reagent Name: Standard7,1,IL-22 (43),141.89,Standard,7
+Reagent Name: Standard7,2,IL-22 (43),156.88,Standard,7
+Sample ID: QC1,1,IL-22 (43),0.6,QC,1
+Sample ID: QC1,2,IL-22 (43),0.58,QC,1
+Sample ID: QC2,1,IL-22 (43),5.37,QC,2
+Sample ID: QC2,2,IL-22 (43),5.21,QC,2
+Sample ID: 3991 Pellet,1,IL-22 (43),0.05,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-22 (43),0.04,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-22 (43),0.13,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-22 (43),0.14,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-22 (43),0.06,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-22 (43),0.06,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-22 (43),0.04,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-22 (43),0.19,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-22 (43),0.03,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-22 (43),0.03,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-22 (43),0.04,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-22 (43),0.05,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-22 (43),0.04,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-22 (43),0.05,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-22 (43),0.01,tissue,3999
+Sample ID: 3999 Tissue,2,IL-22 (43),0.01,tissue,3999
+Sample ID: 4001 Tissue,1,IL-22 (43),NA,tissue,4001
+Sample ID: 4001 Tissue,2,IL-22 (43),0.01,tissue,4001
+Sample ID: 4031 Tissue,1,IL-22 (43),0.01,tissue,4031
+Sample ID: 4031 Tissue,2,IL-22 (43),0.01,tissue,4031
+Sample ID: 4051 Tissue,1,IL-22 (43),0.01,tissue,4051
+Sample ID: 4051 Tissue,2,IL-22 (43),0.01,tissue,4051
+Sample ID: 4078 Tissue,1,IL-22 (43),0.01,tissue,4078
+Sample ID: 4078 Tissue,2,IL-22 (43),0.02,tissue,4078
+Sample ID: 4001 Sponge,1,IL-22 (43),0.04,mucus,4001
+Sample ID: 4001 Sponge,2,IL-22 (43),NA,mucus,4001
+Sample ID: 4031 Sponge,1,IL-22 (43),0.07,mucus,4031
+Sample ID: 4031 Sponge,2,IL-22 (43),0.05,mucus,4031
+Sample ID: 4037 Sponge,1,IL-22 (43),NA,mucus,4037
+Sample ID: 4037 Sponge,2,IL-22 (43),NA,mucus,4037
+Sample ID: 4051 Sponge,1,IL-22 (43),0.04,mucus,4051
+Sample ID: 4051 Sponge,2,IL-22 (43),0.04,mucus,4051
+Sample ID: 4078 Sponge,1,IL-22 (43),0.01,mucus,4078
+Sample ID: 4078 Sponge,2,IL-22 (43),0.01,mucus,4078
+Reagent Name: Background0,1,IL-33 (47),NA,Background,0
+Reagent Name: Background0,2,IL-33 (47),NA,Background,0
+Reagent Name: Standard1,1,IL-33 (47),4.71,Standard,1
+Reagent Name: Standard1,2,IL-33 (47),4.86,Standard,1
+Reagent Name: Standard2,1,IL-33 (47),20.91,Standard,2
+Reagent Name: Standard2,2,IL-33 (47),19.71,Standard,2
+Reagent Name: Standard3,1,IL-33 (47),75.79,Standard,3
+Reagent Name: Standard3,2,IL-33 (47),75.73,Standard,3
+Reagent Name: Standard4,1,IL-33 (47),291.37,Standard,4
+Reagent Name: Standard4,2,IL-33 (47),337.58,Standard,4
+Reagent Name: Standard5,1,IL-33 (47),1220.74,Standard,5
+Reagent Name: Standard5,2,IL-33 (47),1315.73,Standard,5
+Reagent Name: Standard6,1,IL-33 (47),4851.45,Standard,6
+Reagent Name: Standard6,2,IL-33 (47),4835.63,Standard,6
+Reagent Name: Standard7,1,IL-33 (47),21279.59,Standard,7
+Reagent Name: Standard7,2,IL-33 (47),20977.3,Standard,7
+Sample ID: QC1,1,IL-33 (47),95.4,QC,1
+Sample ID: QC1,2,IL-33 (47),88.24,QC,1
+Sample ID: QC2,1,IL-33 (47),853.67,QC,2
+Sample ID: QC2,2,IL-33 (47),822.19,QC,2
+Sample ID: 3991 Pellet,1,IL-33 (47),19.84,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-33 (47),20.84,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-33 (47),214.46,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-33 (47),216.46,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-33 (47),26.64,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-33 (47),23.56,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-33 (47),86.34,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-33 (47),107.05,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-33 (47),1597.83,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-33 (47),1588.64,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-33 (47),363.75,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-33 (47),301.69,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-33 (47),1253.98,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-33 (47),1169.16,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-33 (47),1116.47,tissue,3999
+Sample ID: 3999 Tissue,2,IL-33 (47),1098.8,tissue,3999
+Sample ID: 4001 Tissue,1,IL-33 (47),2068.63,tissue,4001
+Sample ID: 4001 Tissue,2,IL-33 (47),2125.93,tissue,4001
+Sample ID: 4031 Tissue,1,IL-33 (47),44.87,tissue,4031
+Sample ID: 4031 Tissue,2,IL-33 (47),46.55,tissue,4031
+Sample ID: 4051 Tissue,1,IL-33 (47),430.7,tissue,4051
+Sample ID: 4051 Tissue,2,IL-33 (47),420.99,tissue,4051
+Sample ID: 4078 Tissue,1,IL-33 (47),741.89,tissue,4078
+Sample ID: 4078 Tissue,2,IL-33 (47),729.01,tissue,4078
+Sample ID: 4001 Sponge,1,IL-33 (47),19.24,mucus,4001
+Sample ID: 4001 Sponge,2,IL-33 (47),14.4,mucus,4001
+Sample ID: 4031 Sponge,1,IL-33 (47),256.7,mucus,4031
+Sample ID: 4031 Sponge,2,IL-33 (47),112.86,mucus,4031
+Sample ID: 4037 Sponge,1,IL-33 (47),361.52,mucus,4037
+Sample ID: 4037 Sponge,2,IL-33 (47),335.08,mucus,4037
+Sample ID: 4051 Sponge,1,IL-33 (47),4.45,mucus,4051
+Sample ID: 4051 Sponge,2,IL-33 (47),7.38,mucus,4051
+Sample ID: 4078 Sponge,1,IL-33 (47),23.3,mucus,4078
+Sample ID: 4078 Sponge,2,IL-33 (47),22.51,mucus,4078
+Reagent Name: Background0,1,IL-4 (53),NA,Background,0
+Reagent Name: Background0,2,IL-4 (53),NA,Background,0
+Reagent Name: Standard1,1,IL-4 (53),0.03,Standard,1
+Reagent Name: Standard1,2,IL-4 (53),0.02,Standard,1
+Reagent Name: Standard2,1,IL-4 (53),0.11,Standard,2
+Reagent Name: Standard2,2,IL-4 (53),0.1,Standard,2
+Reagent Name: Standard3,1,IL-4 (53),0.37,Standard,3
+Reagent Name: Standard3,2,IL-4 (53),0.38,Standard,3
+Reagent Name: Standard4,1,IL-4 (53),1.58,Standard,4
+Reagent Name: Standard4,2,IL-4 (53),1.57,Standard,4
+Reagent Name: Standard5,1,IL-4 (53),6.15,Standard,5
+Reagent Name: Standard5,2,IL-4 (53),6.39,Standard,5
+Reagent Name: Standard6,1,IL-4 (53),24.84,Standard,6
+Reagent Name: Standard6,2,IL-4 (53),25.1,Standard,6
+Reagent Name: Standard7,1,IL-4 (53),97.43,Standard,7
+Reagent Name: Standard7,2,IL-4 (53),102.71,Standard,7
+Sample ID: QC1,1,IL-4 (53),0.39,QC,1
+Sample ID: QC1,2,IL-4 (53),0.38,QC,1
+Sample ID: QC2,1,IL-4 (53),4.1,QC,2
+Sample ID: QC2,2,IL-4 (53),4.26,QC,2
+Sample ID: 3991 Pellet,1,IL-4 (53),0.02,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-4 (53),NA,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-4 (53),0.06,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-4 (53),0.07,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-4 (53),NA,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-4 (53),NA,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-4 (53),0.01,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-4 (53),0.01,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-4 (53),NA,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-4 (53),NA,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-4 (53),NA,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-4 (53),NA,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-4 (53),NA,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-4 (53),NA,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-4 (53),0.19,tissue,3999
+Sample ID: 3999 Tissue,2,IL-4 (53),0.19,tissue,3999
+Sample ID: 4001 Tissue,1,IL-4 (53),0.01,tissue,4001
+Sample ID: 4001 Tissue,2,IL-4 (53),0.01,tissue,4001
+Sample ID: 4031 Tissue,1,IL-4 (53),NA,tissue,4031
+Sample ID: 4031 Tissue,2,IL-4 (53),NA,tissue,4031
+Sample ID: 4051 Tissue,1,IL-4 (53),NA,tissue,4051
+Sample ID: 4051 Tissue,2,IL-4 (53),NA,tissue,4051
+Sample ID: 4078 Tissue,1,IL-4 (53),0.06,tissue,4078
+Sample ID: 4078 Tissue,2,IL-4 (53),0.06,tissue,4078
+Sample ID: 4001 Sponge,1,IL-4 (53),0.02,mucus,4001
+Sample ID: 4001 Sponge,2,IL-4 (53),NA,mucus,4001
+Sample ID: 4031 Sponge,1,IL-4 (53),0.62,mucus,4031
+Sample ID: 4031 Sponge,2,IL-4 (53),0.54,mucus,4031
+Sample ID: 4037 Sponge,1,IL-4 (53),NA,mucus,4037
+Sample ID: 4037 Sponge,2,IL-4 (53),NA,mucus,4037
+Sample ID: 4051 Sponge,1,IL-4 (53),0.02,mucus,4051
+Sample ID: 4051 Sponge,2,IL-4 (53),0.04,mucus,4051
+Sample ID: 4078 Sponge,1,IL-4 (53),NA,mucus,4078
+Sample ID: 4078 Sponge,2,IL-4 (53),NA,mucus,4078
+Reagent Name: Background0,1,IL-5 (55),NA,Background,0
+Reagent Name: Background0,2,IL-5 (55),NA,Background,0
+Reagent Name: Standard1,1,IL-5 (55),6.2,Standard,1
+Reagent Name: Standard1,2,IL-5 (55),6.1,Standard,1
+Reagent Name: Standard2,1,IL-5 (55),23.54,Standard,2
+Reagent Name: Standard2,2,IL-5 (55),24.5,Standard,2
+Reagent Name: Standard3,1,IL-5 (55),98.24,Standard,3
+Reagent Name: Standard3,2,IL-5 (55),94.37,Standard,3
+Reagent Name: Standard4,1,IL-5 (55),399.01,Standard,4
+Reagent Name: Standard4,2,IL-5 (55),427.34,Standard,4
+Reagent Name: Standard5,1,IL-5 (55),1470.14,Standard,5
+Reagent Name: Standard5,2,IL-5 (55),1514.36,Standard,5
+Reagent Name: Standard6,1,IL-5 (55),6592.45,Standard,6
+Reagent Name: Standard6,2,IL-5 (55),6563.36,Standard,6
+Reagent Name: Standard7,1,IL-5 (55),20519.98,Standard,7
+Reagent Name: Standard7,2,IL-5 (55),26440.54,Standard,7
+Sample ID: QC1,1,IL-5 (55),97.45,QC,1
+Sample ID: QC1,2,IL-5 (55),102.82,QC,1
+Sample ID: QC2,1,IL-5 (55),960.86,QC,2
+Sample ID: QC2,2,IL-5 (55),985.41,QC,2
+Sample ID: 3991 Pellet,1,IL-5 (55),4.61,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-5 (55),4.41,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-5 (55),52.2,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-5 (55),51.13,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-5 (55),5.3,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-5 (55),5.5,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-5 (55),5.65,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-5 (55),4.02,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-5 (55),6.7,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-5 (55),6.9,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-5 (55),4.02,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-5 (55),4.51,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-5 (55),27.72,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-5 (55),29.38,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-5 (55),97.39,tissue,3999
+Sample ID: 3999 Tissue,2,IL-5 (55),105.97,tissue,3999
+Sample ID: 4001 Tissue,1,IL-5 (55),23.17,tissue,4001
+Sample ID: 4001 Tissue,2,IL-5 (55),21.84,tissue,4001
+Sample ID: 4031 Tissue,1,IL-5 (55),4.11,tissue,4031
+Sample ID: 4031 Tissue,2,IL-5 (55),4.51,tissue,4031
+Sample ID: 4051 Tissue,1,IL-5 (55),0.86,tissue,4051
+Sample ID: 4051 Tissue,2,IL-5 (55),0.91,tissue,4051
+Sample ID: 4078 Tissue,1,IL-5 (55),41.68,tissue,4078
+Sample ID: 4078 Tissue,2,IL-5 (55),42.01,tissue,4078
+Sample ID: 4001 Sponge,1,IL-5 (55),120.63,mucus,4001
+Sample ID: 4001 Sponge,2,IL-5 (55),115.68,mucus,4001
+Sample ID: 4031 Sponge,1,IL-5 (55),21.63,mucus,4031
+Sample ID: 4031 Sponge,2,IL-5 (55),18.99,mucus,4031
+Sample ID: 4037 Sponge,1,IL-5 (55),2.17,mucus,4037
+Sample ID: 4037 Sponge,2,IL-5 (55),2.27,mucus,4037
+Sample ID: 4051 Sponge,1,IL-5 (55),3.59,mucus,4051
+Sample ID: 4051 Sponge,2,IL-5 (55),3.78,mucus,4051
+Sample ID: 4078 Sponge,1,IL-5 (55),403.68,mucus,4078
+Sample ID: 4078 Sponge,2,IL-5 (55),388.73,mucus,4078
+Reagent Name: Background0,1,IL-6 (57),NA,Background,0
+Reagent Name: Background0,2,IL-6 (57),NA,Background,0
+Reagent Name: Standard1,1,IL-6 (57),2.15,Standard,1
+Reagent Name: Standard1,2,IL-6 (57),2.64,Standard,1
+Reagent Name: Standard2,1,IL-6 (57),10,Standard,2
+Reagent Name: Standard2,2,IL-6 (57),10.07,Standard,2
+Reagent Name: Standard3,1,IL-6 (57),38.32,Standard,3
+Reagent Name: Standard3,2,IL-6 (57),37.31,Standard,3
+Reagent Name: Standard4,1,IL-6 (57),150.8,Standard,4
+Reagent Name: Standard4,2,IL-6 (57),171.76,Standard,4
+Reagent Name: Standard5,1,IL-6 (57),608.67,Standard,5
+Reagent Name: Standard5,2,IL-6 (57),618.66,Standard,5
+Reagent Name: Standard6,1,IL-6 (57),2475.42,Standard,6
+Reagent Name: Standard6,2,IL-6 (57),2624.43,Standard,6
+Reagent Name: Standard7,1,IL-6 (57),8349.39,Standard,7
+Reagent Name: Standard7,2,IL-6 (57),11498.55,Standard,7
+Sample ID: QC1,1,IL-6 (57),39.34,QC,1
+Sample ID: QC1,2,IL-6 (57),36.54,QC,1
+Sample ID: QC2,1,IL-6 (57),385.39,QC,2
+Sample ID: QC2,2,IL-6 (57),397.74,QC,2
+Sample ID: 3991 Pellet,1,IL-6 (57),4.18,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,IL-6 (57),1.54,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,IL-6 (57),44.36,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,IL-6 (57),47.35,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,IL-6 (57),10.25,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,IL-6 (57),10.36,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,IL-6 (57),12.18,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,IL-6 (57),12.57,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,IL-6 (57),17.18,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,IL-6 (57),18.16,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,IL-6 (57),135.72,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,IL-6 (57),137.56,epithelial brushings,4051
+Sample ID: 4078 pellet,1,IL-6 (57),42.73,epithelial brushings,4078
+Sample ID: 4078 pellet,2,IL-6 (57),44.18,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,IL-6 (57),369.15,tissue,3999
+Sample ID: 3999 Tissue,2,IL-6 (57),377.44,tissue,3999
+Sample ID: 4001 Tissue,1,IL-6 (57),524.22,tissue,4001
+Sample ID: 4001 Tissue,2,IL-6 (57),535.94,tissue,4001
+Sample ID: 4031 Tissue,1,IL-6 (57),4.9,tissue,4031
+Sample ID: 4031 Tissue,2,IL-6 (57),5.11,tissue,4031
+Sample ID: 4051 Tissue,1,IL-6 (57),49.92,tissue,4051
+Sample ID: 4051 Tissue,2,IL-6 (57),49.06,tissue,4051
+Sample ID: 4078 Tissue,1,IL-6 (57),73.5,tissue,4078
+Sample ID: 4078 Tissue,2,IL-6 (57),73.2,tissue,4078
+Sample ID: 4001 Sponge,1,IL-6 (57),2680.65,mucus,4001
+Sample ID: 4001 Sponge,2,IL-6 (57),2737.06,mucus,4001
+Sample ID: 4031 Sponge,1,IL-6 (57),744.12,mucus,4031
+Sample ID: 4031 Sponge,2,IL-6 (57),684.72,mucus,4031
+Sample ID: 4037 Sponge,1,IL-6 (57),55.45,mucus,4037
+Sample ID: 4037 Sponge,2,IL-6 (57),52.54,mucus,4037
+Sample ID: 4051 Sponge,1,IL-6 (57),68.9,mucus,4051
+Sample ID: 4051 Sponge,2,IL-6 (57),72.34,mucus,4051
+Sample ID: 4078 Sponge,1,IL-6 (57),440.56,mucus,4078
+Sample ID: 4078 Sponge,2,IL-6 (57),430.64,mucus,4078
+Reagent Name: Background0,1,MIP-3a/CCL20 (28),NA,Background,0
+Reagent Name: Background0,2,MIP-3a/CCL20 (28),NA,Background,0
+Reagent Name: Standard1,1,MIP-3a/CCL20 (28),5.03,Standard,1
+Reagent Name: Standard1,2,MIP-3a/CCL20 (28),4.73,Standard,1
+Reagent Name: Standard2,1,MIP-3a/CCL20 (28),19.55,Standard,2
+Reagent Name: Standard2,2,MIP-3a/CCL20 (28),19.55,Standard,2
+Reagent Name: Standard3,1,MIP-3a/CCL20 (28),76.27,Standard,3
+Reagent Name: Standard3,2,MIP-3a/CCL20 (28),79.47,Standard,3
+Reagent Name: Standard4,1,MIP-3a/CCL20 (28),307.19,Standard,4
+Reagent Name: Standard4,2,MIP-3a/CCL20 (28),322.14,Standard,4
+Reagent Name: Standard5,1,MIP-3a/CCL20 (28),1185.7,Standard,5
+Reagent Name: Standard5,2,MIP-3a/CCL20 (28),1280.14,Standard,5
+Reagent Name: Standard6,1,MIP-3a/CCL20 (28),5121.07,Standard,6
+Reagent Name: Standard6,2,MIP-3a/CCL20 (28),5258.91,Standard,6
+Reagent Name: Standard7,1,MIP-3a/CCL20 (28),18283.17,Standard,7
+Reagent Name: Standard7,2,MIP-3a/CCL20 (28),19766.07,Standard,7
+Sample ID: QC1,1,MIP-3a/CCL20 (28),48.16,QC,1
+Sample ID: QC1,2,MIP-3a/CCL20 (28),46.92,QC,1
+Sample ID: QC2,1,MIP-3a/CCL20 (28),704.98,QC,2
+Sample ID: QC2,2,MIP-3a/CCL20 (28),740.71,QC,2
+Sample ID: 3991 Pellet,1,MIP-3a/CCL20 (28),34.98,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,MIP-3a/CCL20 (28),28.24,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,MIP-3a/CCL20 (28),405.65,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,MIP-3a/CCL20 (28),409.24,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,MIP-3a/CCL20 (28),98.55,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,MIP-3a/CCL20 (28),97.97,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,MIP-3a/CCL20 (28),78.65,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,MIP-3a/CCL20 (28),78.84,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,MIP-3a/CCL20 (28),84.75,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,MIP-3a/CCL20 (28),82.21,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,MIP-3a/CCL20 (28),305.23,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,MIP-3a/CCL20 (28),310.76,epithelial brushings,4051
+Sample ID: 4078 pellet,1,MIP-3a/CCL20 (28),157.55,epithelial brushings,4078
+Sample ID: 4078 pellet,2,MIP-3a/CCL20 (28),154,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,MIP-3a/CCL20 (28),26.48,tissue,3999
+Sample ID: 3999 Tissue,2,MIP-3a/CCL20 (28),25.71,tissue,3999
+Sample ID: 4001 Tissue,1,MIP-3a/CCL20 (28),35.13,tissue,4001
+Sample ID: 4001 Tissue,2,MIP-3a/CCL20 (28),33.1,tissue,4001
+Sample ID: 4031 Tissue,1,MIP-3a/CCL20 (28),12.75,tissue,4031
+Sample ID: 4031 Tissue,2,MIP-3a/CCL20 (28),13.29,tissue,4031
+Sample ID: 4051 Tissue,1,MIP-3a/CCL20 (28),64.4,tissue,4051
+Sample ID: 4051 Tissue,2,MIP-3a/CCL20 (28),62.64,tissue,4051
+Sample ID: 4078 Tissue,1,MIP-3a/CCL20 (28),12.53,tissue,4078
+Sample ID: 4078 Tissue,2,MIP-3a/CCL20 (28),12.26,tissue,4078
+Sample ID: 4001 Sponge,1,MIP-3a/CCL20 (28),963.89,mucus,4001
+Sample ID: 4001 Sponge,2,MIP-3a/CCL20 (28),848.34,mucus,4001
+Sample ID: 4031 Sponge,1,MIP-3a/CCL20 (28),1689.79,mucus,4031
+Sample ID: 4031 Sponge,2,MIP-3a/CCL20 (28),1786.13,mucus,4031
+Sample ID: 4037 Sponge,1,MIP-3a/CCL20 (28),168.62,mucus,4037
+Sample ID: 4037 Sponge,2,MIP-3a/CCL20 (28),168.07,mucus,4037
+Sample ID: 4051 Sponge,1,MIP-3a/CCL20 (28),223.43,mucus,4051
+Sample ID: 4051 Sponge,2,MIP-3a/CCL20 (28),237.06,mucus,4051
+Sample ID: 4078 Sponge,1,MIP-3a/CCL20 (28),79.6,mucus,4078
+Sample ID: 4078 Sponge,2,MIP-3a/CCL20 (28),81.36,mucus,4078
+Reagent Name: Background0,1,TNF-a (75),NA,Background,0
+Reagent Name: Background0,2,TNF-a (75),NA,Background,0
+Reagent Name: Standard1,1,TNF-a (75),2.38,Standard,1
+Reagent Name: Standard1,2,TNF-a (75),2.48,Standard,1
+Reagent Name: Standard2,1,TNF-a (75),10.32,Standard,2
+Reagent Name: Standard2,2,TNF-a (75),9.5,Standard,2
+Reagent Name: Standard3,1,TNF-a (75),37.95,Standard,3
+Reagent Name: Standard3,2,TNF-a (75),38.4,Standard,3
+Reagent Name: Standard4,1,TNF-a (75),151.53,Standard,4
+Reagent Name: Standard4,2,TNF-a (75),167.68,Standard,4
+Reagent Name: Standard5,1,TNF-a (75),596.15,Standard,5
+Reagent Name: Standard5,2,TNF-a (75),639.6,Standard,5
+Reagent Name: Standard6,1,TNF-a (75),2515.02,Standard,6
+Reagent Name: Standard6,2,TNF-a (75),2551.09,Standard,6
+Reagent Name: Standard7,1,TNF-a (75),13907.48,Standard,7
+Reagent Name: Standard7,2,TNF-a (75),7646.98,Standard,7
+Sample ID: QC1,1,TNF-a (75),38.54,QC,1
+Sample ID: QC1,2,TNF-a (75),37.4,QC,1
+Sample ID: QC2,1,TNF-a (75),409.63,QC,2
+Sample ID: QC2,2,TNF-a (75),404.31,QC,2
+Sample ID: 3991 Pellet,1,TNF-a (75),3.39,epithelial brushings,3991
+Sample ID: 3991 Pellet,2,TNF-a (75),2.67,epithelial brushings,3991
+Sample ID: 3999 Pellet,1,TNF-a (75),19.31,epithelial brushings,3999
+Sample ID: 3999 Pellet,2,TNF-a (75),19.36,epithelial brushings,3999
+Sample ID: 4001 Pellet,1,TNF-a (75),28.95,epithelial brushings,4001
+Sample ID: 4001 Pellet,2,TNF-a (75),28.04,epithelial brushings,4001
+Sample ID: 4031 Pellet,1,TNF-a (75),8.94,epithelial brushings,4031
+Sample ID: 4031 Pellet,2,TNF-a (75),13.74,epithelial brushings,4031
+Sample ID: 4037 Pellet,1,TNF-a (75),4.71,epithelial brushings,4037
+Sample ID: 4037 Pellet,2,TNF-a (75),4.94,epithelial brushings,4037
+Sample ID: 4051 Pellet,1,TNF-a (75),37.07,epithelial brushings,4051
+Sample ID: 4051 Pellet,2,TNF-a (75),32.25,epithelial brushings,4051
+Sample ID: 4078 pellet,1,TNF-a (75),2.48,epithelial brushings,4078
+Sample ID: 4078 pellet,2,TNF-a (75),2.27,epithelial brushings,4078
+Sample ID: 3999 Tissue,1,TNF-a (75),3.77,tissue,3999
+Sample ID: 3999 Tissue,2,TNF-a (75),3.27,tissue,3999
+Sample ID: 4001 Tissue,1,TNF-a (75),3.18,tissue,4001
+Sample ID: 4001 Tissue,2,TNF-a (75),3.3,tissue,4001
+Sample ID: 4031 Tissue,1,TNF-a (75),NA,tissue,4031
+Sample ID: 4031 Tissue,2,TNF-a (75),NA,tissue,4031
+Sample ID: 4051 Tissue,1,TNF-a (75),0.83,tissue,4051
+Sample ID: 4051 Tissue,2,TNF-a (75),0.77,tissue,4051
+Sample ID: 4078 Tissue,1,TNF-a (75),1.24,tissue,4078
+Sample ID: 4078 Tissue,2,TNF-a (75),1.39,tissue,4078
+Sample ID: 4001 Sponge,1,TNF-a (75),117.91,mucus,4001
+Sample ID: 4001 Sponge,2,TNF-a (75),135.78,mucus,4001
+Sample ID: 4031 Sponge,1,TNF-a (75),10.37,mucus,4031
+Sample ID: 4031 Sponge,2,TNF-a (75),7.1,mucus,4031
+Sample ID: 4037 Sponge,1,TNF-a (75),11.25,mucus,4037
+Sample ID: 4037 Sponge,2,TNF-a (75),11.69,mucus,4037
+Sample ID: 4051 Sponge,1,TNF-a (75),61.45,mucus,4051
+Sample ID: 4051 Sponge,2,TNF-a (75),67.12,mucus,4051
+Sample ID: 4078 Sponge,1,TNF-a (75),7.85,mucus,4078
+Sample ID: 4078 Sponge,2,TNF-a (75),7.57,mucus,4078
