@@ -1,0 +1,690 @@
+---
+title: "Steriod_responsive_Cytokines_AERD"
+author: "Cailu Lin"
+date: "2021/07/13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r packages, echo=FALSE}
+rm(list = ls())
+graphics.off()
+pacman::p_load(tidyverse, readxl, ggpubr, GGally, sjmisc, goeveg, irr, gtsummary, tableone, plyr, ggstatsplot, scales,pheatmap, broom, dplyr)
+```
+
+run1 vs run2
+```{r}
+
+obcon<-read_excel("C:/Users/clin/Desktop/Mike&Noam/Luminex/20201021/Set1/20p-002_HTH17MAG-14K-15_20200617_RBS multi layout.xlsx", sheet = "Obs Conc", skip=59)[-c(1,98:102),][,-(1:2)]
+obcon$runs<-rep(seq(1,2), times = 48)
+
+obcon<-obcon%>%gather(Analyte, `Obs Conc`, -Description, -runs)
+
+tslp<-read_excel("C:/Users/clin/Desktop/Mike&Noam/Luminex/20201021/Set1/20p-002_HCYP2MAG-62K-01_20200617_RBS.xlsx",  skip=59)[-(97:107),][,c(1,4,10)]
+
+tslp$runs<-rep(seq(1,2), times = 48)
+dat1<-bind_rows(obcon, tslp)
+
+#set2
+
+names<-c("GM-CSF (20)", "IFN-g (25)", "IL-10 (27)", "IL-13 (35)","IL-17A (39)", "IL-17E IL-25 (66)", "IL-1b (46)","IL-2 (48)","IL-22 (43)", "IL-33 (47)","IL-4 (53)", "IL-5 (55)", "IL-6 (57)", "MIP-3a CCL20 (28)","TNF-a (75)")
+
+for(i in 1:length(names)){
+  GM<-read_excel("C:/Users/clin/Desktop/Mike&Noam/Luminex/20201021/Set2/Copy of 20p-002.2_HTH17MAG-14K-15_20201014_RBS.xlsx", sheet=names[i],skip=59)[-(97:107),][,c(1,4,10)]
+  GM$runs<-rep(seq(1,2), times = 48)
+  d<-bind_rows(d, GM)
+}
+
+dat<-bind_rows(dat1,d)
+
+dat$methods <-ifelse(grepl("pellet", dat$Description)==TRUE|grepl("Pellet", dat$Description)==TRUE, "epithelial brushings", ifelse(grepl("Tissue", dat$Description)==TRUE|grepl("tissue", dat$Description)==TRUE, "tissue",ifelse(grepl("Background", dat$Description)==TRUE,"Background", ifelse(grepl("Standard", dat$Description)==TRUE, "Standard",ifelse(grepl("QC", dat$Description)==TRUE, "QC",ifelse(grepl("RIPA", dat$Description)==TRUE, "RIPAbuffer","mucus"))))))
+
+dat$ptid<-readr::parse_number(dat$Description) 
+
+dat<-dat[!(dat$ptid %in% 4072),]
+
+df<-dat
+df$`Obs Conc`<-str_replace(df$`Obs Conc`, "[*]", "")
+df$`Obs Conc`<-as.numeric(df$`Obs Conc`)
+df$`Obs Conc`[df$`Obs Conc`<0.01]<-NA
+df<-df[df$ptid %in% df_relax$ptid,]
+
+write.csv(df, "data_experimental_runs.csv", row.names = F)
+```
+
+
+```{r import dat}
+
+df<-read.csv("data_experimental_runs.csv", header=T)%>%
+  mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¦Ã (25)", "TNF-a (75)"="TNF¦Á (75)","IL-1b (46)"="IL-1¦Â (46)" ))
+  
+  
+```
+
+
+Figure 1 shows the most 8 detectable cytokines (IL-6, CCL-20(MIP3a), IL-10, IL-13, IL-5, IL-33, IFN-g, TNF-a)
+```{r QC}
+FI<-df%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("MIP-3a/CCL20 (28)", "IL-10 (27)","IL-5 (55)","IL-6 (57)", "IL-13 (35)", "IFN-¦Ã (25)","TNF¦Á (75)", "IL-33 (47)"))
+
+
+FI$Analyte<-factor(FI$Analyte, levels=c("IL-5 (55)","IL-6 (57)", "IL-10 (27)","IL-13 (35)", "IL-33 (47)","MIP-3a/CCL20 (28)","TNF¦Á (75)", "IFN-¦Ã (25)"))
+
+FI$typeNew<-ifelse(FI$methods =="Standard",paste0("S",FI$ptid), ifelse(FI$methods =="Background", "B", FI$methods))
+FI$typeNew[FI$typeNew=="epithelial brushings"]<-"epi.bru"
+
+
+FI$runs<-factor(FI$runs, levels=c(1,2), labels=c("First run", "Second run"))
+FI$value <-as.numeric(FI$`Obs.Conc`)
+FI$typeNew<-factor(FI$typeNew, levels=c("S7","S6", "S5", "S4","S3", "S2", "S1",  "QC", "epi.bru", "mucus", "tissue"))
+p<- ggplot(FI, aes(typeNew, value))+geom_boxplot(outlier.size =0.1,outlier.shape =3)+geom_point(color="blue", size=0.1)+
+  facet_grid(Analyte~runs)+theme_classic()+ylab("Observed concentration, pg/mL")+theme(axis.title.x = element_blank(), strip.text.y = element_text(size=6) )+scale_x_discrete(labels=c("S1","S2","S3","S4","S5","S6","S7", "QC", "epi.bru", "mucus", "tissue"))+theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), strip.background = element_blank(), strip.text=element_text(face = "bold"), panel.grid.major.y=element_line(color="grey"))
+
+p<-p+scale_y_log10(breaks=c(1, 10, 100,1000,10000), labels=trans_format('log10',math_format(10^.x)))+theme(strip.text = element_text(size=16), strip.text.y  = element_text(size=12), axis.title.y = element_text(face='bold', size=20), axis.text = element_text(size=14))
+
+px<-p+ annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf)+
+  annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf)
+
+postscript(colormodel="cmyk")
+ggsave(filename ='Figure_1_QC_v2.tiff',px, width =22, height =33, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+dev.off()
+
+
+```
+
+
+Supplemental Figure 1 shows the 3 less detectable cytokines (IL-1b, IL-22, IL-4) and 5 underdetectable signals for IL-17A, IL-25, IL-2, GM-CSF and TSLP
+```{r QC}
+#version 1
+FI<-df%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("IL-1¦Â (46)","IL-4 (53)", "IL-22 (43)","IL-2 (48)",  "IL-17A (39)", "IL-17E/IL-25 (66)","GM-CSF (20)", "TSLP (43)"))
+
+
+FI$Analyte<-factor(FI$Analyte, levels=c("IL-1¦Â (46)","IL-17A (39)","IL-4 (53)",  "IL-22 (43)",  "IL-17E/IL-25 (66)","GM-CSF (20)","IL-2 (48)", "TSLP (43)"))
+
+FI$typeNew<-ifelse(FI$methods =="Standard",paste0("S",FI$ptid), ifelse(FI$methods =="Background", "B", FI$methods))
+FI$typeNew[FI$typeNew=="epithelial brushings"]<-"epi.bru"
+
+FI$runs<-factor(FI$runs, levels=c(1,2), labels=c("First run", "Second run"))
+FI$value <-as.numeric(FI$`Obs.Conc`)
+FI$typeNew<-factor(FI$typeNew, levels=c("S7","S6", "S5", "S4","S3", "S2", "S1",  "QC", "epi.bru", "mucus", "tissue"))
+p<- ggplot(FI, aes(typeNew, value))+geom_boxplot(outlier.size =0.1,outlier.shape =3)+geom_point(color="blue", size=0.1)+
+  facet_grid(Analyte~runs,)+theme_classic()+ylab("")+theme(axis.title.x = element_blank(), strip.text.y = element_text(size=6) )+scale_x_discrete(labels=c("S1","S2","S3","S4","S5","S6","S7", "QC", "epi.bru", "mucus", "tissue"))+theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), strip.background = element_blank(), strip.text=element_text(face = "bold"), panel.grid.major.y=element_line(color="grey"))
+
+p<-p+scale_y_log10(breaks=c(0.01,0.1,1, 10, 100,1000,10000), labels=trans_format('log10',math_format(10^.x)))+theme(strip.text = element_text(size=16), strip.text.y  = element_text(size=12), axis.title.y = element_text(face='bold', size=20), axis.text = element_text(size=14))
+
+py<-p+ annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf)+
+  annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf)
+
+pz<-cowplot::plot_grid(px,py, ncol=2, labels=NULL)
+postscript(colormodel="cmyk")
+ggsave(filename ='Figure_1QC.tiff',pz, width =40, height =33, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+dev.off()
+
+```
+
+
+```{r runs corrections}
+
+d<-df%>%
+  select(ptid,Analyte,runs, methods, `Obs.Conc`)%>%
+  filter(methods=="mucus"|methods=="tissue"|methods=="epithelial brushings")%>%
+  pivot_wider(names_from = runs,  values_from=`Obs.Conc`)
+
+d<-mutate(d,methods=recode(methods,"epithelial brushings"="epi.bru"))
+
+
+##computaion 
+set.seed(123)
+
+# dataframe in long format
+corr_tbl<-data.frame()
+for (i in unique(d$Analyte)[-c(8,16)]){
+  corr_tblx<-data.frame()
+  for (j in unique(d$methods)){
+    corr_tbl1<-ggcorrmat(
+      data = subset(d,Analyte==i&methods==j)[,4:5],
+      type = "robust",
+      output = "dataframe")
+    corr_tbl1$methods<-j
+    corr_tbl1$Analyte<-i
+    corr_tblx<-bind_rows(corr_tblx,corr_tbl1)
+    }
+  corr_tblx$FDR<-p.adjust(corr_tblx$p.value, method="fdr", n=length(corr_tblx$p.value))
+  corr_tblx$Holm<-p.adjust(corr_tblx$p.value, method="holm", n=length(corr_tblx$p.value))
+  corr_tbl<-bind_rows(corr_tbl, corr_tblx)
+}
+
+
+  corr_tbl1<-ggcorrmat(
+    data = subset(d,Analyte==unique(d$Analyte)[8]&methods=="epi.bru")[,4:5],
+    type = "robust",
+    output = "dataframe"
+  )
+  corr_tbl1$methods<-"epi.bru"
+  corr_tbl1$Analyte<-unique(d$Analyte)[8]
+  corr_tbl1$FDR<-p.adjust(corr_tbl1$p.value, method="fdr", n=length(corr_tbl1$p.value))
+  corr_tbl1$Holm<-p.adjust(corr_tbl1$p.value, method="holm", n=length(corr_tbl1$p.value))
+  corr_tbl<-bind_rows(corr_tbl, corr_tbl1)
+
+
+
+write.csv(corr_tbl, "Supplmental_table1_correlations_experimantal_runs.csv", row.names = F)
+
+```
+
+```{r data import}
+df_relax<-read.csv("data_cleaned_ms.csv", header=T)%>%
+  mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¦Ã (25)", "TNFa (75)"="TNF¦Á (75)","IL-1b (46)"="IL-1¦Â (46)" ))
+```
+
+Figure 2, mthods comparison
+```{r pheatmap}
+d<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("MIP-3a/CCL20 (28)", "IL-10 (27)","IL-5 (55)","IL-6 (57)", "IL-13 (35)", "IFN-¦Ã (25)","TNF¦Á (75)", "IL-33 (47)","IL-1¦Â (46)","IL-4 (53)", "IL-22 (43)", "IL-17A (39)", "IL-17E/IL-25 (66)","GM-CSF (20)"))%>%
+  filter(ptid>100)%>%
+  select(ptid, Analyte, `Obs.Conc`,methods, Conditions)%>%
+  pivot_wider(id_cols = c(ptid,methods,Conditions), names_from=Analyte, values_from=`Obs.Conc`)
+d<-d[order(d$methods,d$Conditions),]%>%
+  mutate(methods=recode(methods,"epithelial brushings"="epi.bru"))
+
+d1<-data.matrix(d[,4:17])
+
+d$newid<-ifelse(d$methods=="epi.bru", d$ptid,ifelse(d$methods=="mucus", paste0(d$ptid, " "), paste0(d$ptid, "  ")))
+d$Steriod<-ifelse(d$Conditions=="AERD+steroids", "Treated", "na??ve")
+
+rownames(d1)<-d$newid
+annrow<- as.data.frame(d[,c(2,19)])
+names(annrow)[1]<-"Sampling"
+rownames(annrow)<-d$newid
+
+
+p<-pheatmap(log10(d1), annotation_row =annrow,
+            gaps_row=c(21, 36), angle_col=315,cluster_rows=FALSE,
+            legend_breaks=c(-2,-1,0,1,2,3), border_col=NA,
+            legend_labels=c(paste("10\u207b\u00b2"),paste("10\u207b\u00b9"),paste("10\u00b0"),
+                            paste("10\u00b9"),paste("10\u00b2"),paste("10\u00b3"))) 
+
+
+postscript(colormodel="cmyk")
+ggsave(filename ='Figure_2_Sampling_v2.tiff',p, width =24, height =28, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+dev.off()
+```
+
+Table 2. "correlation" among methods
+```{r}
+
+d<-df_relax%>%
+  select(ptid,Analyte, methods, `Obs.Conc`)%>%
+  filter(methods=="mucus"|methods=="tissue"|methods=="epithelial brushings")%>%
+  pivot_wider(names_from = methods,  values_from=`Obs.Conc`)
+
+names(d)[names(d)=="epithelial brushings"]<-"epi.bru"
+
+
+##computaion 
+set.seed(123)
+
+# dataframe in long format
+corr_tbl<-data.frame()
+for (i in unique(d$Analyte)){
+  corr_tbl1<-ggcorrmat(
+    data = subset(d,Analyte==i)[,3:4],
+    type = "robust",
+    output = "dataframe"
+  )
+  corr_tbl2<-ggcorrmat(
+    data = subset(d,Analyte==i)[,c(3,5)],
+    type = "robust",
+    output = "dataframe"
+  )
+  corr_tbl3<-ggcorrmat(
+    data = subset(d,Analyte==i)[,4:5],
+    type = "robust",
+    output = "dataframe"
+  )
+  corr_tbl.x<-bind_rows(corr_tbl1, corr_tbl2, corr_tbl3)
+  corr_tbl.x$Analyte<-i
+  corr_tbl.x$FDR<-p.adjust(corr_tbl.x$p.value, method="fdr", n=3)
+  corr_tbl.x$Holm<-p.adjust(corr_tbl.x$p.value, method="holm", n=3)
+  corr_tbl<-bind_rows(corr_tbl, corr_tbl.x)
+}
+
+
+write.csv(corr_tbl, "Supplmental_table1_correlations_robust.csv", row.names = F)
+
+p<-ggstatsplot::grouped_ggcorrmat(
+  # arguments relevant for ggstatsplot::ggcorrmat
+  data =d,
+  type = "robust", # percentage bend correlation coefficient
+  grouping.var = Analyte,
+  #title.prefix = "Quality of cut",
+  cor.vars = c(mucus,epi.bru, tissue),
+  cor.vars.names = c(
+    "mucus",
+    "epi.bru",
+    "tissue"
+  ),
+  # arguments relevant for `ggstatsplot::combine_plots`
+  title.text = "Relationship among sampling methods",
+  title.args = list(size = 16, color = "Red"),
+  caption.text = "Relax data",
+  caption.args = list(size =12, color = "blue"),
+  colors = c("#0072B2", "#D55E00", "#CC79A7"),
+  matrix.type = "lower",
+  pch = "square cross",
+  pch.col = "white",
+  plotgrid.args = list(
+    labels = "",
+    nrow = 4
+  ),
+  ggcorrplot.args = list(
+    lab_col = "yellow",
+    lab_size = 6,
+    tl.srt = 45,
+    pch.col = "white",
+    pch.cex = 14
+  ))
+  
+
+```
+
+
+Figure3A: drill down on epithelial brushings analysis of the cytokines
+comparing AERD (+/-steroid) 
+```{r}
+d2<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c( "IL-10 (27)","IL-5 (55)", "IFN-¦Ã (25)", "IL-33 (47)"))%>%
+  filter(methods=="epithelial brushings")
+
+d2$Analyte<-factor(d2$Analyte, levels=c("IL-5 (55)", "IL-10 (27)","IL-33 (47)", "IFN-¦Ã (25)"))
+
+d2$normCon1<-1000*d2$normCon
+
+p<-ggplot(d2, aes(Conditions,normCon1))+geom_point(aes(col=Conditions),size=4, alpha=0.5)+geom_violin()+geom_boxplot(width=0.3)+facet_wrap(~Analyte, scales= "free_y", ncol=4)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Normalized concentration, pg/mg")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
+               dplyr::group_by(Analyte)%>%
+               dplyr::summarise(y.min = pretty(normCon1)[1],
+                         y.max = pretty(normCon1)[length(pretty(normCon1))]) %>%
+               tidyr::gather(key, value, -Analyte), 
+             aes(x = 1, y =1.1* value),
+             inherit.aes = FALSE, alpha = 0)+scale_x_discrete(labels=c("AERD+\nSteroid-", "AERD+\nSteroid+"))
+
+sigFunc = function(x){
+  if(x < 0.001){"***"} 
+  else if(x < 0.01){"**"}
+  else if(x < 0.05){"*"}
+  else{NA}}
+
+
+
+p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+              map_signif_level= sigFunc,
+              margin_top = 0.05)
+
+
+
+p1eb<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
+
+
+```
+
+Fig3B: drill down on mucus analysis of the cytokines
+comparing AERD (+/-steroid) 
+```{r}
+d2<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c( "IL-33 (47)"))%>%
+  filter(methods=="mucus")
+
+
+
+p<-ggplot(d2, aes(Conditions,`Obs.Conc`))+geom_point(aes(col=Conditions),size=4, alpha=0.5)+geom_violin()+geom_boxplot(width=0.3)+facet_wrap(~Analyte, scales= "free_y", ncol=1)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Observed concentration, pg/ml")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
+               dplyr::group_by(Analyte)%>%
+               dplyr::summarise(y.min = pretty(`Obs.Conc`)[1],
+                         y.max = pretty(`Obs.Conc`)[length(pretty(`Obs.Conc`))]) %>%
+               tidyr::gather(key, value, -Analyte), 
+             aes(x = 1, y =1.1* value),
+             inherit.aes = FALSE, alpha = 0)+scale_x_discrete(labels=c("AERD+\nSteroid-", "AERD+\nSteroid+"))
+
+sigFunc = function(x){
+  if(x < 0.001){"***"} 
+  else if(x < 0.01){"**"}
+  else if(x < 0.05){"*"}
+  else{NA}}
+
+
+
+p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+              map_signif_level= sigFunc,
+              margin_top = 0.05)
+
+
+
+p1m<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
+
+Fig3<-cowplot::plot_grid(p1eb, p1m, ncol=2, label_size = 20, labels=c("A", "B"), rel_widths = c(3.3,1))
+ 
+postscript(colormodel="cmyk")
+ggsave(filename ='Figure_3-V2.tiff',Fig3, width =32, height =15, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+dev.off()
+```
+Figure4: drill down on tissue and epi.bru analysis of the cytokines
+comparing AERD (+/-steroid) 
+```{r}
+d2<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("IL-17E/IL-25 (66)"))%>%
+  filter(methods=="tissue"|methods=="epithelial brushings")%>%
+  mutate(methods=recode(methods, "epithelial brushings"="epi.bru"))
+
+d2$methods<-factor(d2$methods, levels=c("epi.bru","tissue"))
+
+d2$normCon1<-1000*d2$normCon
+
+p<-ggplot(d2, aes(Conditions,normCon1))+geom_point(aes(col=Conditions),size=4, alpha=0.5)+geom_violin()+geom_boxplot(width=0.3)+facet_wrap(~methods, scales= "free_y", ncol=4)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Normalized concentration, pg/mg")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
+               dplyr::group_by(methods)%>%
+               dplyr::summarise(y.min = pretty(normCon1)[1],
+                         y.max = pretty(normCon1)[length(pretty(normCon1))]) %>%
+               tidyr::gather(key, value, -methods), 
+             aes(x = 1, y =1.1* value),
+             inherit.aes = FALSE, alpha = 0)+scale_x_discrete(labels=c("AERD+\nSteroid-", "AERD+\nSteroid+"))
+
+sigFunc = function(x){
+  if(x < 0.001){"***"} 
+  else if(x < 0.01){"**"}
+  else if(x < 0.05){"*"}
+  else{NA}}
+
+
+
+p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+              map_signif_level= sigFunc,
+              margin_top = 0.05)
+
+
+
+p1a<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+test = "wilcox.test", map_signif_level=c("*"=0.001,"*"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
+
+
+
+```
+
+Figure 4: drill down on mucus analysis of the cytokines
+comparing AERD (+/-steroid) 
+```{r}
+d2<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("IL-17E/IL-25 (66)"))%>%
+  filter(methods=="mucus")
+
+
+
+p<-ggplot(d2, aes(Conditions,`Obs.Conc`))+geom_point(aes(col=Conditions),size=4, alpha=0.5)+geom_violin()+geom_boxplot(width=0.3)+facet_wrap(~methods, scales= "free_y", ncol=1)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Observed  concentration, pg/ml")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
+               dplyr::group_by(methods)%>%
+               dplyr::summarise(y.min = pretty(`Obs.Conc`)[1],
+                         y.max = pretty(`Obs.Conc`)[length(pretty(`Obs.Conc`))]) %>%
+               tidyr::gather(key, value, -methods), 
+             aes(x = 1, y =1.1* value),
+             inherit.aes = FALSE, alpha = 0)+scale_x_discrete(labels=c("AERD+\nSteroid-", "AERD+\nSteroid+"))
+
+sigFunc = function(x){
+  if(x < 0.001){"***"} 
+  else if(x < 0.01){"**"}
+  else if(x < 0.05){"*"}
+  else{NA}}
+
+
+
+p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+              map_signif_level= sigFunc,
+              margin_top = 0.05)
+
+
+
+p1b<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "*"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
+
+
+Fig4<-cowplot::plot_grid(p1a, p1b, ncol=2, label_size = 20, labels=c("A", "B"), rel_widths = c(1.9,1))
+ 
+postscript(colormodel="cmyk")
+ggsave(filename ='Figure_4-V2.tiff',Fig4, width =24, height =15, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+dev.off()
+
+```
+
+Supplemental Figure4: drill down on tissue analysis of the cytokines
+comparing AERD (+/-steroid) 
+```{r}
+d2<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("IL-1¦Â (46)", "IL-4 (53)","IL-22 (43)"))%>%
+  filter(methods=="tissue")
+
+d2$Analyte<-factor(d2$Analyte, levels=c("IL-1¦Â (46)", "IL-4 (53)","IL-22 (43)"))
+
+d2$normCon1<-1000*d2$normCon
+
+p<-ggplot(d2, aes(Conditions,normCon1))+geom_point(aes(col=Conditions),size=4, alpha=0.5)+geom_violin()+geom_boxplot(width=0.3)+facet_wrap(~Analyte, scales= "free_y", ncol=4)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Normalized analyte concentration, pg/mg")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
+               group_by(Analyte)%>%
+               summarise(y.min = pretty(normCon1)[1],
+                         y.max = pretty(normCon1)[length(pretty(normCon1))]) %>%
+               tidyr::gather(key, value, -Analyte), 
+             aes(x = 1, y =1.1* value),
+             inherit.aes = FALSE, alpha = 0)+scale_x_discrete(labels=c("AERD+\nSteroid-", "AERD+\nSteroid+"))
+
+sigFunc = function(x){
+  if(x < 0.001){"***"} 
+  else if(x < 0.01){"**"}
+  else if(x < 0.05){"*"}
+  else{NA}}
+
+
+
+p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+              map_signif_level= sigFunc,
+              margin_top = 0.05)
+
+
+
+p1b<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+test = "wilcox.test", map_signif_level=c("***"=0.001,"ns"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
+
+
+```
+
+
+Supplemental Figure4: drill down on epithelial brushings analysis of the cytokines
+comparing AERD (+/-steroid) 
+```{r}
+d2<-df_relax%>%
+  filter(methods !="RIPAbuffer"&methods !="Background")%>%
+  filter(Analyte %in% c("IL-1¦Â (46)", "IL-4 (53)","IL-22 (43)"))%>%
+  filter(methods=="epithelial brushings")
+
+d2$Analyte<-factor(d2$Analyte, levels=c("IL-1¦Â (46)", "IL-4 (53)","IL-22 (43)"))
+
+d2$normCon1<-1000*d2$normCon
+
+p<-ggplot(d2, aes(Conditions,normCon1))+geom_point(aes(col=Conditions),size=4, alpha=0.5)+geom_violin()+geom_boxplot(width=0.3)+facet_wrap(~Analyte, scales= "free_y", ncol=4)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Normalized analyte concentration, pg/mg")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
+               group_by(Analyte)%>%
+               summarise(y.min = pretty(normCon1)[1],
+                         y.max = pretty(normCon1)[length(pretty(normCon1))]) %>%
+               tidyr::gather(key, value, -Analyte), 
+             aes(x = 1, y =1.1* value),
+             inherit.aes = FALSE, alpha = 0)+scale_x_discrete(labels=c("AERD+\nSteroid-", "AERD+\nSteroid+"))
+
+sigFunc = function(x){
+  if(x < 0.001){"***"} 
+  else if(x < 0.01){"**"}
+  else if(x < 0.05){"*"}
+  else{NA}}
+
+
+
+
+p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+              map_signif_level= sigFunc,
+              margin_top = 0.05)
+
+
+
+p1c<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
+test = "wilcox.test", map_signif_level=c("***"=0.001,"ns"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
+
+
+p1ax<-p1a+ggtitle("mucus samples")+theme(plot.title = element_text(face="bold", size=20, hjust=0.5))
+p1bx<-p1b+ggtitle("tissue samples")+theme(plot.title = element_text(face="bold", size=20, hjust=0.5))
+p1cx<-p1c+ggtitle("epithelial brushings samples")+theme(plot.title = element_text(face="bold", size=20, hjust=0.5))
+
+p1x<-cowplot::plot_grid(p1ax, p1bx, p1cx, ncol=1, labels=c("A", "B", "C"), label_size=20)
+
+postscript(colormodel="cmyk")
+ggsave(filename ='Supplemental_Figure_4_Effect.tiff',p1x, width =26, height =40, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+dev.off()
+```
+
+
+
+
+Supplemental Table 1
+```{r tableOne for summary table}
+# data_relax
+
+d<-df_relax%>%
+  filter(methods=="mucus")%>%
+  select(ptid,  Analyte, `Obs Conc`, Conditions)
+n<-d%>%
+  group_by(Conditions,Analyte)%>%
+  filter(`Obs Conc` !="NA")%>%
+  summarise(n())%>%
+  pivot_wider(id_cols = Analyte, names_from = Conditions, values_from = `n()`)
+
+d<-pivot_wider(d, id_cols=c(ptid, Conditions), names_from = Analyte,  values_from=`Obs Conc`)
+ 
+table<-CreateTableOne(d, var=names(d[,3:18]), strata = "Conditions",testNonNormal=kruskal.test, addOverall =TRUE)
+table<-data.frame(print(table,nonnormal =names(d[,3:18]), smd= TRUE))
+table$methods<-"mucus"
+table$Analyte<-substr(rownames(table),1,nchar(rownames(table))-15)
+table<-merge(table, n,  by= "Analyte", all=T)
+
+
+d<-df_relax%>%
+  filter(methods=="tissue")%>%
+  select(ptid,  Analyte, `Obs Conc`, Conditions)
+
+n<-d%>%
+  group_by(Conditions,Analyte)%>%
+  filter(`Obs Conc` !="NA")%>%
+  summarise(n())%>%
+  pivot_wider(id_cols = Analyte, names_from = Conditions, values_from = `n()`)
+
+d<-pivot_wider(d, id_cols=c(ptid, Conditions),names_from = Analyte,  values_from=`Obs Conc`)
+
+
+table2<-CreateTableOne(d, var=names(d[,3:18]), strata = "Conditions",testNonNormal=kruskal.test, addOverall =TRUE)
+table2<-data.frame(print(table2,nonnormal =names(d[,3:18]),smd= TRUE))
+table2$methods<-"tissue"
+
+table2$Analyte<-substr(rownames(table2),1,nchar(rownames(table2))-15)
+table2<-merge(table2, n,  by= "Analyte", all=T)
+
+
+
+d<-df_relax%>%
+  filter(methods=="epithelial brushings")%>%
+  select(ptid,  Analyte, `Obs Conc`, Conditions)
+
+n<-d%>%
+  group_by(Conditions,Analyte)%>%
+  filter(`Obs Conc` !="NA")%>%
+  summarise(n())%>%
+  pivot_wider(id_cols = Analyte, names_from = Conditions, values_from = `n()`)
+
+d<-pivot_wider(d, names_from = Analyte,  values_from=`Obs Conc`)
+
+table3<-CreateTableOne(d, var=names(d[,3:18]), strata = "Conditions",testNonNormal=kruskal.test, addOverall =TRUE)
+table3<-data.frame(print(table3,nonnormal =names(d[,3:18]),smd= TRUE))
+table3$methods<-"epithelial brushings"
+
+table3$Analyte<-substr(rownames(table3),1,nchar(rownames(table3))-15)
+table3<-merge(table3, n,  by= "Analyte", all=T)
+
+
+result1<-bind_rows(table, table2, table3)
+
+
+
+#normdata
+d<-df_relax%>%
+  filter(methods=="tissue")%>%
+  select(ptid,  Analyte, normCon, Conditions)
+d$normCon<-1000*d$normCon
+
+n<-d%>%
+  group_by(Conditions,Analyte)%>%
+  filter(normCon !="NA")%>%
+  summarise(n())%>%
+  pivot_wider(id_cols = Analyte, names_from = Conditions, values_from = `n()`)
+
+d<-pivot_wider(d,id_cols=c(ptid, Conditions), names_from = Analyte,  values_from=normCon)
+
+
+table2<-CreateTableOne(d, var=names(d[,3:18]), strata = "Conditions",testNonNormal=kruskal.test, addOverall =TRUE)
+table2<-data.frame(print(table2,nonnormal =names(d[,3:18]),smd= TRUE))
+table2$methods<-"tissue"
+
+table2$Analyte<-substr(rownames(table2),1,nchar(rownames(table2))-15)
+table2<-merge(table2, n,  by= "Analyte", all=T)
+
+
+d<-df_relax%>%
+  filter(methods=="epithelial brushings")%>%
+  select(ptid,  Analyte, normCon, Conditions)
+d$normCon<-1000*d$normCon
+
+n<-d%>%
+  group_by(Conditions,Analyte)%>%
+  filter(normCon !="NA")%>%
+  summarise(n())%>%
+  pivot_wider(id_cols = Analyte, names_from = Conditions, values_from = `n()`)
+
+d<-pivot_wider(d, id_cols=c(ptid, Conditions),names_from = Analyte,  values_from=normCon)
+
+table3<-CreateTableOne(d, var=names(d[,3:18]), strata = "Conditions",testNonNormal=kruskal.test, addOverall =TRUE)
+table3<-data.frame(print(table3,nonnormal =names(d[,3:18]),smd= TRUE))
+table3$methods<-"epithelial brushings"
+
+table3$Analyte<-substr(rownames(table3),1,nchar(rownames(table3))-15)
+table3<-merge(table3, n,  by= "Analyte", all=T)
+
+
+result2<-bind_rows( table2, table3)
+
+result<-merge(result1, result2, by=c("methods","Analyte"), all=T)
+result[result=="NaN (NA)"]<-""
+
+write.csv(result, "Supplemtal_Table1_Test_results_20210715.csv", row.names = FALSE)
+```
+
+
+
+
+
+
+
