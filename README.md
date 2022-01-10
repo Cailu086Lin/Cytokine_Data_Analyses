@@ -13,6 +13,7 @@ Conclusions: In the epithelial samples, type 2 associated cytokines IL-5 and IL-
 
 
 sessionInfo()
+
 R version 4.1.2 (2021-11-01)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 7 x64 (build 7601) Service Pack 1
