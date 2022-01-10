@@ -31,6 +31,7 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 loaded via a namespace (and not attached):
+
   [1] pairwiseComparisons_3.1.6 circlize_0.4.13           plyr_1.8.6               
   [4] splines_4.1.2             gmp_0.6-2                 kSamples_1.2-9           
   [7] usethis_2.0.1             ggplot2_3.3.5             ipmisc_6.0.2             
