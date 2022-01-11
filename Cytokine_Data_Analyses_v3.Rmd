@@ -21,7 +21,7 @@ pacman::p_load(tidyverse, readxl, ggpubr, GGally, sjmisc, goeveg, irr, gtsummary
 ```
 
 
-```{r import dat}
+```{r import dat, echo=FALSE}
 
 df<-read.csv("data/data_experimental_runs.csv", header=T)%>%
   mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¦Ã (25)", "TNF-a (75)"="TNF¦Á (75)","IL-1b (46)"="IL-1¦Â (46)" ))
@@ -29,7 +29,7 @@ df<-read.csv("data/data_experimental_runs.csv", header=T)%>%
 ```
 
 #S1 Table
-```{r runs corrections}
+```{r runs corrections, echo=FALSE}
 
 d<-df%>%
   select(ptid,Analyte,runs, methods, `Obs.Conc`)%>%
@@ -97,7 +97,7 @@ tbl<-dem2 %>%
 ```
 
 S3 Table
-```{r  S3_table, 2-way Scheirer-Ray-Hare tests}
+```{r  S3_table, 2-way Scheirer-Ray-Hare tests, echo=FALSE}
 
 df2<-merge(df_relax, dem2[,c(1,3)], by.x="ptid", by.y="PtID", all.x = T)
 #nonpara,metric test with scheirer_Ray_Hare eqipped in rcompanion)
@@ -165,7 +165,7 @@ write.csv(results, "S3_twowayResults.csv", row.names = F)
 ```
 
 S3 Table
-```{r posthoc Dunn test and adjusts FDR}
+```{r posthoc Dunn test and adjusts FDR, echo=FALSE}
 library(FSA)
 df2$Conditions <-factor(df2$Conditions)
 ##TNFg
@@ -201,7 +201,7 @@ IL_252_t <- dunnTest(normCon ~  Conditions, data=subset(df2, Analyte=="IL-17E/IL
 
 
 S2_table
-```{r S2_Table_correlation with covariates}
+```{r S2_Table_correlation with covariates, echo=FALSE}
 dem3<- read_excel("data/Copy of AERD_clinicalInfo_11-2021-1.xlsx")
 df3<-merge(df_relax, dem2[,c(1,3,7, 8, 10)], by.x="ptid", by.y="PtID", all.x = T)%>%
   filter(Conditions=="AERD+nosteroids")
@@ -517,7 +517,7 @@ write.csv(corr_tbl, "S2_Table_concentration_by_group.csv", row.names=F)
 ```
 
 Figure 1 shows the most 8 detectable cytokines (IL-6, CCL-20(MIP3a), IL-10, IL-13, IL-5, IL-33, IFN-g, TNF-a)
-```{r QC, Figure 1}
+```{r QC Figure 1, echo=FALSE}
 FI<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
   filter(Analyte %in% c("MIP-3a/CCL20 (28)", "IL-10 (27)","IL-5 (55)","IL-6 (57)", "IL-13 (35)", "IFN-¦Ã (25)","TNF¦Á (75)", "IL-33 (47)"))%>%
@@ -563,7 +563,7 @@ dev.off()
 
 
 S1 Figure 1
-```{r QC, S1 Figure}
+```{r QC S1 Figure, echo=FALSE}
 
 FI<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
@@ -611,7 +611,7 @@ dev.off()
 
 
 S5 Table . "correlation" among methods
-```{r, S5 Table, sampling}
+```{r S5 Table sampling, echo=FALSE}
 
 d<-df_relax%>%
   select(ptid,Analyte, methods, `Obs.Conc`)%>%
@@ -807,7 +807,7 @@ dev.off()
 ```
 
 #Figure 3,negative results IL13, CCL20, IL6 and TNFa in epitium sample
-```{r, Figure3}
+```{r Figure3, echo=FALSE}
 d2<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
   filter(Analyte %in% c("IL-13 (35)","MIP-3a/CCL20 (28)","IL-6 (57)","TNFa (75)"))%>%
@@ -869,7 +869,7 @@ dev.off()
 
 
 Supplemental Table 4
-```{r tableOne for summary table}
+```{r tableOne for summary table, echo=FALSE}
 # data_relax
 d<-df_relax%>%
   rename(.,c("Obs.Conc"="Obs Conc"))%>%
@@ -988,7 +988,7 @@ write.csv(result, "S4_Table_Test_results_20210715.csv", row.names = FALSE)
 ```
 
 #REviewer 2#15, combine brushings+mucus to and included it into S5 Table.
-```{r, brushings+mucus}
+```{r brushings+mucus, echo=FALSE}
 
 d<-df_relax%>%
   filter(methods=="epithelial brushings"|methods=="mucus")%>%
