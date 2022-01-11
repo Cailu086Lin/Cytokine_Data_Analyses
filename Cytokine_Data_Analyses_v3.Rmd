@@ -24,12 +24,9 @@ pacman::p_load(tidyverse, readxl, ggpubr, GGally, sjmisc, goeveg, irr, gtsummary
 ```{r import dat}
 
 df<-read.csv("data/data_experimental_runs.csv", header=T)%>%
-  mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¶√ (25)", "TNF-a (75)"="TNF¶¡ (75)","IL-1b (46)"="IL-1¶¬ (46)" ))
-  
-  
+  mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¬¶√É (25)", "TNF-a (75)"="TNF¬¶√Å (75)","IL-1b (46)"="IL-1¬¶√Ç (46)" ))
+    
 ```
-
-
 
 #S1 Table
 ```{r runs corrections}
@@ -75,16 +72,13 @@ for (i in unique(d$Analyte)[-c(8,16)]){
   corr_tbl1$Holm<-p.adjust(corr_tbl1$p.value, method="holm", n=length(corr_tbl1$p.value))
   corr_tbl<-bind_rows(corr_tbl, corr_tbl1)
 
-
-
 write.csv(corr_tbl, "Supplmental_table1_correlations_experimantal_runs.csv", row.names = F)
 
 ```
 
-
 ```{r data import}
 df_relax<-read.csv("data/data_cleaned_ms.csv", header=T)%>%
-  mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¶√ (25)", "TNFa (75)"="TNF¶¡ (75)","IL-1b (46)"="IL-1¶¬ (46)" ))
+  mutate(Analyte=recode(Analyte, "IFN-g (25)"="IFN-¬¶√É (25)", "TNFa (75)"="TNF¬¶√Å (75)","IL-1b (46)"="IL-1¬¶√Ç (46)" ))
 ```
 
 S1_Table
@@ -100,11 +94,7 @@ tbl<-dem2 %>%
     digits = all_continuous() ~ 2,
     type=c(`Previous Sinus Surgeries`) ~"continuous")%>%
   add_p(pvalue_fun = ~style_pvalue(.x, digits = 3))
-
-
-
 ```
-
 
 S3 Table
 ```{r  S3_table, 2-way Scheirer-Ray-Hare tests}
@@ -179,8 +169,8 @@ S3 Table
 library(FSA)
 df2$Conditions <-factor(df2$Conditions)
 ##TNFg
-TNFg1 <- dunnTest(Obs.Conc ~  Conditions, data=subset(df2, Analyte=="IFN-¶√ (25)"&methods=="epithelial brushings"&Conditions !="unknown"), method="none")
-TNFg2 <- dunnTest(normCon ~  Conditions, data=subset(df2, Analyte=="IFN-¶√ (25)"&methods=="epithelial brushings"&Conditions !="unknown"), method="none")
+TNFg1 <- dunnTest(Obs.Conc ~  Conditions, data=subset(df2, Analyte=="IFN-¬¶√É (25)"&methods=="epithelial brushings"&Conditions !="unknown"), method="none")
+TNFg2 <- dunnTest(normCon ~  Conditions, data=subset(df2, Analyte=="IFN-¬¶√É (25)"&methods=="epithelial brushings"&Conditions !="unknown"), method="none")
 
 ## IL-10
 IL_101 <- dunnTest(Obs.Conc ~  Conditions, data=subset(df2, Analyte=="IL-10 (27)"&methods=="epithelial brushings"&Conditions !="unknown"), method="none")
@@ -522,22 +512,19 @@ corr_tbl2$Steriod<-"Treated"
 
 corr_tbl<-bind_rows(corr_tbl, corr_tbl2)
 
-
 write.csv(corr_tbl, "S2_Table_concentration_by_group.csv", row.names=F)
 
 ```
-
-
 
 Figure 1 shows the most 8 detectable cytokines (IL-6, CCL-20(MIP3a), IL-10, IL-13, IL-5, IL-33, IFN-g, TNF-a)
 ```{r QC, Figure 1}
 FI<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
-  filter(Analyte %in% c("MIP-3a/CCL20 (28)", "IL-10 (27)","IL-5 (55)","IL-6 (57)", "IL-13 (35)", "IFN-¶√ (25)","TNF¶¡ (75)", "IL-33 (47)"))%>%
-  mutate(Analyte=recode(Analyte,"MIP-3a/CCL20 (28)"="MIP-3a/CCL20", "IL-10 (27)"="IL-10","IL-5 (55)"="IL-5","IL-6 (57)"="IL-6", "IL-13 (35)"="IL-13", "IFN-¶√ (25)"="IFN-¶√","TNF¶¡ (75)"="TNF¶¡", "IL-33 (47)"="IL-33"))
+  filter(Analyte %in% c("MIP-3a/CCL20 (28)", "IL-10 (27)","IL-5 (55)","IL-6 (57)", "IL-13 (35)", "IFN-¬¶√É (25)","TNF¬¶√Å (75)", "IL-33 (47)"))%>%
+  mutate(Analyte=recode(Analyte,"MIP-3a/CCL20 (28)"="MIP-3a/CCL20", "IL-10 (27)"="IL-10","IL-5 (55)"="IL-5","IL-6 (57)"="IL-6", "IL-13 (35)"="IL-13", "IFN-¬¶√É (25)"="IFN-¬¶√É","TNF¬¶√Å (75)"="TNF¬¶√Å", "IL-33 (47)"="IL-33"))
 
 
-FI$Analyte<-factor(FI$Analyte, levels=c("IL-5","IL-6", "IL-10","IL-13", "IL-33","MIP-3a/CCL20","TNF¶¡", "IFN-¶√"))
+FI$Analyte<-factor(FI$Analyte, levels=c("IL-5","IL-6", "IL-10","IL-13", "IL-33","MIP-3a/CCL20","TNF¬¶√Å", "IFN-¬¶√É"))
 
 FI$typeNew<-ifelse(FI$methods =="Standard",paste0("S",FI$ptid), ifelse(FI$methods =="Background", "B", FI$methods))
 FI$typeNew[FI$typeNew=="epithelial brushings"]<-"Epithelium"
@@ -558,9 +545,8 @@ px<-p+ annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf)+
   annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf)
 
 
-
 ##
-p<- ggplot(FI[FI$Analyte %in% c("IL-33", "MIP-3a/CCL20", "TNFa", "IFN-¶√"),], aes(typeNew, value))+geom_boxplot(outlier.size =0.1,outlier.shape =3, width=0.3)+geom_point(aes(color=typeNew),position = position_jitter(seed = 1, width = 0.1), size=2, alpha=0.5)+geom_violin(alpha=0.5)+
+p<- ggplot(FI[FI$Analyte %in% c("IL-33", "MIP-3a/CCL20", "TNFa", "IFN-¬¶√É"),], aes(typeNew, value))+geom_boxplot(outlier.size =0.1,outlier.shape =3, width=0.3)+geom_point(aes(color=typeNew),position = position_jitter(seed = 1, width = 0.1), size=2, alpha=0.5)+geom_violin(alpha=0.5)+
   facet_grid(Analyte~.)+theme_classic()+ylab("")+theme(axis.title.x = element_blank(), strip.text.y = element_text(size=6) )+scale_x_discrete(labels=c("S High", "S Low","QC", "Epithelium","Polyp tissue", "Mucus"))+theme(axis.text.x = element_text(angle=45, vjust=1, hjust=1), strip.background = element_blank(), strip.text=element_text(face = "bold"), panel.grid.major.y=element_line(color="grey"))
 
 p<-p+scale_y_log10(breaks=c(0.01, 0.1, 1, 10, 100,1000,10000), labels=trans_format('log10',math_format(10^.x)), limits=c(0.01, 50000))+theme(strip.text = element_text(size=16), strip.text.y  = element_text(size=16), axis.title.y = element_text(face='bold', size=20), axis.text = element_text(size=14), axis.text.y = element_text(color="white"), legend.position = "none", axis.line.y = element_blank())
@@ -573,7 +559,6 @@ postscript(colormodel="cmyk")
 ggsave(filename ='Figure_1QC.tiff',pz, width =20, height =24, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
 dev.off()
 
-
 ```
 
 
@@ -582,11 +567,11 @@ S1 Figure 1
 
 FI<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
-  filter(Analyte %in% c("IL-1¶¬ (46)","IL-4 (53)", "IL-22 (43)","IL-2 (48)",  "IL-17A (39)", "IL-17E/IL-25 (66)","GM-CSF (20)", "TSLP (43)"))%>%
-  mutate(Analyte=recode(Analyte,"IL-1¶¬ (46)"="IL-1¶¬","IL-4 (53)"="IL-4", "IL-22 (43)"="IL-22","IL-2 (48)"="IL-2",  "IL-17A (39)"="IL-17A", "IL-17E/IL-25 (66)"="IL-17E/IL-25","GM-CSF (20)"="GM-CSF", "TSLP (43)"="TSLP"))
+  filter(Analyte %in% c("IL-1¬¶√Ç (46)","IL-4 (53)", "IL-22 (43)","IL-2 (48)",  "IL-17A (39)", "IL-17E/IL-25 (66)","GM-CSF (20)", "TSLP (43)"))%>%
+  mutate(Analyte=recode(Analyte,"IL-1¬¶√Ç (46)"="IL-1¬¶√Ç","IL-4 (53)"="IL-4", "IL-22 (43)"="IL-22","IL-2 (48)"="IL-2",  "IL-17A (39)"="IL-17A", "IL-17E/IL-25 (66)"="IL-17E/IL-25","GM-CSF (20)"="GM-CSF", "TSLP (43)"="TSLP"))
 
 
-FI$Analyte<-factor(FI$Analyte, levels=c("IL-1¶¬","IL-17A","IL-4",  "IL-22",  "IL-17E/IL-25","GM-CSF","IL-2", "TSLP"))
+FI$Analyte<-factor(FI$Analyte, levels=c("IL-1¬¶√Ç","IL-17A","IL-4",  "IL-22",  "IL-17E/IL-25","GM-CSF","IL-2", "TSLP"))
 
 FI$typeNew<-ifelse(FI$methods =="Standard",paste0("S",FI$ptid), ifelse(FI$methods =="Background", "B", FI$methods))
 
@@ -600,7 +585,7 @@ FI$value <-as.numeric(FI$`Obs.Conc`)
 FI$typeNew<-factor(FI$typeNew, levels=c("S7", "S1","QC", "Epithelium", "Polyp tissue", "Mucus"))
 
 
-p<- ggplot(FI[FI$Analyte %in% c("IL-1¶¬","IL-17A","IL-4","IL-22"),] , aes(typeNew, value))+geom_boxplot(outlier.size =0.1,outlier.shape =3, width=0.3)+geom_point(aes(color=typeNew),position = position_jitter(seed = 1, width = 0.1), size=2,alpha=0.5)+geom_violin(alpha = 0.5)+
+p<- ggplot(FI[FI$Analyte %in% c("IL-1¬¶√Ç","IL-17A","IL-4","IL-22"),] , aes(typeNew, value))+geom_boxplot(outlier.size =0.1,outlier.shape =3, width=0.3)+geom_point(aes(color=typeNew),position = position_jitter(seed = 1, width = 0.1), size=2,alpha=0.5)+geom_violin(alpha = 0.5)+
   facet_grid(Analyte~.)+theme_classic()+ylab("Raw concentration, pg/mL")+theme(axis.title.x = element_blank(), strip.text.y = element_text(size=6) )+scale_x_discrete(labels=c("S High", "S Low","QC", "Epithelium", "Polyp tissue", "Mucus"))+theme(axis.text.x = element_text(angle=45, vjust=1, hjust=1), strip.background = element_blank(), strip.text=element_text(face = "bold"), panel.grid.major.y=element_line(color="grey"),legend.position = "none")
 
 p<-p+scale_y_log10(breaks=c(0.01, 0.1, 1, 10, 100,1000,10000), labels=trans_format('log10',math_format(10^.x)), limits=c(0.01, 50000))+theme(strip.text = element_text(size=16), strip.text.y  = element_text(size=16), axis.title.y = element_text(face='bold', size=20), axis.text = element_text(size=14))
@@ -620,12 +605,9 @@ py<-p+ annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf)+
 
 pz<-cowplot::plot_grid(px,py, ncol=2, labels=NULL)
 postscript(colormodel="cmyk")
-ggsave(filename ='Figure_1QC_continue.tiff',pz, width =20, height =24, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
+ggsave(filename ='S1Figure_1QC_continue.tiff',pz, width =20, height =24, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
 dev.off()
 ```
-
-
-
 
 
 S5 Table . "correlation" among methods
@@ -667,9 +649,7 @@ for (i in unique(d$Analyte)){
   corr_tbl<-bind_rows(corr_tbl, corr_tbl.x)
 }
 
-
 write.csv(corr_tbl, "S5_table_correlations_robust_sampling.csv", row.names = F)
-
 
 ```
 
@@ -679,11 +659,11 @@ comparing AERD (+/-steroid)
 ```{r, Figure2A}
 d2<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
-  filter(Analyte %in% c( "IL-10 (27)","IL-5 (55)", "IFN-¶√ (25)", "IL-33 (47)"))%>%
+  filter(Analyte %in% c( "IL-10 (27)","IL-5 (55)", "IFN-¬¶√É (25)", "IL-33 (47)"))%>%
   filter(methods=="epithelial brushings")%>%
-  mutate(Analyte=recode(Analyte,"IL-10 (27)"="Epithelium\n IL-10","IL-5 (55)"="Epithelium\n IL-5","IFN-¶√ (25)"="Epithelium\n IFN-¶√","IL-33 (47)"="Epithelium\n IL-33"))
+  mutate(Analyte=recode(Analyte,"IL-10 (27)"="Epithelium\n IL-10","IL-5 (55)"="Epithelium\n IL-5","IFN-¬¶√É (25)"="Epithelium\n IFN-¬¶√É","IL-33 (47)"="Epithelium\n IL-33"))
 
-d2$Analyte<-factor(d2$Analyte, levels=c("Epithelium\n IL-5", "Epithelium\n IL-10","Epithelium\n IL-33", "Epithelium\n IFN-¶√"))
+d2$Analyte<-factor(d2$Analyte, levels=c("Epithelium\n IL-5", "Epithelium\n IL-10","Epithelium\n IL-33", "Epithelium\n IFN-¬¶√É"))
 
 d2$normCon1<-1000*d2$normCon
 
@@ -702,16 +682,12 @@ sigFunc = function(x){
   else{NA}}
 
 
-
 p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
               map_signif_level= sigFunc,
               margin_top = 0.05)
 
-
-
 p1eb<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
 test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
-
 
 ```
 
@@ -723,8 +699,6 @@ d2<-df_relax%>%
   filter(Analyte %in% c( "IL-33 (47)"))%>%
   filter(methods=="mucus")%>%
   mutate(Analyte=recode(Analyte,"IL-33 (47)"="Mucus\n IL-33"))
-
-
 
 p<-ggplot(d2, aes(Conditions,`Obs.Conc`))+geom_point(aes(col=Conditions),position = position_jitter(seed = 1, width = 0.1),size=2, alpha=0.9)+geom_violin(alpha=0.5)+geom_boxplot(width=0.3,alpha=0.5)+facet_wrap(~Analyte, scales= "free_y", ncol=1)+theme_classic2()+theme(legend.position = "none", axis.title.x = element_blank())+ylab("Raw concentration, pg/ml")+theme(axis.line = element_line(color="white"),panel.grid.major=element_line(color='lightgrey'), axis.text = element_text(size=12),axis.text.x =element_text(face="bold"), axis.title.y = element_text(face='bold', size=16), strip.text=element_text(face="bold",size=14))+geom_point(data = . %>% 
                dplyr::group_by(Analyte)%>%
@@ -739,8 +713,6 @@ sigFunc = function(x){
   else if(x < 0.01){"**"}
   else if(x < 0.05){"*"}
   else{NA}}
-
-
 
 p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
               map_signif_level= sigFunc,
@@ -784,18 +756,12 @@ sigFunc = function(x){
   else if(x < 0.05){"*"}
   else{NA}}
 
-
-
 p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
               map_signif_level= sigFunc,
               margin_top = 0.05)
 
-
-
 p1a<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
 test = "wilcox.test", map_signif_level=c("*"=0.001,"*"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
-
-
 
 ```
 
@@ -825,17 +791,12 @@ sigFunc = function(x){
   else if(x < 0.05){"*"}
   else{NA}}
 
-
-
 p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
               map_signif_level= sigFunc,
               margin_top = 0.05)
 
-
-
 p1b<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
 test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "*"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
-
 
 S2Fig<-cowplot::plot_grid(p1a, p1b, ncol=2, label_size = 20, labels=c("A", "B"), rel_widths = c(1.9,1))
  
@@ -846,13 +807,12 @@ dev.off()
 ```
 
 #Figure 3,negative results IL13, CCL20, IL6 and TNFa in epitium sample
-
 ```{r, Figure3}
 d2<-df_relax%>%
   filter(methods !="RIPAbuffer"&methods !="Background")%>%
   filter(Analyte %in% c("IL-13 (35)","MIP-3a/CCL20 (28)","IL-6 (57)","TNFa (75)"))%>%
   filter(methods=="epithelial brushings")%>%
-  mutate(Analyte=recode(Analyte, "TNFa (75)"="Epithelium\n TNF¶¡", "IL-13 (35)"="Epithelium\n IL-13", "MIP-3a/CCL20 (28)"="Epithelium\n MIP-3a/CCL20","IL-6 (57)"="Epithelium\n IL-6"))
+  mutate(Analyte=recode(Analyte, "TNFa (75)"="Epithelium\n TNF¬¶√Å", "IL-13 (35)"="Epithelium\n IL-13", "MIP-3a/CCL20 (28)"="Epithelium\n MIP-3a/CCL20","IL-6 (57)"="Epithelium\n IL-6"))
 
 d2$Analyte<-factor(d2$Analyte,levels=c("Epithelium\n IL-13","Epithelium\n MIP-3a/CCL20","Epithelium\n IL-6","Epithelium\n TNFa"))
 
@@ -871,18 +831,12 @@ sigFunc = function(x){
   else if(x < 0.05){"*"}
   else{NA}}
 
-
-
 p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
               map_signif_level= sigFunc,
               margin_top = 0.05)
 
-
-
 p1b<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
 test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "*"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
-
-
 
 ##
 d2$normCon1<-1000*d2$normCon
@@ -901,31 +855,17 @@ sigFunc = function(x){
   else if(x < 0.05){"*"}
   else{NA}}
 
-
-
 p1<-p+geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
               map_signif_level= sigFunc,
               margin_top = 0.05)
 
-
-
 p1a<-p+  geom_signif(comparisons = list(c("AERD+nosteroids", "AERD+steroids")),
 test = "wilcox.test", map_signif_level=c("***"=0.001,"*"=0.01, "ns"=0.05, "ns"=2),vjust=1.7, size=1, textsize = 6)
 
- 
 postscript(colormodel="cmyk")
 ggsave(filename ='Figure_3.tiff',p1a, width =32, height =15, units ="cm",dpi = 600, device='tiff', limitsize = TRUE, compression = "lzw")
 dev.off()
 ```
-
-
-
-
-
-
-
-
-
 
 
 Supplemental Table 4
@@ -972,7 +912,6 @@ table2$Analyte<-substr(rownames(table2),1,nchar(rownames(table2))-15)
 table2<-merge(table2, n,  by= "Analyte", all=T)
 
 
-
 d<-df_relax%>%
   rename(.,c("Obs.Conc"="Obs Conc"))%>%
   filter(methods=="epithelial brushings")%>%
@@ -995,8 +934,6 @@ table3<-merge(table3, n,  by= "Analyte", all=T)
 
 
 result1<-bind_rows(table, table2, table3)
-
-
 
 #normdata
 d<-df_relax%>%
@@ -1050,9 +987,7 @@ result[result=="NaN (NA)"]<-""
 write.csv(result, "S4_Table_Test_results_20210715.csv", row.names = FALSE)
 ```
 
-
 #REviewer 2#15, combine brushings+mucus to and included it into S5 Table.
-
 ```{r, brushings+mucus}
 
 d<-df_relax%>%
