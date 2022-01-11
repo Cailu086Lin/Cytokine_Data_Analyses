@@ -39,7 +39,7 @@ d<-df%>%
 d<-mutate(d,methods=recode(methods,"epithelial brushings"="epi.bru"))
 
 
-##computaion 
+##computation 
 set.seed(123)
 
 # dataframe in long format
